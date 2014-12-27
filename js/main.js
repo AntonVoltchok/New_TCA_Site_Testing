@@ -1,6 +1,6 @@
   $('#nav-button').click(function(){
-    $('.skype').fadeIn(3000);
-	$('.practice-fade').fadeIn(3000);
+//    $('.skype').fadeIn(2000);
+	$('.practice-fade').fadeIn(1000);
   });
 
 

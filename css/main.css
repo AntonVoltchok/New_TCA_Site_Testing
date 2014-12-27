@@ -57,11 +57,6 @@ textarea {
     padding: 0.92em 0;
 }
 
-
-/* ===== Initializr Styles ==================================================
-   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
-   ========================================================================== */
-
 /* -------------------------------- 
 
 Primary style
@@ -180,26 +175,17 @@ img {
 /* VIDEO BACKGROUND TESTING HERE */
 
 .schedule-container {
-	height: 600px;
-	width: 100%;
-	background-color: yellow;
-	display: block;
+	border-top: 25px solid rgba(76, 76, 76, 0.22);
+	border-bottom: 25px solid rgba(76, 76, 76, 0.22);
 }
 
 .video-ratio-box {
+	height: 720px;
+	width: 100%;
+	background-color: #000;
+	display: block;
 	position: relative;
-	width: 100%;		
-	display: block;
-	float: left;
-	left: 0;
 }
-
-.video-ratio-box:before {
-	content: "";
-	display: block;
-	padding-top: 45%;	
-}
-
 
 .covervid-wrapper {
     position: absolute;
@@ -207,22 +193,69 @@ img {
 	left: 0;
 	bottom: 0;
 	right: 0;
-
+	width: 100%;
+	height: 100%;
 }
 
-.covervid-video {
- 	background-color: yellow;
+.schedule-h1 {
+    position: absolute;
+    width: 100%;
+    font-family: 'Oswald', sans-serif;
+    font-size: 5em;
+	font-weight: 400;
+    text-align: center;
+    height: 35%;
+    line-height: 1.2;
+    top: -25%;
+    bottom: 0;
+    margin: auto;
+    color: rgb(255, 255, 255);
+    opacity: .99;
+	text-shadow: 4px 5px 20px #000000;
+}
+.schedule-content {
+    position: absolute;
+    top: 10%; 
+	left: 0;
+    bottom: 0; 
+	right: 0;
+    width: 80%;
+	margin: auto;
+    height: 20%;
+	z-index: 11;
+	text-align: center;
+}
+.schedule-dates {
+	color: #fff;
+	opacity: .99;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 400;
+	line-height: 1.2em;
+	font-size: 2em;
+	width: 100%;
+
+}
+.video-content-overlay {
+    background-color: #000;
+    opacity: 0.65;
+    position: absolute;
+    top: 35%; 
+	left: 0;
+    bottom: 0; 
+	right: 0;
+    width: 100%;
+    height: 32%;
+	z-index: 10;
 }
 
 .next-div {
 	height: 800px;
-	background-color: blue;
+	background-color: #fff;
 }
-
 
 .next-div2 {
 	height: 500px;
-	background-color: red;
+	background-color: #ffc2c2;
 }
 
 
@@ -275,6 +308,7 @@ img {
   overflow: hidden;
   -webkit-transition: background 0.2s ease-in-out;
   transition: background 0.2s ease-in-out;
+  z-index: 999;
 }
 
 .header-stripe {
