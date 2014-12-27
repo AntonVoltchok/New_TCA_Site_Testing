@@ -64,13 +64,13 @@ $menu-items-number: 5;
 
 // layout - breakpoints
 
-$S:   320px;     
+/*$S:   320px;     
 $M:   768px;     
-$L:   1170px;     
+$L:   1170px;  */   
 
 // layout - media queries
 
-@mixin MQ($canvas) {
+/*@mixin MQ($canvas) {
   @if $canvas == S {
    @media only screen and (min-width: $S) { @content; } 
   }
@@ -80,9 +80,45 @@ $L:   1170px;
   @else if $canvas == L {
    @media only screen and (min-width: $L) { @content; } 
   }
+}*/
+
+@mixin breakpoint($point) {
+  @if $point == hires {
+    @media only screen and (min-width: 2000px) and (max-width: 2565px) { @content; }
+  }
+  @else if $point == desktop {
+    @media only screen and (max-width: 1920px) { @content; }
+  }  
+  @else if $point == laptop {
+    @media only screen and (max-width: 1600px) { @content; }
+  }
+  @else if $point == netbook {
+    @media only screen and (max-width: 1280px) { @content; }
+  } 	
+  @else if $point == medium {
+    @media only screen and (max-width: 1005px) { @content; }
+  }	
+  @else if $point == small {
+    @media only screen and (max-width: 755px) { @content; }
+  }
+  @else if $point == newp {
+    @media only screen and (max-width: 380px)  { @content; }
+  }
+  @else if $point == oldp {
+    @media only screen and (max-width: 320px)  { @content; }
+  }	
 }
 
-
+.video-ratio-box {
+	@include breakpoint(hires) { height: 820px; }
+	@include breakpoint(desktop) { height: 720px; }
+	@include breakpoint(laptop) { height: 550px; }
+	@include breakpoint(netbook) { height: 450px; }
+	@include breakpoint(medium) { height: 325px; }
+	@include breakpoint(small) { height: 250px; }
+	@include breakpoint(newp) { height: 200px; }
+	@include breakpoint(oldp) { height: 150px; }	
+}
 
 
 

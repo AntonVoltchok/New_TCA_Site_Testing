@@ -86,9 +86,11 @@ img {
 }
 
 
-/* ===================
+/* 	===================
+	
     INTRO PAGE STYLES
-   =================== */
+   	
+	=================== */
 
 .wrapper {
     width: 90%;
@@ -103,7 +105,7 @@ img {
 .heading {
 	margin:0 auto;
 	width: 100%;
-	margin: 11% 0 11%;
+	margin: 10.3% 0 10.5%;
 }
 .intro-h1 {
 	text-align: center;
@@ -172,7 +174,11 @@ img {
 
 
 
-/* VIDEO BACKGROUND TESTING HERE */
+/* 	===================
+	
+    SCHEDULE STYLES
+   	
+	=================== */
 
 .schedule-container {
 	border-top: 25px solid rgba(76, 76, 76, 0.22);
@@ -204,7 +210,7 @@ img {
     font-size: 5em;
 	font-weight: 400;
     text-align: center;
-    height: 35%;
+    height: 37%;
     line-height: 1.2;
     top: -25%;
     bottom: 0;
@@ -239,12 +245,12 @@ img {
     background-color: #000;
     opacity: 0.65;
     position: absolute;
-    top: 35%; 
+    top: 36%; 
 	left: 0;
     bottom: 0; 
 	right: 0;
     width: 100%;
-    height: 32%;
+    height: 31%;
 	z-index: 10;
 }
 
@@ -269,32 +275,11 @@ img {
 
 
 
-
-/* ==============
-    MOBILE: Menu
-   ============== */
-
-
-/*
-#cover {
-  opacity: 0;
-  visibility: hidden;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: 10;
-  top: 0;
-  left: 0;
-  -webkit-transition: opacity 0.2s ease-in-out;
-  transition: opacity 0.2s ease-in-out;
-}
- 
-#cover.display {
-  background: rgba(0, 0, 0, 0.8);
-  opacity: 1;
-  visibility: visible;
-}
-*/
+/* 	===================
+	
+    MOBILE MENU
+   	
+	=================== */
 
 .practice-fade {
 	display: none;
@@ -308,7 +293,7 @@ img {
   overflow: hidden;
   -webkit-transition: background 0.2s ease-in-out;
   transition: background 0.2s ease-in-out;
-  z-index: 999;
+  z-index: 50;
 }
 
 .header-stripe {
@@ -316,7 +301,7 @@ img {
 	height: 40px;
 	background-color: rgba(54, 54, 54, 0.93);
 	position: fixed;
-	z-index: 8;
+	z-index: 48;
 }
 
 .header-title {
@@ -326,7 +311,7 @@ img {
 	font-family: 'Oswald', sans-serif;
 	color: rgba(255, 255, 255, 0.88);
 	padding-right: 1.5em;
-	z-index: 9;
+	z-index: 49;
 }
 
 .header-menu-text {
