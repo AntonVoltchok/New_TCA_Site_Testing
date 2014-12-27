@@ -1,0 +1,88 @@
+@import "bourbon"; 
+
+
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,700,300);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300);
+
+
+
+// variables - colors
+
+$color-1: #ffd464; // yellow
+$color-2: #eeecf5; // light purple
+$color-3: #d26c64; // red
+$color-4: #ffffff; // white
+$background: darken($color-1, 5%); // body background color - visible when main element scales down
+
+// variables - fonts 
+
+$primary-font: 'Ubuntu', sans-serif;
+
+// variables - z-index
+
+$main-zindex: 1;
+$nav-zindex: 3;
+$shadow-zindex: 2;
+
+// variables - nav
+
+$menu-items-number: 5;
+
+// mixins - rem fallback - credits: http://zerosixthree.se/
+
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
+
+// mixins - center vertically and/or horizontally an absolute positioned element
+
+@mixin center($xy:xy) {
+  @if $xy == xy {
+    left: 50%;
+    top: 50%;
+    bottom: auto;
+    right: auto;
+    @include transform(translateX(-50%) translateY(-50%));
+  }
+  @else if $xy == x {
+    left: 50%;
+    right: auto;
+    @include transform(translateX(-50%));
+  }
+  @else if $xy == y {
+    top: 50%;
+    bottom: auto;
+    @include transform(translateY(-50%));
+  }
+}
+
+// layout - breakpoints
+
+$S:   320px;     
+$M:   768px;     
+$L:   1170px;     
+
+// layout - media queries
+
+@mixin MQ($canvas) {
+  @if $canvas == S {
+   @media only screen and (min-width: $S) { @content; } 
+  }
+  @else if $canvas == M {
+   @media only screen and (min-width: $M) { @content; } 
+  }
+  @else if $canvas == L {
+   @media only screen and (min-width: $L) { @content; } 
+  }
+}
+
+
+
+
+

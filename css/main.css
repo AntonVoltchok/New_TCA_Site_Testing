@@ -1,0 +1,589 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,700,300);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300);
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.92em 0;
+}
+
+
+/* ===== Initializr Styles ==================================================
+   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
+   ========================================================================== */
+
+/* -------------------------------- 
+
+Primary style
+
+-------------------------------- */
+
+body {
+    font: 16px/26px Helvetica, Helvetica Neue, Arial;
+}
+
+h1 {
+	font-family: 'Oswald', sans-serif;
+	color: #474848;
+	font-weight: 400;
+	line-height: 1.2em;
+}
+
+h2 {
+	font-family: 'Roboto Condensed', sans-serif;
+	color: #474848;
+	font-weight: 400;
+	line-height: 1.2em;
+}
+
+img {
+	width: 100%;
+}
+
+
+/* ===================
+    INTRO PAGE STYLES
+   =================== */
+
+.wrapper {
+    width: 90%;
+    margin: 0 5%;
+}
+
+.intro-container{
+	background-color: #fff;
+}
+
+/* HERO HEADING POSITIONING*/
+.heading {
+	margin:0 auto;
+	width: 100%;
+	margin: 11% 0 11%;
+}
+.intro-h1 {
+	text-align: center;
+	line-height: 0;
+}
+
+/* SIDE HEADING POSITIONING */
+.intro-left-content {
+	width: 38%;
+	float: left;
+	padding-left: 1.1%;
+	padding-bottom: 10%
+}
+.intro-h3 {
+	margin-top: 15%;
+}
+.intro-h2 {
+	font-family: 'Roboto Condensed', sans-serif;
+	line-height: .7em;
+}
+
+/* RATIO BOX USED TO KEEP ASPECT RATIO OF IMAGES */
+.ratio-box{
+	position: relative;
+	width: 55%;		/* desired width */
+	display: block;
+	float: right;
+	left: 0;
+}
+.ratio-box:before{
+	content: "";
+	display: block;
+	padding-top: 75%;	/* initial ratio of 4:3*/
+}
+.content{
+	position:  absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
+/* POSITIONS IMAGES INSIDE RATIO BOX */
+.monitor {
+	z-index: 1;
+	position:absolute;
+	left: -8%;;
+	top: -10%;
+	width: 110%;
+}
+.play-button {
+	width: 20%;
+	position: absolute;
+	left: 37%;
+	top: 22%;
+	z-index: 2;
+}
+.skype {
+	width: 14%;
+	position: absolute;
+	left: -39%;
+	top: 25%;
+	z-index: 2;
+/*	display: none;*/
+}
+
+
+
+/* VIDEO BACKGROUND TESTING HERE */
+
+.schedule-container {
+	height: 600px;
+	width: 100%;
+	background-color: yellow;
+	display: block;
+}
+
+.video-ratio-box {
+	position: relative;
+	width: 100%;		
+	display: block;
+	float: left;
+	left: 0;
+}
+
+.video-ratio-box:before {
+	content: "";
+	display: block;
+	padding-top: 45%;	
+}
+
+
+.covervid-wrapper {
+    position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+
+}
+
+.covervid-video {
+ 	background-color: yellow;
+}
+
+.next-div {
+	height: 800px;
+	background-color: blue;
+}
+
+
+.next-div2 {
+	height: 500px;
+	background-color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==============
+    MOBILE: Menu
+   ============== */
+
+
+/*
+#cover {
+  opacity: 0;
+  visibility: hidden;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+ 
+#cover.display {
+  background: rgba(0, 0, 0, 0.8);
+  opacity: 1;
+  visibility: visible;
+}
+*/
+
+.practice-fade {
+	display: none;
+}
+
+#main-nav {
+  z-index: 10;
+  width: 200px;
+  height: 100%;
+  position: fixed;
+  overflow: hidden;
+  -webkit-transition: background 0.2s ease-in-out;
+  transition: background 0.2s ease-in-out;
+}
+
+.header-stripe {
+	width: 100%;
+	height: 40px;
+	background-color: rgba(54, 54, 54, 0.93);
+	position: fixed;
+	z-index: 8;
+}
+
+.header-title {
+	text-align: right;
+	font-size: 1.6em;
+	line-height: 1.6em;
+	font-family: 'Oswald', sans-serif;
+	color: rgba(255, 255, 255, 0.88);
+	padding-right: 1.5em;
+	z-index: 9;
+}
+
+.header-menu-text {
+	text-align: left;
+	font-size: 1.6em;
+	line-height: 1.6em;
+	font-family: 'Oswald', sans-serif;
+	color: rgba(255, 255, 255, 0.88);
+	padding-left: 2em;
+	top: 0em;
+	left: 1.7em;
+	position: absolute;
+	z-index: 9;
+}
+
+
+#main-nav.show { background: rgba(255, 255, 255, 1); }
+ 
+#nav-button {
+  background: #fff;
+  height: 2em;
+  width: 2em;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+  top: .25em;
+  left: 2.05em;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #444;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+}
+ 
+#nav-button .fa {
+  position: absolute;
+  top: .1em;
+  left: .17em;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  display: block;
+  width: 1em;
+  height: 1em;
+  font-size: 1.4em;
+  opacity: 1;
+  -webkit-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
+}
+ 
+#nav-button:hover {
+  cursor: pointer;
+  box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.3);
+  color: #ff7600;
+}
+ 
+#nav-button.width {
+  width: 80em;
+  height: 80em;
+  top: -38.75em;
+  left: -36.96em;
+  box-shadow: none;
+}
+ 
+#nav-button.width:before {
+  content: '';
+  display: block;
+  width: 1.4em;
+  height: 1.4em;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  -webkit-animation: color 0.93s linear;
+  animation: color 0.93s linear;
+}
+ 
+@-webkit-keyframes 
+color {  
+  0% {
+    box-shadow: 0;
+  }
+ 30% {
+   box-shadow: 0 0 10px 25px rgba(255, 218, 62, 0.52);
+  }
+}
+ 
+@keyframes 
+color {  
+  0% {
+    box-shadow: 0;
+  }
+  30% {
+    box-shadow: 0 0 10px 25px rgba(255, 92, 105, 0.26);
+  }
+}
+ 
+#nav-list {
+  position: absolute;
+  top: 6em;
+  padding: 0 0 0 3em;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+  width: 70%;
+
+}
+ 
+#nav-list a {
+  font-family: 'Roboto Condensed', sans-serif;	
+  color: #444;
+  text-decoration: none;
+  font-size: 1.6em;
+  display: block;
+  width: 100%;
+  padding: .5em 0;
+  -webkit-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+  	
+  
+}
+ 
+#nav-list a:hover { color: #51b5fd; }
+ 
+#nav-list.nav-show { opacity: 1; }
+5. Include the latest version of jQuery library from a CDN
+
+
+#nav-fade {
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===============
+    ALL: IE Fixes
+   =============== */
+
+.ie7 .title {
+    padding-top: 20px;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
