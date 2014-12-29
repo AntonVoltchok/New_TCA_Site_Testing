@@ -84,25 +84,25 @@ $L:   1170px;  */
 
 @mixin breakpoint($point) {
   @if $point == hires {
-    @media only screen and (min-width: 2000px) and (max-width: 2565px) { @content; }
+    @media only screen and (min-width: 1921px) and (max-width: 2565px) { @content; }
   }
   @else if $point == desktop {
-    @media only screen and (max-width: 1920px) { @content; }
+    @media only screen and (min-width: 1601px) and (max-width: 1920px) { @content; }
   }  
   @else if $point == laptop {
-    @media only screen and (max-width: 1600px) { @content; }
+    @media only screen and (min-width: 1281px) and (max-width: 1600px) { @content; }
   }
   @else if $point == netbook {
-    @media only screen and (max-width: 1280px) { @content; }
+    @media only screen and (min-width: 1006px) and (max-width: 1280px) { @content; }
   } 	
   @else if $point == medium {
-    @media only screen and (max-width: 1005px) { @content; }
+    @media only screen and (min-width: 756px) and (max-width: 1005px) { @content; }
   }	
   @else if $point == small {
-    @media only screen and (max-width: 755px) { @content; }
+    @media only screen and (min-width: 381px) and (max-width: 755px) { @content; }
   }
   @else if $point == newp {
-    @media only screen and (max-width: 380px)  { @content; }
+    @media only screen and (min-width: 321px) and (max-width: 380px)  { @content; }
   }
   @else if $point == oldp {
     @media only screen and (max-width: 320px)  { @content; }
@@ -110,15 +110,17 @@ $L:   1170px;  */
 }
 
 .video-ratio-box {
-	@include breakpoint(hires) { height: 820px; }
+	@include breakpoint(hires) { height: 770px; }
 	@include breakpoint(desktop) { height: 720px; }
-	@include breakpoint(laptop) { height: 550px; }
-	@include breakpoint(netbook) { height: 450px; }
+	@include breakpoint(laptop) { height: 500px; }
+	@include breakpoint(netbook) { height: 420px; }
 	@include breakpoint(medium) { height: 325px; }
-	@include breakpoint(small) { height: 250px; }
+	@include breakpoint(small) { height: 260px; }
 	@include breakpoint(newp) { height: 200px; }
 	@include breakpoint(oldp) { height: 150px; }	
 }
+
+
 
 
 

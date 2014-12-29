@@ -14,25 +14,25 @@ $L:   1170px;  */
    @media only screen and (min-width: $L) { @content; } 
   }
 }*/
-@media only screen and (min-width: 2000px) and (max-width: 2565px) {
+@media only screen and (min-width: 1921px) and (max-width: 2565px) {
   .video-ratio-box {
-    height: 820px; } }
-@media only screen and (max-width: 1920px) {
+    height: 770px; } }
+@media only screen and (min-width: 1601px) and (max-width: 1920px) {
   .video-ratio-box {
     height: 720px; } }
-@media only screen and (max-width: 1600px) {
+@media only screen and (min-width: 1281px) and (max-width: 1600px) {
   .video-ratio-box {
-    height: 550px; } }
-@media only screen and (max-width: 1280px) {
+    height: 500px; } }
+@media only screen and (min-width: 1006px) and (max-width: 1280px) {
   .video-ratio-box {
-    height: 450px; } }
-@media only screen and (max-width: 1005px) {
+    height: 420px; } }
+@media only screen and (min-width: 756px) and (max-width: 1005px) {
   .video-ratio-box {
     height: 325px; } }
-@media only screen and (max-width: 755px) {
+@media only screen and (min-width: 381px) and (max-width: 755px) {
   .video-ratio-box {
-    height: 250px; } }
-@media only screen and (max-width: 380px) {
+    height: 260px; } }
+@media only screen and (min-width: 321px) and (max-width: 380px) {
   .video-ratio-box {
     height: 200px; } }
 @media only screen and (max-width: 320px) {

@@ -13,6 +13,7 @@
 		<link rel="stylesheet" href="css/normalize.min.css">
 		<link rel="stylesheet" href="css/main.css">
 		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="css/font-awesome-animation.css">
 		<script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 		
@@ -24,24 +25,19 @@
 		
 	
 
-		<nav id="main-nav">  
-			<div id="nav-button"><span class="fa fa-navicon"></span></div>
-			<ul id="nav-list">
-				<div class="practice-fade">
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Schedule</a></li>
-					<li><a href="#">Twitter</a></li>
-					<li><a href="#">Videos</a></li>
-					<li><a href="#">Blog</a></li>
-					<li><a href="#">Our Team</a></li>
-					<li><a href="#">Statistics</a></li>
-					<li><a href="#">Contact</a></li>
-				</div>		
-			</ul>
-		</nav>
+		
 		<div class="header-stripe" id="test-jq">
-			<div class="header-title">Talk Center America</div>
-			<div class="header-menu-text">Menu</div>
+			<div class="header-logo"><img src="img/header-logo.png" height="45px" width="312px">		</div>
+				<ul id="nav">
+					<li><a href="#">HOME</a></li>
+					<li><a href="#">SCHEDULE</a></li>
+					<li><a href="#">VIDEOS</a></li>
+					<li><a href="#">INTERACT</a></li>
+					<li><a href="#">TEAM</a></li>
+					<li><a href="#">BLOG</a></li>
+					<li><a href="#">ABOUT</a></li>
+				</ul>
+			
 		</div>	
 		
 <!-- -------------------------------------- -->
@@ -63,8 +59,9 @@
 				<div class='ratio-box'> 
 					<div class="content">
 					<img class="monitor" src="img/monitor.jpg">
+					<img class="play-button faa-burst animated faa-slow" src="img/play.png">
 					<img class="play-button" src="img/play.png">
-					<img class="skype" src="img/skype.png">	
+					<img class="skype " src="img/skype.png">	
 					</div>
 				</div>
 				
@@ -95,14 +92,24 @@
 <!-- 2. SCHEDULE SECTION					-->		
 <!-- -------------------------------------- -->		
 		
-		<div class="next-div">
-			<div class="main wrapper clearfix">
-			
+		<div class="blog-container">
+			<div class="banner">
+				<ul>
+					<li>This is a slide.</li>
+					<li>This is another slide.</li>
+					<li>This is a final slide.</li>
+				</ul>
 			</div>
 		</div>
-				<div class="next-div2">
-			<div class="main wrapper clearfix"></div>
 		
+		
+		
+		<div class="next-div2">
+			<div class="main wrapper clearfix"></div>
+		</div>
+		
+		<div class="menu-icon">
+			<i class="fa fa-cog"></i>
 		</div>
 
 		
@@ -125,7 +132,7 @@
 				$(".schedule-h2").fitText(2.0, { minFontSize: '5px', maxFontSize: '35px' });
 			</script>	
 <!-- BACKGROUND VIDEOS -->		
-		<script src="js/covervid.min.js"></script>
+			<script src="js/covervid.min.js"></script>
 			<script type="text/javascript">
 				 $('.covervid-video').coverVid(1280, 720);
 			</script>
@@ -139,6 +146,27 @@
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X');ga('send','pageview');
         </script>
+		
+<!-- MENU NAVIGATION: INITIALIZE -->		
+		<script type="text/javascript">
+			$("#nav").addClass("js").before('<div id="menu" class="fa fa-bars faa-horizontal animated-hover"></div>');
+			$("#menu").click(function(){
+				$("#nav").toggle();
+			});
 
+			$('#nav li a').on("click", function(){
+				$('#nav').slideUp();
+			});			
+			
+			$(window).resize(function(){
+				if(window.innerWidth > 1005) {
+					$("#nav").removeAttr("style");
+				}
+			});
+		</script>
+<!-- LOADING MISC SCRIPTS -->
+		<script src="js/vendor/unslider.min.js"></script>
+		<script src="js/vendor/unslider.min.js"></script>
+		
     </body>
 </html>
