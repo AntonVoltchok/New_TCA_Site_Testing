@@ -154,15 +154,23 @@
 				$("#nav").toggle();
 			});
 
-			$('#nav li a').on("click", function(){
-				$('#nav').slideUp();
-			});			
+				
 			
 			$(window).resize(function(){
 				if(window.innerWidth > 1005) {
 					$("#nav").removeAttr("style");
+					$("#nav li a").unbind('click');
+				} else {
+				$('#nav li a').on("click", function(){
+				$('#nav').slideUp();
+				});	
 				}
 			});
+			
+			
+			
+			
+			
 		</script>
 <!-- LOADING MISC SCRIPTS -->
 		<script src="js/vendor/unslider.min.js"></script>
