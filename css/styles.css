@@ -12,7 +12,7 @@ $L:   1170px;  */
   }
   @else if $canvas == L {
    @media only screen and (min-width: $L) { @content; } 
-  }
+  } 
 }*/
 @media only screen and (min-width: 1921px) and (max-width: 2565px) {
   .video-ratio-box {
@@ -38,5 +38,16 @@ $L:   1170px;  */
 @media only screen and (max-width: 320px) {
   .video-ratio-box {
     height: 150px; } }
+
+/* line 124, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/styles.scss */
+.twitter-container {
+  height: 700px;
+  width: 100%;
+  background-color: #fff; }
+
+/* line 132, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/styles.scss */
+.next-div2 {
+  height: 500px;
+  background-color: #ffc2c2; }
 
 /*# sourceMappingURL=styles.css.map */

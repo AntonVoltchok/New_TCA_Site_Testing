@@ -79,7 +79,7 @@ $L:   1170px;  */
   }
   @else if $canvas == L {
    @media only screen and (min-width: $L) { @content; } 
-  }
+  } 
 }*/
 
 @mixin breakpoint($point) {
@@ -120,6 +120,19 @@ $L:   1170px;  */
 	@include breakpoint(oldp) { height: 150px; }	
 }
 
+
+.twitter-container {
+	height: 700px;
+	width: 100%;
+	background-color: #fff;
+
+}
+
+
+.next-div2 {
+	height: 500px;
+	background-color: #ffc2c2;
+}
 
 
 

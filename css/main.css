@@ -259,15 +259,6 @@ img {
 	z-index: 10;
 }
 
-.blog-container {
-	
-	background-color: #fff;
-}
-
-.next-div2 {
-	height: 500px;
-	background-color: #ffc2c2;
-}
 
 
 
@@ -350,8 +341,6 @@ a:hover {
 		text-align: center;
 	}
 	
-
-	
 	.fa-chevron {
 		display: none;
 	}
@@ -389,19 +378,22 @@ a:hover {
 
 
 
-/* --------------------  */
-/* --------------------  */
-/* --------------------  */
 
-/* JQUERY SLIDER !!!!    */
 
-/* --------------------  */
-/* --------------------  */
-/* --------------------  */
 
-.banner { position: relative; overflow: auto; }
-    .banner li { list-style: none; }
-        .banner ul li { float: left; }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
