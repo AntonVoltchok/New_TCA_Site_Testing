@@ -1,0 +1,79 @@
+.wrapper {
+    width: 90%;
+    margin: 0 5%;
+}
+
+.intro-container{
+	background-color: #fff;
+}
+
+/* HERO HEADING POSITIONING*/
+.heading {
+	margin:0 auto;
+	width: 100%;
+	margin: 10.3% 0 10.5%;
+}
+.intro-h1 {
+	text-align: center;
+	line-height: 0;
+}
+
+/* SIDE HEADING POSITIONING */
+.intro-left-content {
+	width: 38%;
+	float: left;
+	padding-left: 1.1%;
+	padding-bottom: 10%
+}
+.intro-h3 {
+	margin-top: 15%;
+}
+.intro-h2 {
+	font-family: 'Roboto Condensed', sans-serif;
+	line-height: .6em;
+}
+
+/* RATIO BOX USED TO KEEP ASPECT RATIO OF IMAGES */
+.ratio-box{
+	position: relative;
+	width: 55%;		/* desired width */
+	display: block;
+	float: right;
+	left: 0;
+}
+.ratio-box:before{
+	content: "";
+	display: block;
+	padding-top: 75%;	/* initial ratio of 4:3*/
+}
+.content{
+	position:  absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
+/* POSITIONS IMAGES INSIDE RATIO BOX */
+.monitor {
+	z-index: 1;
+	position:absolute;
+	left: -8%;;
+	top: -10%;
+	width: 110%;
+}
+.play-button {
+	width: 20%;
+	position: absolute;
+	left: 37%;
+	top: 22%;
+	z-index: 2;
+}
+.skype {
+	width: 14%;
+	position: absolute;
+	left: -39%;
+	top: 25%;
+	z-index: 2;
+/*	display: none;*/
+}
