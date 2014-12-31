@@ -464,9 +464,51 @@ a:hover {
   position: absolute;
   left: 37%;
   top: 22%;
-  z-index: 2; }
+  z-index: 2;
+  -webkit-animation: super-rainbow 8s infinite alternate linear;
+  -moz-animation: super-rainbow 4s infinite alternate linear;
+  border: 0.01em solid rgba(255, 255, 255, 0);
+  border-radius: 100em; }
 
-/* line 72, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
+@-webkit-keyframes super-rainbow {
+  /* line 78, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
+  0% {
+    background: #fff; }
+
+  /* line 80, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
+  50% {
+    background: #b5b5b5; }
+
+  /* line 83, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
+  100% {
+    background: #fff; } }
+
+@-moz-keyframes super-rainbow {
+  /* line 87, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
+  0% {
+    background: #fff; }
+
+  /* line 88, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
+  20% {
+    background: #ff2a2a; }
+
+  /* line 89, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
+  40% {
+    background: #1f5081; }
+
+  /* line 90, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
+  60% {
+    background: #043253; }
+
+  /* line 91, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
+  80% {
+    background: #204271; }
+
+  /* line 92, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
+  100% {
+    background: #416589; } }
+
+/* line 97, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
 .skype {
   width: 14%;
   position: absolute;
@@ -598,45 +640,49 @@ a:hover {
   height: 31%;
   z-index: 10; }
 
-/* line 13, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/style.scss */
+/* line 1, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/twitter */
+.twitter-container {
+  width: 100%;
+  background-color: #fff; }
+
+/* line 7, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/twitter */
+.proto-box {
+  margin: 8% 28% 8% 28%; }
+
+/* line 14, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/style.scss */
 :root, html {
   font-size: 100%;
   font-size: 1em;
   line-height: 1.5; }
 
-/* line 25, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/style.scss */
+/* line 26, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/style.scss */
 h1, h2, h3, h4, h5, h6, ul, ol, dl, fieldset, p, table, pre, hr {
   font-weight: normal;
   margin-bottom: 24px;
   margin-bottom: 1.5rem; }
 
-/* line 31, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/style.scss */
+/* line 32, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/style.scss */
 h1 {
   font-family: 'Oswald', sans-serif;
   color: #484747;
   font-weight: 400;
   line-height: 1.92em; }
 
-/* line 38, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/style.scss */
+/* line 39, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/style.scss */
 h2 {
   font-family: 'Roboto Condensed', sans-serif;
   color: #484747;
   font-weight: 400;
   line-height: 1.2em; }
 
-/* line 46, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/style.scss */
+/* line 47, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/style.scss */
 img {
   width: 100%; }
 
-/* line 53, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/style.scss */
-.twitter-container {
-  height: 700px;
-  width: 100%;
-  background-color: #fff; }
-
-/* line 61, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/style.scss */
+/* line 55, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/style.scss */
 .next-div2 {
-  height: 500px;
-  background-color: #d32424; }
+  height: 50px;
+  width: 100%;
+  background-color: #a30e0e; }
 
 /*# sourceMappingURL=style.css.map */

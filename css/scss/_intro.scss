@@ -68,7 +68,32 @@
 	left: 37%;
 	top: 22%;
 	z-index: 2;
+	-webkit-animation: super-rainbow 8s infinite alternate linear; 
+     -moz-animation: super-rainbow 4s infinite alternate linear; 
+	border: .01em solid rgba(255, 255, 255, 0);
+	border-radius: 100em;
 }
+
+@-webkit-keyframes super-rainbow {
+    0%   { background: #fff; } 
+  
+    50%  { background: #b5b5b5; }
+
+
+    100% { background: #fff; }
+}
+
+@-moz-keyframes super-rainbow {
+    0%   { background: #fff; } 
+    20%  { background: #ff2a2a; }
+    40%  { background: #1f5081; }
+    60%  { background: #043253; }
+    80%  { background: #204271; }
+    100% { background: #416589; }
+}
+
+
+
 .skype {
 	width: 14%;
 	position: absolute;
@@ -77,3 +102,7 @@
 	z-index: 2;
 /*	display: none;*/
 }
+
+
+
+//http://i.imgur.com/JDPgq5F.png
