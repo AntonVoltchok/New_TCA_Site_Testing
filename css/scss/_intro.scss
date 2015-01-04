@@ -1,24 +1,247 @@
-.wrapper {
-    width: 90%;
-    margin: 0 5%;
-}
+// ---------
+// STRUCTURE
+// ---------
+//
+// intro-container 
+//		intro-hero
+//		intro-split-content
+// CLEARFIX on intro container
+// 
+// 		intro-split-content
+//			skype-box: float left
+//			intro-monitor: float right (small media queries, no float)
+// 		CLEARFIX intro-split-content
+// 
+// 			skype-box
+//				skype-box-head
+//				skype-box-split
+// 			CLEARFIX skype-box
+// 
+// 				skype-box-split
+//					skype-box-subhead: float left
+//					skype-box-img: float right
+// 				CLEARFIX skype-box-split
+
+
+
 
 .intro-container{
 	background-color: #fff;
-}
+	@include clearfix;
+	margin: 2% 5% 0;
+	@include breakpoint(mobile-flip) {
+		margin-top: 1%;
+		}	
+	
+	
+} 		
 
-/* HERO HEADING POSITIONING*/
-.heading {
-	margin:0 auto;
+// HERO HEADING - USING FITTEXT TO ALWAYS KEEP 1 LINE/MAX WIDTH TEXT 
+.intro-hero {
 	width: 100%;
-	margin: 10.3% 0 10.5%;
-}
-.intro-h1 {
-	text-align: center;
-	line-height: 0;
+	margin-bottom: 3%;
+	@include breakpoint(medium) {
+		margin-top: 6%;
+		}
+	@include breakpoint(small) {
+		margin-top: 13%;
+		}
+	@include breakpoint(oldp) {
+		margin-top: 20%;
+		}
+	@include breakpoint(newp) {
+		margin-top: 22%;
+		}	
+	@include breakpoint(mobile-flip) {
+		margin-bottom: 0;
+		padding-bottom: 0;
+		}
+
+	.intro-hero-text {
+		text-align: center;
+	}
 }
 
-/* SIDE HEADING POSITIONING */
+// SPLITS HERO TEXT WITH THE REST OF THE CONTENT
+.intro-split-content {
+	@include clearfix;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 0 2%;	
+}
+
+// IMG AND CONTAINER FOR SCALING
+.intro-monitor {
+	float: right;
+	width: 58%;
+	@include breakpoint(medium) {
+		width: 52%;
+		}
+	@include breakpoint(small) {
+		width: 52%;
+		}
+
+	@include breakpoint(mobile-flip) {
+		float: none;
+		box-sizing: border-box;
+		padding: 5% 15% 0 15%;
+		width: 100%;
+		}
+}
+.monitor {
+	width: 100%;
+}
+
+
+// CONTENT FLOATED LEFT OF MONITOR
+// HEADINGS AND SKYPE IMG
+.skype-box {
+	float: left;
+	margin-top: 5%;
+	@include breakpoint(mobile-flip) {
+		width: 100%;
+		margin: 0 0 5%;
+		}
+}
+
+.skype-box-head {
+	box-sizing: border-box;
+	margin: 0 0 8%;
+	font-family: $h2-font-fam;
+	color: $darkgrey;
+	font-weight: 400;
+	line-height: 1.2em;
+	@include font-size(42px);
+	//BREAKPOINTS
+	@include breakpoint(laptop) {
+			@include font-size(35px);
+			}
+	@include breakpoint(netbook) {
+		@include font-size(26px);
+		}
+	@include breakpoint(medium) {
+		@include font-size(22px);
+		}
+	@include breakpoint(small) {
+		@include font-size(18px);
+		}
+	@include breakpoint(newp) {
+		@include font-size(16px);
+		}
+	@include breakpoint(oldp) {
+		@include font-size(16px);
+		}
+	@include breakpoint(mobile-flip) {
+		float: none;
+		box-sizing: border-box;
+		width: 100%;
+		margin: 0;
+		padding: 0 10%;;
+		text-align: center;
+		}
+}
+
+
+// SPLITS TEXT AND SKYPE CALL IN IMG
+.skype-box-split {
+	@include clearfix;
+	width: 100%;
+	
+}
+
+.skype-box-subhead {
+	box-sizing: border-box;
+	margin-top: 5%;
+	float: left;
+	font-family: $h2-font-fam;
+	color: $darkgrey;
+	font-weight: 400;
+	line-height: 1.2em;
+	@include font-size(31px);
+	//BREAKPOINTS
+	@include breakpoint(laptop) {
+		@include font-size(27px);
+		}
+	@include breakpoint(netbook) {
+		@include font-size(22px);
+		}
+	@include breakpoint(medium) {
+		@include font-size(17px);
+		}
+	@include breakpoint(small) {
+		@include font-size(16px);
+		}
+	@include breakpoint(newp) {
+		@include font-size(14px);
+		}
+	@include breakpoint(oldp) {
+		@include font-size(13px);
+		}
+	@include breakpoint(mobile-flip) {
+		float: left;
+		box-sizing: border-box;
+		width: 100%;
+		margin: 2% 0 2%;
+		padding: 0 20%;
+		text-align: center;
+		}
+}
+
+.skype-box-img {
+	float: left;
+	margin-left: 11%;
+	width: 22%;
+	//BREAKPOINTS
+	@include breakpoint(laptop) {
+		width: 21%;
+		}
+	@include breakpoint(netbook) {
+		width: 20%;
+		}
+	@include breakpoint(medium) {
+		width: 16%;
+		margin-top: 2%;
+		}
+	@include breakpoint(small) {
+		width: 13%;
+		}
+	@include breakpoint(oldp) {
+		width: 12%;
+		}
+	@include breakpoint(newp) {
+		width: 11%;
+		}
+	@include breakpoint(mobile-flip) {
+		display: none;
+		}
+}
+.skype {
+	width: 100%;
+}
+
+
+
+// GET RID OF LINE BREAKS FOR MOBILE VIEW
+.intro-subhead-break {
+		@include breakpoint(mobile-flip) {
+		display: none;
+		}
+}
+
+
+
+
+
+img {
+	max-width: 100%;
+}
+
+
+
+
+
+
+/*
 .intro-left-content {
 	width: 38%;
 	float: left;
@@ -33,10 +256,10 @@
 	line-height: .6em;
 }
 
-/* RATIO BOX USED TO KEEP ASPECT RATIO OF IMAGES */
+
 .ratio-box{
 	position: relative;
-	width: 55%;		/* desired width */
+	width: 55%;		
 	display: block;
 	float: right;
 	left: 0;
@@ -44,7 +267,7 @@
 .ratio-box:before{
 	content: "";
 	display: block;
-	padding-top: 75%;	/* initial ratio of 4:3*/
+	padding-top: 75%;	
 }
 .content{
 	position:  absolute;
@@ -54,7 +277,7 @@
 	right: 0;
 }
 
-/* POSITIONS IMAGES INSIDE RATIO BOX */
+
 .monitor {
 	z-index: 1;
 	position:absolute;
@@ -100,9 +323,10 @@
 	left: -39%;
 	top: 25%;
 	z-index: 2;
-/*	display: none;*/
+
 }
 
+*/
 
 
 //http://i.imgur.com/JDPgq5F.png

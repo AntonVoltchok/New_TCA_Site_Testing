@@ -1,3 +1,36 @@
+
+
+// MENU / NAVICON EXAMPLE
+$('#nav-button').click( function(){
+  $(this).toggleClass('width');
+  $(this).parent().toggleClass('show');
+  $(this).children().toggleClass( 'fa-navicon').toggleClass( 'fa-close');
+  $('#nav-list').toggleClass('nav-show'); 
+});
+
+
+
+// BASIC SLIDER
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ------------------------
+//  NOTES , IDEA , MISC...
+// ------------------------
+
+
 //First time trying to animate jquery
 
 /*
@@ -5,8 +38,8 @@
     $('.skype').fadeIn(2000);
 	$('.practiceeee-fade').fadeIn(1000);
   });
-
 */
+
 
 
 //Below is a really useful snippet to stop 
@@ -20,28 +53,6 @@
 } )( jQuery );
 
 */
-
-
-// MENU / NAVICON EXAMPLE
-/*
-$('#nav-button').click( function(){
-  $(this).toggleClass('width');
-  $(this).parent().toggleClass('show');
-  $(this).children().toggleClass( 'fa-navicon').toggleClass( 'fa-close');
-  $('#nav-list').toggleClass('nav-show'); 
-});
-*/
-
-
-
-// BASIC SLIDER
-
-
-
-
-
-
-
 
 
 

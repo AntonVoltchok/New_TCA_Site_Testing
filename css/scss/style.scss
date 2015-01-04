@@ -1,9 +1,12 @@
+//@import 'bourbon/dist/bourbon';
 @import 'helper-classes-reset';
 @import 'modules/utility';
+@import 'modules/typography';
 @import 'menu';
 @import 'intro';
 @import 'schedule';
 @import 'twitter';
+
 
 @import url(http://fonts.googleapis.com/css?family=Oswald:400,700,300);
 @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300);
@@ -11,53 +14,19 @@
 
 
 // SET FONT SIZE STANDARDS
-:root, html {
-  font-size: 100%;
-  font-size: 1em;    
-  line-height: 1.5;  
-}
 
-h1, h2, h3, h4, h5, h6,
-ul, ol, dl,
-fieldset,
-p,
-table,
-pre,
-hr {
-  font-weight: normal;
-  margin-bottom: 24px;
-  margin-bottom: 1.5rem;
-}
 
-h1 {
-	font-family: $h1-font-fam;
-	color: $darkgrey;
-	font-weight: 400;
-	line-height: 1.92em;
-}
-
-h2 {
-	font-family: $h2-font-fam;
-	color: $darkgrey;
-	font-weight: 400;
-	line-height: 1.2em;
-}
 
 // IMAGE STANDARDS
 img {
-	width: 100%;
+  max-width: 100%;
 }
 
- 
-// TESTING AREA
-
-
+ // TESTING AREA
 .next-div2 {
 	height: 50px;
 	width: 100%;
 	background-color: #a30e0e; 
-
-
 }
 
 

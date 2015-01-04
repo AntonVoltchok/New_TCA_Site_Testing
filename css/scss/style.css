@@ -169,73 +169,8 @@ textarea {
  }
 
 /*********************************************
-	BASE FONT STYLES
+	BASE FONT SIZING
 *********************************************/
-/* These handle massive type, for less frequently occuring bits of text (e.g. in mastheads and banners). */
-/* line 17, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/modules/utility */
-.giga {
-  font-size: 80px;
-  font-size: 5rem;
-  line-height: 1.2;
-  /* 96px */ }
-
-/* line 21, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/modules/utility */
-.mega {
-  font-size: 64px;
-  font-size: 4rem;
-  line-height: 1.125;
-  /* 72px */ }
-
-/* line 25, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/modules/utility */
-.kilo {
-  font-size: 48px;
-  font-size: 3rem;
-  line-height: 1;
-  /* 48px */ }
-
-/* Define headings and their associated classes here. */
-/* line 31, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/modules/utility */
-h1, .alpha {
-  font-size: 32px;
-  font-size: 2rem;
-  line-height: 1.5;
-  /* 48px */ }
-
-/* line 35, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/modules/utility */
-h2, .beta {
-  font-size: 24px;
-  font-size: 1.5rem;
-  line-height: 1;
-  /* 24px */ }
-
-/* line 39, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/modules/utility */
-h3, .gamma {
-  font-size: 20px;
-  font-size: 1.25rem;
-  line-height: 1.2;
-  /* 24px */ }
-
-/* line 43, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/modules/utility */
-h4, .delta {
-  font-size: 18px;
-  font-size: 1.125rem;
-  line-height: 1.333;
-  /* 24px */ }
-
-/* line 47, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/modules/utility */
-h5, .epsilon {
-  font-size: 16px;
-  font-size: 1rem;
-  line-height: 1.5;
-  /* 24px */ }
-
-/* line 51, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/modules/utility */
-h6, .zeta {
-  font-size: 16px;
-  font-size: 1rem;
-  line-height: 1.5;
-  /* 24px */ }
-
 /*********************************************
 	MIXINS
 *********************************************/
@@ -256,6 +191,91 @@ h6, .zeta {
 /* - 3.2. - HEADER FONTS
 	------------------------------------------ */
 /* RANDOM FUNCTIONS / MIXINS */
+/* These handle massive type, for less frequently occuring bits of text (e.g. in mastheads and banners). */
+/* line 2, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/modules/typography */
+.giga {
+  font-size: 80px;
+  font-size: 5rem;
+  line-height: 1.2;
+  /* 96px */ }
+
+/* line 6, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/modules/typography */
+.mega {
+  font-size: 64px;
+  font-size: 4rem;
+  line-height: 1.125;
+  /* 72px */ }
+
+/* line 10, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/modules/typography */
+.kilo {
+  font-size: 48px;
+  font-size: 3rem;
+  line-height: 1;
+  /* 48px */ }
+
+/* Define headings and their associated classes here. */
+/* line 16, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/modules/typography */
+h1, .alpha {
+  font-size: 32px;
+  font-size: 2rem;
+  line-height: 1.5;
+  /* 48px */ }
+
+/* line 20, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/modules/typography */
+h2, .beta {
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 1;
+  /* 24px */ }
+
+/* line 24, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/modules/typography */
+h3, .gamma {
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 1.2;
+  /* 24px */ }
+
+/* line 28, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/modules/typography */
+h4, .delta {
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.333;
+  /* 24px */ }
+
+/* line 32, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/modules/typography */
+h5, .epsilon {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5;
+  /* 24px */ }
+
+/* line 36, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/modules/typography */
+h6, .zeta {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5;
+  /* 24px */ }
+
+/* line 50, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/modules/typography */
+h1, h2, h3, h4, h5, h6, ul, ol, dl, fieldset, p, table, pre, hr {
+  font-weight: normal;
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem; }
+
+/* line 56, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/modules/typography */
+h1 {
+  font-family: 'Oswald', sans-serif;
+  color: #484747;
+  font-weight: 400;
+  line-height: 1.92em; }
+
+/* line 63, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/modules/typography */
+h2 {
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #484747;
+  font-weight: 400;
+  line-height: 1.2em; }
+
 /* line 1, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/menu */
 .header-stripe {
   width: 100%;
@@ -268,255 +288,465 @@ h6, .zeta {
 
 /* line 11, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/menu */
 .header-logo {
-  width: 312px;
-  height: 45px;
   float: right;
-  padding-right: 5%; }
+  height: 45px;
+  margin-right: 5%; }
+  /* line 16, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/menu */
+  .header-logo img {
+    float: right;
+    height: auto;
+    max-width: 100%;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); }
+    @media only screen and (min-width: 1281px) and (max-width: 1600px) {
+      .header-logo img {
+        max-width: 90%; } }
+    @media only screen and (min-width: 1006px) and (max-width: 1280px) {
+      .header-logo img {
+        max-width: 80%; } }
+    @media only screen and (min-width: 756px) and (max-width: 1005px) {
+      .header-logo img {
+        max-width: 80%; } }
+    @media only screen and (min-width: 381px) and (max-width: 755px) {
+      .header-logo img {
+        max-width: 70%; } }
+    @media only screen and (min-width: 321px) and (max-width: 380px) {
+      .header-logo img {
+        max-width: 65%; } }
+    @media only screen and (max-width: 320px) {
+      .header-logo img {
+        max-width: 60%; } }
 
-/* line 18, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/menu */
+/* line 44, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/menu */
 ul {
-  width: 75%;
-  list-style-type: none;
-  text-align: center;
-  margin: 0.11% 0 0 3%;
-  padding: 0;
   font-family: 'Anton', sans-serif;
-  font-weight: 400; }
+  font-weight: 400;
+  font-size: 22px;
+  font-size: 1.375rem;
+  text-align: center;
+  list-style-type: none;
+  max-width: 60%;
+  height: 45px;
+  margin: 0 0 0 4%;
+  padding: 0; }
   @media only screen and (min-width: 1281px) and (max-width: 1600px) {
     ul {
-      margin-top: 0.29%; } }
+      max-width: 60%;
+      font-size: 20px;
+      font-size: 1.25rem; } }
   @media only screen and (min-width: 1006px) and (max-width: 1280px) {
     ul {
-      margin-top: 0.4%;
-      width: 85%; } }
+      max-width: 65%;
+      font-size: 17px;
+      font-size: 1.0625rem; } }
 
-/* line 34, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/menu */
+/* line 65, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/menu */
 li {
-  width: 9%;
+  width: 11%;
   float: left;
-  list-style-type: none; }
+  list-style-type: none;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
 
-/* line 39, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/menu */
+/* line 71, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/menu */
 li:last-child {
   border-right: none; }
 
-/* line 42, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/menu */
+/* line 74, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/menu */
 li a {
+  text-decoration: none;
   display: block;
-  width: 90%;
-  padding: 4% 10%;
-  font-size: 1.31em;
-  text-decoration: none; }
-  @media only screen and (min-width: 1281px) and (max-width: 1600px) {
-    li a {
-      font-size: 1.17em; } }
-  @media only screen and (min-width: 1006px) and (max-width: 1280px) {
-    li a {
-      font-size: 1.1em; } }
+  width: 100%; }
 
-/* line 56, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/menu */
+/* line 86, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/menu */
 a {
   text-decoration: none;
   color: #1f4c73; }
 
-/* line 57, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/menu */
+/* line 87, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/menu */
 a:visited {
   text-decoration: none; }
 
-/* line 58, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/menu */
+/* line 88, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/menu */
 a:focus {
   text-decoration: none; }
 
-/* line 59, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/menu */
+/* line 89, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/menu */
 a:hover, a:active {
   text-decoration: none; }
 
-/* line 60, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/menu */
+/* line 90, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/menu */
 a:hover {
   text-decoration: none;
   background-color: white;
   border-radius: 2px; }
 
 @media screen and (max-width: 1005px) {
-  /* line 68, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/menu */
+  /* line 98, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/menu */
   #menu {
-    margin: 1% 0 0 5%;
+    margin: 0 0 0 5%;
     width: 1em;
     display: block;
     color: #33558b;
     font-size: 1.75em;
-    text-align: center; }
+    text-align: center;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); }
 
-  /* line 77, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/menu */
+  /* line 108, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/menu */
   .fa-chevron {
     display: none; }
 
-  /* line 80, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/menu */
+  /* line 111, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/menu */
   #nav.js {
     display: none; }
 
-  /* line 83, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/menu */
+  /* line 114, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/menu */
   ul {
-    width: 100%;
+    max-width: 100%;
     margin: 0; }
 
-  /* line 87, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/menu */
+  /* line 118, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/menu */
   li {
     width: 100%;
     border-right: none;
     background-color: #e2e2e2; }
 
-  /* line 92, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/menu */
+  /* line 123, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/menu */
   li a {
     padding: 1%;
     width: 100%; }
 
-  /* line 97, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/menu */
+  /* line 128, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/menu */
   a:hover {
     background-color: #fff; }
  }
 
 @media screen and (min-width: 1005px) {
-  /* line 104, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/menu */
+  /* line 135, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/menu */
   #menu {
     display: none; }
 
-  /* line 107, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/menu */
+  /* line 138, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/menu */
   #menu-icon2 {
     display: none; }
  }
 
-/* line 1, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
-.wrapper {
-  width: 90%;
-  margin: 0 5%; }
-
-/* line 6, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
-.intro-container {
-  background-color: #fff; }
-
-/* HERO HEADING POSITIONING*/
-/* line 11, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
-.heading {
-  margin: 0 auto;
-  width: 100%;
-  margin: 10.3% 0 10.5%; }
-
-/* line 16, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
-.intro-h1 {
-  text-align: center;
-  line-height: 0; }
-
-/* SIDE HEADING POSITIONING */
-/* line 22, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
-.intro-left-content {
-  width: 38%;
-  float: left;
-  padding-left: 1.1%;
-  padding-bottom: 10%; }
-
 /* line 28, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
-.intro-h3 {
-  margin-top: 15%; }
+.intro-container {
+  background-color: #fff;
+  margin: 2% 5% 0; }
+  /* line 59, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/modules/utility */
+  .intro-container:before, .intro-container:after {
+    content: "";
+    display: table; }
+  /* line 63, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/modules/utility */
+  .intro-container:after {
+    clear: both; }
+  @media only screen and (max-width: 768px) {
+    .intro-container {
+      margin-top: 1%; } }
 
-/* line 31, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
-.intro-h2 {
-  font-family: 'Roboto Condensed', sans-serif;
-  line-height: 0.6em; }
+/* line 40, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
+.intro-hero {
+  width: 100%;
+  margin-bottom: 3%; }
+  @media only screen and (min-width: 756px) and (max-width: 1005px) {
+    .intro-hero {
+      margin-top: 6%; } }
+  @media only screen and (min-width: 381px) and (max-width: 755px) {
+    .intro-hero {
+      margin-top: 13%; } }
+  @media only screen and (max-width: 320px) {
+    .intro-hero {
+      margin-top: 20%; } }
+  @media only screen and (min-width: 321px) and (max-width: 380px) {
+    .intro-hero {
+      margin-top: 22%; } }
+  @media only screen and (max-width: 768px) {
+    .intro-hero {
+      margin-bottom: 0;
+      padding-bottom: 0; } }
+  /* line 60, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
+  .intro-hero .intro-hero-text {
+    text-align: center; }
 
-/* RATIO BOX USED TO KEEP ASPECT RATIO OF IMAGES */
-/* line 37, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
-.ratio-box {
-  position: relative;
-  width: 55%;
-  /* desired width */
-  display: block;
+/* line 66, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
+.intro-split-content {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 2%; }
+  /* line 59, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/modules/utility */
+  .intro-split-content:before, .intro-split-content:after {
+    content: "";
+    display: table; }
+  /* line 63, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/modules/utility */
+  .intro-split-content:after {
+    clear: both; }
+
+/* line 74, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
+.intro-monitor {
   float: right;
-  left: 0; }
+  width: 58%; }
+  @media only screen and (min-width: 756px) and (max-width: 1005px) {
+    .intro-monitor {
+      width: 52%; } }
+  @media only screen and (min-width: 381px) and (max-width: 755px) {
+    .intro-monitor {
+      width: 52%; } }
+  @media only screen and (max-width: 768px) {
+    .intro-monitor {
+      float: none;
+      box-sizing: border-box;
+      padding: 5% 15% 0 15%;
+      width: 100%; } }
 
-/* line 44, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
-.ratio-box:before {
-  content: "";
-  display: block;
-  padding-top: 75%;
-  /* initial ratio of 4:3*/ }
-
-/* line 49, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
-.content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0; }
-
-/* POSITIONS IMAGES INSIDE RATIO BOX */
-/* line 58, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
+/* line 91, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
 .monitor {
-  z-index: 1;
-  position: absolute;
-  left: -8%;
-  top: -10%;
-  width: 110%; }
+  width: 100%; }
 
-/* line 65, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
+/* line 98, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
+.skype-box {
+  float: left;
+  margin-top: 5%; }
+  @media only screen and (max-width: 768px) {
+    .skype-box {
+      width: 100%;
+      margin: 0 0 5%; } }
+
+/* line 107, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
+.skype-box-head {
+  box-sizing: border-box;
+  margin: 0 0 8%;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #484747;
+  font-weight: 400;
+  line-height: 1.2em;
+  font-size: 42px;
+  font-size: 2.625rem; }
+  @media only screen and (min-width: 1281px) and (max-width: 1600px) {
+    .skype-box-head {
+      font-size: 35px;
+      font-size: 2.1875rem; } }
+  @media only screen and (min-width: 1006px) and (max-width: 1280px) {
+    .skype-box-head {
+      font-size: 26px;
+      font-size: 1.625rem; } }
+  @media only screen and (min-width: 756px) and (max-width: 1005px) {
+    .skype-box-head {
+      font-size: 22px;
+      font-size: 1.375rem; } }
+  @media only screen and (min-width: 381px) and (max-width: 755px) {
+    .skype-box-head {
+      font-size: 18px;
+      font-size: 1.125rem; } }
+  @media only screen and (min-width: 321px) and (max-width: 380px) {
+    .skype-box-head {
+      font-size: 16px;
+      font-size: 1rem; } }
+  @media only screen and (max-width: 320px) {
+    .skype-box-head {
+      font-size: 16px;
+      font-size: 1rem; } }
+  @media only screen and (max-width: 768px) {
+    .skype-box-head {
+      float: none;
+      box-sizing: border-box;
+      width: 100%;
+      margin: 0;
+      padding: 0 10%;
+      text-align: center; } }
+
+/* line 146, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
+.skype-box-split {
+  width: 100%; }
+  /* line 59, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/modules/utility */
+  .skype-box-split:before, .skype-box-split:after {
+    content: "";
+    display: table; }
+  /* line 63, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/modules/utility */
+  .skype-box-split:after {
+    clear: both; }
+
+/* line 152, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
+.skype-box-subhead {
+  box-sizing: border-box;
+  margin-top: 5%;
+  float: left;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #484747;
+  font-weight: 400;
+  line-height: 1.2em;
+  font-size: 31px;
+  font-size: 1.9375rem; }
+  @media only screen and (min-width: 1281px) and (max-width: 1600px) {
+    .skype-box-subhead {
+      font-size: 27px;
+      font-size: 1.6875rem; } }
+  @media only screen and (min-width: 1006px) and (max-width: 1280px) {
+    .skype-box-subhead {
+      font-size: 22px;
+      font-size: 1.375rem; } }
+  @media only screen and (min-width: 756px) and (max-width: 1005px) {
+    .skype-box-subhead {
+      font-size: 17px;
+      font-size: 1.0625rem; } }
+  @media only screen and (min-width: 381px) and (max-width: 755px) {
+    .skype-box-subhead {
+      font-size: 16px;
+      font-size: 1rem; } }
+  @media only screen and (min-width: 321px) and (max-width: 380px) {
+    .skype-box-subhead {
+      font-size: 14px;
+      font-size: 0.875rem; } }
+  @media only screen and (max-width: 320px) {
+    .skype-box-subhead {
+      font-size: 13px;
+      font-size: 0.8125rem; } }
+  @media only screen and (max-width: 768px) {
+    .skype-box-subhead {
+      float: left;
+      box-sizing: border-box;
+      width: 100%;
+      margin: 2% 0 2%;
+      padding: 0 20%;
+      text-align: center; } }
+
+/* line 190, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
+.skype-box-img {
+  float: left;
+  margin-left: 11%;
+  width: 22%; }
+  @media only screen and (min-width: 1281px) and (max-width: 1600px) {
+    .skype-box-img {
+      width: 21%; } }
+  @media only screen and (min-width: 1006px) and (max-width: 1280px) {
+    .skype-box-img {
+      width: 20%; } }
+  @media only screen and (min-width: 756px) and (max-width: 1005px) {
+    .skype-box-img {
+      width: 16%;
+      margin-top: 2%; } }
+  @media only screen and (min-width: 381px) and (max-width: 755px) {
+    .skype-box-img {
+      width: 13%; } }
+  @media only screen and (max-width: 320px) {
+    .skype-box-img {
+      width: 12%; } }
+  @media only screen and (min-width: 321px) and (max-width: 380px) {
+    .skype-box-img {
+      width: 11%; } }
+  @media only screen and (max-width: 768px) {
+    .skype-box-img {
+      display: none; } }
+
+/* line 218, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
+.skype {
+  width: 100%; }
+
+@media only screen and (max-width: 768px) {
+  .intro-subhead-break {
+    display: none; } }
+
+/* line 235, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
+img {
+  max-width: 100%; }
+
+/*
+.intro-left-content {
+	width: 38%;
+	float: left;
+	padding-left: 1.1%;
+	padding-bottom: 10%
+}
+.intro-h3 {
+	margin-top: 15%;
+}
+.intro-h2 {
+	font-family: 'Roboto Condensed', sans-serif;
+	line-height: .6em;
+}
+
+
+.ratio-box{
+	position: relative;
+	width: 55%;		
+	display: block;
+	float: right;
+	left: 0;
+}
+.ratio-box:before{
+	content: "";
+	display: block;
+	padding-top: 75%;	
+}
+.content{
+	position:  absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
+
+.monitor {
+	z-index: 1;
+	position:absolute;
+	left: -8%;;
+	top: -10%;
+	width: 110%;
+}
 .play-button {
-  width: 20%;
-  position: absolute;
-  left: 37%;
-  top: 22%;
-  z-index: 2;
-  -webkit-animation: super-rainbow 8s infinite alternate linear;
-  -moz-animation: super-rainbow 4s infinite alternate linear;
-  border: 0.01em solid rgba(255, 255, 255, 0);
-  border-radius: 100em; }
+	width: 20%;
+	position: absolute;
+	left: 37%;
+	top: 22%;
+	z-index: 2;
+	-webkit-animation: super-rainbow 8s infinite alternate linear; 
+     -moz-animation: super-rainbow 4s infinite alternate linear; 
+	border: .01em solid rgba(255, 255, 255, 0);
+	border-radius: 100em;
+}
 
 @-webkit-keyframes super-rainbow {
-  /* line 78, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
-  0% {
-    background: #fff; }
+    0%   { background: #fff; } 
+  
+    50%  { background: #b5b5b5; }
 
-  /* line 80, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
-  50% {
-    background: #b5b5b5; }
 
-  /* line 83, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
-  100% {
-    background: #fff; } }
+    100% { background: #fff; }
+}
 
 @-moz-keyframes super-rainbow {
-  /* line 87, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
-  0% {
-    background: #fff; }
+    0%   { background: #fff; } 
+    20%  { background: #ff2a2a; }
+    40%  { background: #1f5081; }
+    60%  { background: #043253; }
+    80%  { background: #204271; }
+    100% { background: #416589; }
+}
 
-  /* line 88, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
-  20% {
-    background: #ff2a2a; }
 
-  /* line 89, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
-  40% {
-    background: #1f5081; }
 
-  /* line 90, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
-  60% {
-    background: #043253; }
-
-  /* line 91, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
-  80% {
-    background: #204271; }
-
-  /* line 92, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
-  100% {
-    background: #416589; } }
-
-/* line 97, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
 .skype {
-  width: 14%;
-  position: absolute;
-  left: -39%;
-  top: 25%;
-  z-index: 2;
-  /*	display: none;*/ }
+	width: 14%;
+	position: absolute;
+	left: -39%;
+	top: 25%;
+	z-index: 2;
 
+}
+
+*/
 /* line 1, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/schedule */
 .schedule-container {
   border-top: 25px solid rgba(76, 76, 76, 0.22);
@@ -649,37 +879,11 @@ a:hover {
 .proto-box {
   margin: 8% 28% 8% 28%; }
 
-/* line 14, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/style.scss */
-:root, html {
-  font-size: 100%;
-  font-size: 1em;
-  line-height: 1.5; }
+/* line 21, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/style.scss */
+img {
+  max-width: 100%; }
 
 /* line 26, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/style.scss */
-h1, h2, h3, h4, h5, h6, ul, ol, dl, fieldset, p, table, pre, hr {
-  font-weight: normal;
-  margin-bottom: 24px;
-  margin-bottom: 1.5rem; }
-
-/* line 32, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/style.scss */
-h1 {
-  font-family: 'Oswald', sans-serif;
-  color: #484747;
-  font-weight: 400;
-  line-height: 1.92em; }
-
-/* line 39, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/style.scss */
-h2 {
-  font-family: 'Roboto Condensed', sans-serif;
-  color: #484747;
-  font-weight: 400;
-  line-height: 1.2em; }
-
-/* line 47, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/style.scss */
-img {
-  width: 100%; }
-
-/* line 55, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/style.scss */
 .next-div2 {
   height: 50px;
   width: 100%;

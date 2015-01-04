@@ -1,5 +1,5 @@
 /*********************************************
-	BASE FONT STYLES
+	BASE FONT SIZING
 *********************************************/
 
 // BASE FONT SIZE REM CONVERSION
@@ -13,57 +13,13 @@
   font-size: calculateRem($size);
 }
 
-/* These handle massive type, for less frequently occuring bits of text (e.g. in mastheads and banners). */
-.giga {
-  @include font-size(80px);
-  line-height: 1.2;  /* 96px */
-}
-.mega {
-  @include font-size(64px);
-  line-height: 1.125;  /* 72px */
-}
-.kilo {
-  @include font-size(48px);
-  line-height: 1;    /* 48px */
-}
-
-/* Define headings and their associated classes here. */
-h1, .alpha {
-  @include font-size(32px);
-  line-height: 1.5;  /* 48px */
-}
-h2, .beta {
-  @include font-size(24px);
-  line-height: 1;    /* 24px */
-}
-h3, .gamma {
-  @include font-size(20px);
-  line-height: 1.2;  /* 24px */
-}
-h4, .delta {
-  @include font-size(18px);
-  line-height: 1.333;  /* 24px */
-}
-h5, .epsilon {
-  @include font-size(16px);
-  line-height: 1.5;  /* 24px */
-}
-h6, .zeta {
-  @include font-size(16px);
-  line-height: 1.5;  /* 24px */
-}
-
-
-
-
-
-
 
 /*********************************************
 	MIXINS
 *********************************************/
 
-// MEDIA QUERIES
+
+// MEDIA QUERIES MIXIN
 
 @mixin breakpoint($point) {
   @if $point == hires {
@@ -89,7 +45,33 @@ h6, .zeta {
   }
   @else if $point == oldp {
     @media only screen and (max-width: 320px)  { @content; }
+  }		
+  @else if $point == mobile-flip {
+    @media only screen and (max-width: 768px)  { @content; }
   }	
+}
+
+
+// CLEAR FIX: (NICOLAS GALLAGHER'S VERSION OF IT)
+//  throw into a class at the end of properties: @include clearfix;
+@mixin clearfix() {
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+// VERTICAL ALIGNMENT MIXIN
+@mixin vertical-align {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
 
@@ -125,8 +107,6 @@ h6, .zeta {
 	------------------------------------------ */
 	$h1-font-fam: 'Oswald', sans-serif;
 	$h2-font-fam: 'Roboto Condensed', sans-serif;
-
-	
 	
 	/* - 3.2. - HEADER FONTS
 	------------------------------------------ */
