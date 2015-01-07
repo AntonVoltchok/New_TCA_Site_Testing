@@ -96,13 +96,20 @@ a:hover {
 
 @media screen and (max-width: 1005px) {
 	#menu {
-		margin: 0 0 0 5%;
+		position: absolute;
+		top: 21%;
+		left: 5%;
 		width: 1em;
 		display: block;
 		color: #33558b;
 		font-size: 1.75em;
 		text-align: center;
-		@include vertical-align();
+		@include breakpoint(newp) {
+				max-width: 65%;
+				}	
+		@include breakpoint(oldp) {
+				max-width: 60%;
+				}	
 	}
 	
 	.fa-chevron {

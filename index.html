@@ -48,8 +48,9 @@
 			<div class="intro-hero">
 					<h1 class="intro-hero-text">THIS IS REVOLUTIONARY VIDEO CALLER TELEVISION</h1>
 				</div>
-			
+<!-- INTRO-SPLIT-CONTENT SEPERATES HERO TEXT AND CONTENT BELOW -->
 			<div class="intro-split-content">
+    <!-- SKYPE BOX SEPERATES MONITOR FROM HEADINGS AND SKYPE IMG -->
 				<div class="skype-box">
 					<div class="skype-box-head">
 						<span class="intro-subhead">At the Intersection of Social and <br class="intro-subhead-break"> Mass Media TV and the Web</span>
@@ -61,38 +62,23 @@
 						<div class="skype-box-img">
 							<img class="skype" src="img/skype.png">
 						</div>
-					
 					</div>
-					
-					
 				</div>
-				
-				
-				
+    <!-- SPLIT HERE, MONITOR FLOATED RIGHT, MOBILE FLIPPED FLOAT NONE-->			
 				<div class="intro-monitor">
+					<div class="center-play">
 					<img class="monitor" src="img/monitor.jpg">
+						<div class="play-button-animate faa-burst animated faa-slow"></div>
+					<img class="play-button" src="img/play.png">
+					</div>
 				</div>
-			</div>	
-		</div> <!-- #main-container -->
+			</div>
+<!-- INTRO-SPLIT-CONTENT ENDS HERE -->				
+		</div>
+<!-- END OF MAIN INTRO CONTAINER -->		
 		
 				
 				
-				
-				<!--<div class="intro-left-content">
-					<h1 class="intro-h2">At the Intersection of Social and</h1>
-					<h1 class="intro-h2">Mass Media TV and the Web</h1>			
-					<h2 class="intro-h3">When we are LIVE, <br> this Skype button will <br> direct your call straight <br> to our studio</h2>
-				</div>
-
-				<div class='ratio-box'> 
-					<div class="content">
-					<img class="monitor" src="img/monitor.jpg">
-					<img class="play-button faa-burst animated faa-slow" src="img/play.png">
-					<img class="play-button" src="img/play.png">
-						
-					</div>
-				</div>-->
-
 		
 <!-- -------------------------------------- -->
 <!-- 2. SCHEDULE SECTION					-->		
@@ -105,7 +91,7 @@
 						<source src="vids/diane1.mp4" type="video/mp4">
 					</video>
 				</div>
-				<span class="schedule-h1">SCHEDULE</span>
+				<span class="schedule-head">SCHEDULE</span>
 				<div class="schedule-content">
 					<span class="schedule-dates schedule-h2">Dec 10th, 2014 : Pete Dominic - Show me your World</span>
 				</div>		
@@ -118,21 +104,44 @@
 <!-- -------------------------------------- -->		
 		
 		<div class="twitter-container">
-			<div class="proto-box">
-				<img src="img/proto-twitter.jpg">
+			<!--<img class="small-logo" src="img/small-logo.png">-->
+			<h1 class="twitter-head">TWITTER FEED</h1>
+				<h2 class="h1-subhead">#TalkCenterAmerica @TalkCenterTV</h2>	
+			<div class="tweet-box first-tweet">
+				<div class="tweet">RT @breatheeasyy: #BabyTalk #TalkCenterAmerica tomorrow 12pm EST. New #moms and #dads #babies #toddlers all are welcome! @TalkCenterTV http… </div>
+				<div class="tweet-time">-TALKCENTERTV 1 WEEK AGO</div>
 			</div>
+			<div class="tweet-box">
+				<div class="tweet">RT @ionabrockie: @TalkCenterTV What's the deal with cold cuts? Are they okay to eat? #confused </div>
+				<div class="tweet-time">-TALKCENTERTV 2 WEEKS AGO</div>
+			</div>
+			<div class="tweet-box">
+				<div class="tweet">RT @breatheeasyy: #BabyTalk #TalkCenterAmerica tomorrow 12pm EST. New #moms and #dads #babies #toddlers all are welcome! @TalkCenterTV http… </div>
+				<div class="tweet-time">-TALKCENTERTV 2 WEEKS AGO</div>
+			</div>		
 		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 		
 		
 		<div class="next-div2">
-			<div class="main wrapper clearfix"></div>
 			
 		</div>
 		
-		<div class="menu-icon">
-		
-		</div>
+
 
 		
 <!-- -------------------------------------- -->
@@ -147,9 +156,8 @@
 <!-- LOAD FIT TEXT, SET RATIOS, SET MIN AND MAX FONT SIZES -->
 		<script src="js/vendor/jquery.fittext.js"></script>
 			<script type="text/javascript">
-				$(".intro-hero-text").fitText(2.02, { minFontSize: '18px', maxFontSize: '100px' });
+				$(".intro-hero-text").fitText(2.02, { minFontSize: '23px', maxFontSize: '100px' });
 				$(".schedule-h1").fitText(2.0, { minFontSize: '15px', maxFontSize: '50px' });
-			
 			</script>	
 <!-- BACKGROUND VIDEOS -->		
 			<script src="js/covervid.min.js"></script>
@@ -180,15 +188,19 @@
 					$("#nav li a").unbind('click');
 				} else {
 				$('#nav li a').on("click", function(){
-				$('#nav').slideUp();
+				$('#nav').hide();
 				});	
 				}
-			});			
+			});	
+			
+
 		</script>
 		
 <!-- LOADING MISC SCRIPTS -->
 		<script src="js/vendor/jquery.event.swipe.js"></script>
 		<script src="js/vendor/velocity.min.js"></script>
+		<script src="js/vendor/velocity.ui.min.js"></script>
+
 <!-- AFTER FINISHING THE INTRO PAGE, LOAD UP FLOWTYPE.JS AND MAKE NEW DIV -->
 <!-- TO COVER ALL SECTIONS BESIDES INTRO PAGE -->		
 

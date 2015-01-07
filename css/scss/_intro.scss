@@ -21,47 +21,48 @@
 //					skype-box-subhead: float left
 //					skype-box-img: float right
 // 				CLEARFIX skype-box-split
+ 
 
-
-
-
+// -------------------------------------
+// WRAPS EVERYTHING ON INTRO PAGE
 .intro-container{
 	background-color: #fff;
 	@include clearfix;
 	margin: 2% 5% 0;
+	//BREAKPOINTS
 	@include breakpoint(mobile-flip) {
 		margin-top: 1%;
 		}	
-	
-	
 } 		
 
+// -------------------------------------
 // HERO HEADING - USING FITTEXT TO ALWAYS KEEP 1 LINE/MAX WIDTH TEXT 
 .intro-hero {
 	width: 100%;
 	margin-bottom: 3%;
+	//BREAKPOINTS
 	@include breakpoint(medium) {
 		margin-top: 6%;
 		}
+	@include breakpoint(mobile-flip) {
+		margin-top: 12%;
+		}
 	@include breakpoint(small) {
-		margin-top: 13%;
+		margin-top: 14%;
 		}
 	@include breakpoint(oldp) {
-		margin-top: 20%;
+		margin-top: 25%;
 		}
 	@include breakpoint(newp) {
 		margin-top: 22%;
 		}	
-	@include breakpoint(mobile-flip) {
-		margin-bottom: 0;
-		padding-bottom: 0;
-		}
-
 	.intro-hero-text {
 		text-align: center;
 	}
 }
 
+
+// -------------------------------------
 // SPLITS HERO TEXT WITH THE REST OF THE CONTENT
 .intro-split-content {
 	@include clearfix;
@@ -70,40 +71,19 @@
 	padding: 0 2%;	
 }
 
-// IMG AND CONTAINER FOR SCALING
-.intro-monitor {
-	float: right;
-	width: 58%;
-	@include breakpoint(medium) {
-		width: 52%;
-		}
-	@include breakpoint(small) {
-		width: 52%;
-		}
-
-	@include breakpoint(mobile-flip) {
-		float: none;
-		box-sizing: border-box;
-		padding: 5% 15% 0 15%;
-		width: 100%;
-		}
-}
-.monitor {
-	width: 100%;
-}
-
-
-// CONTENT FLOATED LEFT OF MONITOR
-// HEADINGS AND SKYPE IMG
+// CONTENT FLOATED LEFT OF MONITOR. ON MOBILE FLIP
+// FLOAT NONE, HIDE SKYPE (WILL REPLACE W/ DIFF ICON)
 .skype-box {
 	float: left;
-	margin-top: 5%;
+	margin-top: 4%;
+	//BREAKPOINT
 	@include breakpoint(mobile-flip) {
 		width: 100%;
 		margin: 0 0 5%;
+		float: none;
 		}
 }
-
+// TOP  MOST HEADING FOR SKYPE BOX
 .skype-box-head {
 	box-sizing: border-box;
 	margin: 0 0 8%;
@@ -114,8 +94,8 @@
 	@include font-size(42px);
 	//BREAKPOINTS
 	@include breakpoint(laptop) {
-			@include font-size(35px);
-			}
+		@include font-size(35px);
+		}
 	@include breakpoint(netbook) {
 		@include font-size(26px);
 		}
@@ -123,32 +103,29 @@
 		@include font-size(22px);
 		}
 	@include breakpoint(small) {
-		@include font-size(18px);
+		@include font-size(21px);
 		}
 	@include breakpoint(newp) {
-		@include font-size(16px);
+		@include font-size(20px);
 		}
 	@include breakpoint(oldp) {
-		@include font-size(16px);
+		@include font-size(19px);
 		}
+	// LAYOUT CHANGE
 	@include breakpoint(mobile-flip) {
 		float: none;
 		box-sizing: border-box;
-		width: 100%;
 		margin: 0;
-		padding: 0 10%;;
+		padding: 0 1%;;
 		text-align: center;
+		transition: all 1s;
 		}
 }
 
-
 // SPLITS TEXT AND SKYPE CALL IN IMG
 .skype-box-split {
-	@include clearfix;
-	width: 100%;
-	
+	@include clearfix;	
 }
-
 .skype-box-subhead {
 	box-sizing: border-box;
 	margin-top: 5%;
@@ -166,24 +143,26 @@
 		@include font-size(22px);
 		}
 	@include breakpoint(medium) {
-		@include font-size(17px);
+		@include font-size(19px);
 		}
 	@include breakpoint(small) {
-		@include font-size(16px);
+		@include font-size(18px);
 		}
 	@include breakpoint(newp) {
-		@include font-size(14px);
+		@include font-size(17px);
 		}
 	@include breakpoint(oldp) {
-		@include font-size(13px);
+		@include font-size(16px);
 		}
+	// LAYOUT CHANGE
 	@include breakpoint(mobile-flip) {
-		float: left;
+		
 		box-sizing: border-box;
 		width: 100%;
-		margin: 2% 0 2%;
-		padding: 0 20%;
+		margin: 5% 0 0;
+		padding: 0 1%;
 		text-align: center;
+		transition: all 1s;
 		}
 }
 
@@ -217,18 +196,79 @@
 }
 .skype {
 	width: 100%;
+	opacity: 1;
 }
-
-
 
 // GET RID OF LINE BREAKS FOR MOBILE VIEW
 .intro-subhead-break {
-		@include breakpoint(mobile-flip) {
-		display: none;
+		@include breakpoint(oldp) {
+		
 		}
 }
 
 
+// -------------------------------------
+// MONITOR IMG AND CONTAINER FOR SCALING
+.intro-monitor {
+	float: right;
+	width: 58%;
+	//BREAKPOINTS
+	@include breakpoint(medium) {
+		width: 52%;
+		}
+	@include breakpoint(small) {
+		width: 52%;
+		}
+	@include breakpoint(mobile-flip) {
+		float: none;
+		box-sizing: border-box;
+		padding: 3% 10% 0 10%;
+		width: 100%;
+		transition: all 1s;
+		}
+}
+// WRAPS MONITOR AND PLAY BUTTON
+// BUTTON ABSOLUTE POSITIONING BASED ON THIS CONTAINER
+.center-play {
+	width: 100%;
+	position: relative;
+}
+.monitor {
+	width: 100%;
+}
+// MAIN BUTTON AND HOVER
+.play-button {
+	position: absolute;
+	top: 27%;
+	left: 39.35%;
+	width: 20%;
+	box-sizing: border-box;
+	border-radius: 50%;
+	box-shadow:  0 0 1px 3px rgb(255, 255, 255);
+	/*border: 5px solid rgba(255, 255, 255, 0.52);*/
+	opacity: .9;
+}
+
+.play-button:hover {
+	box-sizing: border-box;
+	border-radius: 100%;
+	box-shadow:  0 0 5px 5px rgba(10, 10, 10, 0.53);
+	opacity: .8;
+	
+}
+// SAME BUTTON LAYERED BEHIND USED FOR BURSTING ANIMATION
+.play-button-animate {
+	position: absolute;
+	top: 28.25%;
+	left: 40.4%;
+	width: 18%;
+	height: 23%;  
+	background-color: rgb(255, 255, 255);
+	border-radius: 100%;  
+	box-sizing: border-box;
+	box-shadow: 0 0 10px 10px rgb(255, 255, 255);
+
+}
 
 
 
@@ -237,96 +277,3 @@ img {
 }
 
 
-
-
-
-
-/*
-.intro-left-content {
-	width: 38%;
-	float: left;
-	padding-left: 1.1%;
-	padding-bottom: 10%
-}
-.intro-h3 {
-	margin-top: 15%;
-}
-.intro-h2 {
-	font-family: 'Roboto Condensed', sans-serif;
-	line-height: .6em;
-}
-
-
-.ratio-box{
-	position: relative;
-	width: 55%;		
-	display: block;
-	float: right;
-	left: 0;
-}
-.ratio-box:before{
-	content: "";
-	display: block;
-	padding-top: 75%;	
-}
-.content{
-	position:  absolute;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-}
-
-
-.monitor {
-	z-index: 1;
-	position:absolute;
-	left: -8%;;
-	top: -10%;
-	width: 110%;
-}
-.play-button {
-	width: 20%;
-	position: absolute;
-	left: 37%;
-	top: 22%;
-	z-index: 2;
-	-webkit-animation: super-rainbow 8s infinite alternate linear; 
-     -moz-animation: super-rainbow 4s infinite alternate linear; 
-	border: .01em solid rgba(255, 255, 255, 0);
-	border-radius: 100em;
-}
-
-@-webkit-keyframes super-rainbow {
-    0%   { background: #fff; } 
-  
-    50%  { background: #b5b5b5; }
-
-
-    100% { background: #fff; }
-}
-
-@-moz-keyframes super-rainbow {
-    0%   { background: #fff; } 
-    20%  { background: #ff2a2a; }
-    40%  { background: #1f5081; }
-    60%  { background: #043253; }
-    80%  { background: #204271; }
-    100% { background: #416589; }
-}
-
-
-
-.skype {
-	width: 14%;
-	position: absolute;
-	left: -39%;
-	top: 25%;
-	z-index: 2;
-
-}
-
-*/
-
-
-//http://i.imgur.com/JDPgq5F.png

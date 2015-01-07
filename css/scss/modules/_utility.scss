@@ -45,7 +45,8 @@
   }
   @else if $point == oldp {
     @media only screen and (max-width: 320px)  { @content; }
-  }		
+  }	
+  // WIDTH ORDER FOR NONE LAYOUT RESIZING: MEDIUM, MOBILE-FLIP, SMALL, NEWP, OLDP	
   @else if $point == mobile-flip {
     @media only screen and (max-width: 768px)  { @content; }
   }	
@@ -83,7 +84,16 @@
 	/* Find colour names - http://chir.ag/projects/name-that-color/ */
 	
 	$darkgrey: #484747;
-	$darkblue: #1f4c73;
+	
+	$menublue: #1f4c73;
+
+	$lightblue: #beddfc;
+	$headingblue: #02518c;
+	$darkblue: #14436d;
+	
+	$pinkred-dull: #e86767;
+	$pinkred: #ff8677;
+	$deepred: #a30e0e;
 	
 /*********************************************
 	- 2.0 -  GRADIENTS
