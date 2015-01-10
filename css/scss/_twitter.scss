@@ -1,12 +1,12 @@
 .twitter-container {
 	position: relative;
-	margin: 10% 23% 15% 23%;
+	margin: 10% 24% 15% 24%;
 	@include breakpoint(laptop) { margin: 10% 18% 15% 18%; }
 	@include breakpoint(netbook) { margin: 10% 16% 18% 16%; }
-	@include breakpoint(medium) { margin: 10% 14% 22% 14%; }
-	@include breakpoint(small) { margin: 10% 5% 28% 5%; }
-	@include breakpoint(newp) { margin: 10% 4% 25% 4%; }
-	@include breakpoint(oldp) { margin: 10% 2% 25% 3%; }
+	@include breakpoint(medium) { margin: 10% 14% 15% 14%; }
+	@include breakpoint(small) { margin: 10% 10% 20% 10%; }
+	@include breakpoint(newp) { margin: 10% 10% 25% 10%; }
+	@include breakpoint(oldp) { margin: 10% 10% 25% 10%; }
 }
 
 
@@ -39,11 +39,8 @@
 	margin-bottom: 3.5%;
 }
 
-.tweet-box {
-	position: relative;
-	z-index: 0;
-	margin-bottom: 5%;
-}
+
+// TRIANGLES FOR TWEET BOXES TO FAKE THE CUT OFF CORNER
 .tweet-box:after {
 	content: "";
 	width: 0;
@@ -57,27 +54,29 @@
 	z-index: 5;
 }
 
-
-
 .tweet-box {
 	background-color: $darkblue;
 	box-sizing: border-box;
-	padding: 2.5% 3% 2%;
+	padding: 3% 7% 3% 5%;
 	@include clearfix;
 	box-shadow: -7px 7px 0px 0px $pinkred-dull;
 	border-top-right-radius: 0;
-
+	position: relative;
+	z-index: 0;
+	margin-bottom: 5%;
 }
 
 .tweet {
 	display: inline-block;
 	width: 100%;
+	box-sizing: border-box;
+	padding-right: 2%;
 	line-height: 1.4;
 	color: $lightblue;
 	font-family: $h2-font-fam;
 	font-weight: 400;
-		@include breakpoint(hires) { @include font-size(32px); }
-		@include breakpoint(desktop) { @include font-size(30px); }
+		@include breakpoint(hires) { @include font-size(27px); }
+		@include breakpoint(desktop) { @include font-size(27px); }
 		@include breakpoint(laptop) { @include font-size(27px); }
 		@include breakpoint(netbook) { @include font-size(24px); }
 		@include breakpoint(medium) { @include font-size(21px); }
@@ -94,12 +93,34 @@
 	font-family: $h2-font-fam;
 	font-size: 46px;
 	@include breakpoint(hires) { font-size: 100%; }
-		@include breakpoint(hires) { @include font-size(30px); }
-		@include breakpoint(desktop) { @include font-size(25px); }
+		@include breakpoint(hires) { @include font-size(23px); }
+		@include breakpoint(desktop) { @include font-size(23px); }
 		@include breakpoint(laptop) { @include font-size(23px); }
 		@include breakpoint(netbook) { @include font-size(19px); }
 		@include breakpoint(medium) { @include font-size(17px); }
 		@include breakpoint(small) { @include font-size(14px); }
 		@include breakpoint(newp) { @include font-size(12px); }
 		@include breakpoint(oldp) { @include font-size(10px); }
+}
+
+ // TESTING AREA
+.next-div2 {
+	height: 10px;
+	width: 100%;
+	background-color: $pinkred-dull;
+	position: relative;
+}
+
+
+.twitter-triangle {
+	width: 0;
+	height: 0;
+	border-color: $pinkred-dull transparent transparent transparent;
+	display: inline-block;
+	border-style: solid;
+	border-width: 50px 50px 0 50px;
+	@include breakpoint(mobile-flip) { border-width: 25px 25px 0 25px; }
+}
+.triangle-position {
+	text-align: center;
 }

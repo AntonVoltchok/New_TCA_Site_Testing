@@ -1,6 +1,34 @@
 
-  
+// MENU
 
+$(function() {
+	
+$("#nav").addClass("js").before('<div id="menu" class="fa fa-bars faa-horizontal"></div>');
+$("#menu").click(function(){
+	$("#nav").toggle();
+});
+
+$(window).resize(function(){
+	if(window.innerWidth > 1005) {
+		$("#nav").removeAttr("style");
+		$("#nav li a").unbind('click');
+	} else {
+	$('#nav li a').on("click", function(){
+	$('#nav').hide();
+	});	
+	}
+});	
+
+});
+
+
+/* 
+$(function() {
+	$('.blog-box').click(function(e) {
+		e.preventDefault();
+	});
+});	
+*/
 
 
 
@@ -24,28 +52,7 @@
 
 
 
-//Below is a really useful snippet to stop 
-//making anchor tags scroll to top of page
 
-/*
-( function( $ ) {
-   $( 'a[href="#"]' ).click( function(e) {
-      e.preventDefault();
-   } );
-} )( jQuery );
-
-*/
-
-
-// MENU / NAVICON EXAMPLE
-/*
-$('#nav-button').click( function(){
-  $(this).toggleClass('width');
-  $(this).parent().toggleClass('show');
-  $(this).children().toggleClass( 'fa-navicon').toggleClass( 'fa-close');
-  $('#nav-list').toggleClass('nav-show'); 
-});
-*/
 
 
 

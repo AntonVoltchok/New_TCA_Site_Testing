@@ -1,6 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Oswald:400,700,300);
 @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300);
 @import url(http://fonts.googleapis.com/css?family=Anton);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700);
 /* line 6, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/helper-classes-reset */
 html, button, input, select, textarea {
   color: #222; }
@@ -451,24 +452,24 @@ a:hover {
  }
 
 /* line 28, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
-.intro-container {
+.intro-wrapper {
   background-color: #fff;
-  margin: 2% 5% 0; }
+  margin: 3% 5% 0; }
   /* line 60, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/modules/utility */
-  .intro-container:before, .intro-container:after {
+  .intro-wrapper:before, .intro-wrapper:after {
     content: "";
     display: table; }
   /* line 64, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/modules/utility */
-  .intro-container:after {
+  .intro-wrapper:after {
     clear: both; }
   @media only screen and (max-width: 768px) {
-    .intro-container {
+    .intro-wrapper {
       margin-top: 1%; } }
 
 /* line 40, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
 .intro-hero {
   width: 100%;
-  margin-bottom: 3%; }
+  margin-bottom: 3.5%; }
   @media only screen and (min-width: 756px) and (max-width: 1005px) {
     .intro-hero {
       margin-top: 6%; } }
@@ -583,12 +584,12 @@ a:hover {
       font-size: 1.375rem; } }
   @media only screen and (min-width: 756px) and (max-width: 1005px) {
     .skype-box-subhead {
-      font-size: 19px;
-      font-size: 1.1875rem; } }
+      font-size: 17px;
+      font-size: 1.0625rem; } }
   @media only screen and (min-width: 381px) and (max-width: 755px) {
     .skype-box-subhead {
-      font-size: 18px;
-      font-size: 1.125rem; } }
+      font-size: 17px;
+      font-size: 1.0625rem; } }
   @media only screen and (min-width: 321px) and (max-width: 380px) {
     .skype-box-subhead {
       font-size: 17px;
@@ -640,17 +641,17 @@ a:hover {
   opacity: 1; }
 
 /* line 212, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
-.intro-monitor {
+.monitor-box {
   float: right;
   width: 58%; }
   @media only screen and (min-width: 756px) and (max-width: 1005px) {
-    .intro-monitor {
+    .monitor-box {
       width: 52%; } }
   @media only screen and (min-width: 381px) and (max-width: 755px) {
-    .intro-monitor {
+    .monitor-box {
       width: 52%; } }
   @media only screen and (max-width: 768px) {
-    .intro-monitor {
+    .monitor-box {
       float: none;
       box-sizing: border-box;
       padding: 3% 10% 0 10%;
@@ -863,7 +864,7 @@ img {
 /* line 1, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/twitter */
 .twitter-container {
   position: relative;
-  margin: 10% 23% 15% 23%; }
+  margin: 10% 24% 15% 24%; }
   @media only screen and (min-width: 1281px) and (max-width: 1600px) {
     .twitter-container {
       margin: 10% 18% 15% 18%; } }
@@ -872,16 +873,16 @@ img {
       margin: 10% 16% 18% 16%; } }
   @media only screen and (min-width: 756px) and (max-width: 1005px) {
     .twitter-container {
-      margin: 10% 14% 22% 14%; } }
+      margin: 10% 14% 15% 14%; } }
   @media only screen and (min-width: 381px) and (max-width: 755px) {
     .twitter-container {
-      margin: 10% 5% 28% 5%; } }
+      margin: 10% 10% 20% 10%; } }
   @media only screen and (min-width: 321px) and (max-width: 380px) {
     .twitter-container {
-      margin: 10% 4% 25% 4%; } }
+      margin: 10% 10% 25% 10%; } }
   @media only screen and (max-width: 320px) {
     .twitter-container {
-      margin: 10% 2% 25% 3%; } }
+      margin: 10% 10% 25% 10%; } }
 
 /*
 .small-logo { 
@@ -908,13 +909,7 @@ img {
   color: #02518c;
   margin-bottom: 3.5%; }
 
-/* line 42, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/twitter */
-.tweet-box {
-  position: relative;
-  z-index: 0;
-  margin-bottom: 5%; }
-
-/* line 47, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/twitter */
+/* line 44, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/twitter */
 .tweet-box:after {
   content: "";
   width: 0;
@@ -927,13 +922,16 @@ img {
   position: absolute;
   z-index: 5; }
 
-/* line 62, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/twitter */
+/* line 57, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/twitter */
 .tweet-box {
   background-color: #14436d;
   box-sizing: border-box;
-  padding: 2.5% 3% 2%;
+  padding: 3% 7% 3% 5%;
   box-shadow: -7px 7px 0px 0px #e86767;
-  border-top-right-radius: 0; }
+  border-top-right-radius: 0;
+  position: relative;
+  z-index: 0;
+  margin-bottom: 5%; }
   /* line 60, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/modules/utility */
   .tweet-box:before, .tweet-box:after {
     content: "";
@@ -942,22 +940,24 @@ img {
   .tweet-box:after {
     clear: both; }
 
-/* line 72, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/twitter */
+/* line 69, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/twitter */
 .tweet {
   display: inline-block;
   width: 100%;
+  box-sizing: border-box;
+  padding-right: 2%;
   line-height: 1.4;
   color: #beddfc;
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: 400; }
   @media only screen and (min-width: 1921px) and (max-width: 2565px) {
     .tweet {
-      font-size: 32px;
-      font-size: 2rem; } }
+      font-size: 27px;
+      font-size: 1.6875rem; } }
   @media only screen and (min-width: 1601px) and (max-width: 1920px) {
     .tweet {
-      font-size: 30px;
-      font-size: 1.875rem; } }
+      font-size: 27px;
+      font-size: 1.6875rem; } }
   @media only screen and (min-width: 1281px) and (max-width: 1600px) {
     .tweet {
       font-size: 27px;
@@ -983,7 +983,7 @@ img {
       font-size: 12px;
       font-size: 0.75rem; } }
 
-/* line 89, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/twitter */
+/* line 88, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/twitter */
 .tweet-time {
   margin-top: 1%;
   box-sizing: border-box;
@@ -996,12 +996,12 @@ img {
       font-size: 100%; } }
   @media only screen and (min-width: 1921px) and (max-width: 2565px) {
     .tweet-time {
-      font-size: 30px;
-      font-size: 1.875rem; } }
+      font-size: 23px;
+      font-size: 1.4375rem; } }
   @media only screen and (min-width: 1601px) and (max-width: 1920px) {
     .tweet-time {
-      font-size: 25px;
-      font-size: 1.5625rem; } }
+      font-size: 23px;
+      font-size: 1.4375rem; } }
   @media only screen and (min-width: 1281px) and (max-width: 1600px) {
     .tweet-time {
       font-size: 23px;
@@ -1027,14 +1027,319 @@ img {
       font-size: 10px;
       font-size: 0.625rem; } }
 
-/* line 21, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/style.scss */
+/* line 107, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/twitter */
+.next-div2 {
+  height: 10px;
+  width: 100%;
+  background-color: #e86767;
+  position: relative; }
+
+/* line 115, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/twitter */
+.twitter-triangle {
+  width: 0;
+  height: 0;
+  border-color: #e86767 transparent transparent transparent;
+  display: inline-block;
+  border-style: solid;
+  border-width: 50px 50px 0 50px; }
+  @media only screen and (max-width: 768px) {
+    .twitter-triangle {
+      border-width: 25px 25px 0 25px; } }
+
+/* line 124, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/twitter */
+.triangle-position {
+  text-align: center; }
+
+/* line 1, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/blog */
+.blog-container {
+  margin: 15% 11% 11%;
+  text-align: center; }
+  @media only screen and (min-width: 1281px) and (max-width: 1600px) {
+    .blog-container {
+      margin: 8% 2% 10%; } }
+  @media only screen and (min-width: 1006px) and (max-width: 1280px) {
+    .blog-container {
+      margin: 8% 20% 10%; } }
+  @media only screen and (min-width: 756px) and (max-width: 1005px) {
+    .blog-container {
+      margin: 8% 11% 10%; } }
+  @media only screen and (min-width: 381px) and (max-width: 755px) {
+    .blog-container {
+      margin: 8% 1% 10%; } }
+  @media only screen and (min-width: 321px) and (max-width: 380px) {
+    .blog-container {
+      margin: 8% 2% 10%; } }
+  @media only screen and (max-width: 320px) {
+    .blog-container {
+      margin: 8% 2% 10%; } }
+
+/* line 12, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/blog */
+.blog-head {
+  color: #02518c;
+  line-height: 1em;
+  margin: 5% 0 7%; }
+
+/* line 18, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/blog */
+.blog-subhead {
+  margin-bottom: 8%; }
+  @media only screen and (min-width: 381px) and (max-width: 755px) {
+    .blog-subhead {
+      margin: 0 30% 7%; } }
+  @media only screen and (min-width: 321px) and (max-width: 380px) {
+    .blog-subhead {
+      margin: 0 20% 7%; } }
+  @media only screen and (max-width: 320px) {
+    .blog-subhead {
+      margin: 0 20% 7%; } }
+
+/* line 27, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/blog */
+.blog-box {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  margin: 1% 1%; }
+
+/* line 34, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/blog */
+.blog-img {
+  width: 325px;
+  display: block;
+  opacity: 1;
+  -webkit-transition: 0.6s;
+  transition: 0.6s; }
+  @media only screen and (min-width: 1921px) and (max-width: 2565px) {
+    .blog-img {
+      width: 325px; } }
+  @media only screen and (min-width: 1601px) and (max-width: 1920px) {
+    .blog-img {
+      width: 270px; } }
+  @media only screen and (min-width: 1281px) and (max-width: 1600px) {
+    .blog-img {
+      width: 270px; } }
+  @media only screen and (min-width: 1006px) and (max-width: 1280px) {
+    .blog-img {
+      width: 240px; } }
+  @media only screen and (min-width: 756px) and (max-width: 1005px) {
+    .blog-img {
+      width: 240px; } }
+  @media only screen and (min-width: 381px) and (max-width: 755px) {
+    .blog-img {
+      width: 240px; } }
+  @media only screen and (min-width: 321px) and (max-width: 380px) {
+    .blog-img {
+      width: 240px; } }
+  @media only screen and (max-width: 320px) {
+    .blog-img {
+      width: 240px; } }
+
+/* line 50, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/blog */
+.blog-box-body {
+  bottom: 0;
+  left: 0;
+  top: 0;
+  right: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 3em 2em;
+  position: absolute;
+  text-align: center;
+  -webkit-transition: 0.6s;
+  transition: 0.6s; }
+  @media only screen and (min-width: 1921px) and (max-width: 2565px) {
+    .blog-box-body {
+      padding-top: 2.6em; } }
+  @media only screen and (min-width: 1601px) and (max-width: 1920px) {
+    .blog-box-body {
+      padding-top: 2.6em; } }
+  @media only screen and (min-width: 1281px) and (max-width: 1600px) {
+    .blog-box-body {
+      padding-top: 2.6em; } }
+  @media only screen and (min-width: 1006px) and (max-width: 1280px) {
+    .blog-box-body {
+      padding-top: 2.6em; } }
+  @media only screen and (min-width: 756px) and (max-width: 1005px) {
+    .blog-box-body {
+      padding-top: 2.6em; } }
+  @media only screen and (min-width: 381px) and (max-width: 755px) {
+    .blog-box-body {
+      padding-top: 2.6em; } }
+  @media only screen and (min-width: 321px) and (max-width: 380px) {
+    .blog-box-body {
+      padding-top: 2.6em; } }
+  @media only screen and (max-width: 320px) {
+    .blog-box-body {
+      padding-top: 2.6em; } }
+
+/* line 73, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/blog */
+.blog-box-head h2 {
+  color: #fff;
+  opacity: 0;
+  -webkit-transition: 1.4s;
+  transition: 1.4s; }
+  @media only screen and (min-width: 1921px) and (max-width: 2565px) {
+    .blog-box-head h2 {
+      font-size: 20px;
+      font-size: 1.25rem; } }
+  @media only screen and (min-width: 1601px) and (max-width: 1920px) {
+    .blog-box-head h2 {
+      font-size: 19px;
+      font-size: 1.1875rem; } }
+  @media only screen and (min-width: 1281px) and (max-width: 1600px) {
+    .blog-box-head h2 {
+      font-size: 19px;
+      font-size: 1.1875rem; } }
+  @media only screen and (min-width: 1006px) and (max-width: 1280px) {
+    .blog-box-head h2 {
+      font-size: 14.5px;
+      font-size: 0.90625rem; } }
+  @media only screen and (min-width: 756px) and (max-width: 1005px) {
+    .blog-box-head h2 {
+      font-size: 14.5px;
+      font-size: 0.90625rem; } }
+  @media only screen and (min-width: 381px) and (max-width: 755px) {
+    .blog-box-head h2 {
+      font-size: 14.5px;
+      font-size: 0.90625rem; } }
+  @media only screen and (min-width: 321px) and (max-width: 380px) {
+    .blog-box-head h2 {
+      font-size: 14.5px;
+      font-size: 0.90625rem; } }
+  @media only screen and (max-width: 320px) {
+    .blog-box-head h2 {
+      font-size: 14.5px;
+      font-size: 0.90625rem; } }
+
+/* line 88, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/blog */
+.blog-box-body p {
+  color: #fff;
+  opacity: 0;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+  -webkit-transition: all 2s;
+  transition: all 2s; }
+  @media only screen and (min-width: 1921px) and (max-width: 2565px) {
+    .blog-box-body p {
+      font-size: 17px;
+      font-size: 1.0625rem; } }
+  @media only screen and (min-width: 1601px) and (max-width: 1920px) {
+    .blog-box-body p {
+      font-size: 16px;
+      font-size: 1rem; } }
+  @media only screen and (min-width: 1281px) and (max-width: 1600px) {
+    .blog-box-body p {
+      font-size: 16px;
+      font-size: 1rem; } }
+  @media only screen and (min-width: 1006px) and (max-width: 1280px) {
+    .blog-box-body p {
+      font-size: 13px;
+      font-size: 0.8125rem; } }
+  @media only screen and (min-width: 756px) and (max-width: 1005px) {
+    .blog-box-body p {
+      font-size: 13px;
+      font-size: 0.8125rem; } }
+  @media only screen and (min-width: 381px) and (max-width: 755px) {
+    .blog-box-body p {
+      font-size: 13px;
+      font-size: 0.8125rem; } }
+  @media only screen and (min-width: 321px) and (max-width: 380px) {
+    .blog-box-body p {
+      font-size: 13px;
+      font-size: 0.8125rem; } }
+  @media only screen and (max-width: 320px) {
+    .blog-box-body p {
+      font-size: 13px;
+      font-size: 0.8125rem; } }
+
+/* line 106, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/blog */
+.cross-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s; }
+
+/* line 122, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/blog */
+.blog-box:hover .cross-overlay {
+  opacity: 0.5;
+  -webkit-transform: scale(0.93);
+  -ms-transform: scale(0.93);
+  transform: scale(0.93); }
+
+/* line 132, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/blog */
+.blog-box-body:hover, .blog-box-body:hover p, .blog-box-body:hover h2 {
+  display: block;
+  opacity: 1;
+  background-color: #14436d; }
+
+/* line 138, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/blog */
+.blog-box-body:hover .blog-click {
+  opacity: 1;
+  width: 30%; }
+
+/* line 146, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/blog */
+.blog-box-body h2 {
+  margin-top: 0; }
+
+/* line 150, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/blog */
+.blog-box-body p {
+  margin-bottom: 1.5em; }
+
+/* line 155, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/blog */
+.blog-click {
+  position: relative;
+  color: yellow;
+  opacity: 0;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s; }
+  @media only screen and (min-width: 1921px) and (max-width: 2565px) {
+    .blog-click {
+      font-size: 17px;
+      font-size: 1.0625rem; } }
+  @media only screen and (min-width: 1601px) and (max-width: 1920px) {
+    .blog-click {
+      font-size: 16px;
+      font-size: 1rem; } }
+  @media only screen and (min-width: 1281px) and (max-width: 1600px) {
+    .blog-click {
+      font-size: 16px;
+      font-size: 1rem; } }
+  @media only screen and (min-width: 1006px) and (max-width: 1280px) {
+    .blog-click {
+      font-size: 13px;
+      font-size: 0.8125rem; } }
+  @media only screen and (min-width: 756px) and (max-width: 1005px) {
+    .blog-click {
+      font-size: 13px;
+      font-size: 0.8125rem; } }
+  @media only screen and (min-width: 381px) and (max-width: 755px) {
+    .blog-click {
+      font-size: 13px;
+      font-size: 0.8125rem; } }
+  @media only screen and (min-width: 321px) and (max-width: 380px) {
+    .blog-click {
+      font-size: 13px;
+      font-size: 0.8125rem; } }
+  @media only screen and (max-width: 320px) {
+    .blog-click {
+      font-size: 13px;
+      font-size: 0.8125rem; } }
+
+/* line 20, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/style.scss */
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 28, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/style.scss */
 img {
   max-width: 100%; }
-
-/* line 26, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/style.scss */
-.next-div2 {
-  height: 100px;
-  width: 100%;
-  background-color: #a30e0e; }
 
 /*# sourceMappingURL=style.css.map */
