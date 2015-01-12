@@ -7,7 +7,7 @@
 	top: 0;
 	clear: both;
 }
-
+ 
 .header-logo {
 	float: right;
 	height: 45px;
@@ -39,9 +39,7 @@
 	}
 }
 
-
-
-ul {
+.ul-nav {
 	font-family: 'Anton', sans-serif;
 	font-weight: 400;
 	@include font-size(22px);
@@ -62,16 +60,16 @@ ul {
 			}
 	
 }
-li {
+.menu-li {
 	width: 11%;
 	float: left;
 	list-style-type: none;
 	@include vertical-align();
 }
-li:last-child {
+.menu-li:last-child {
 	border-right:none;
 }
-li a {
+.menu-li a {
 	text-decoration: none;
 	display: block;
 	width:100%;
@@ -118,16 +116,16 @@ a:hover {
 	#nav.js {
 		display: none;
 	}
-	ul {
+	.ul-nav {
 		max-width:100%;
 		margin: 0;
 	}
-	li {
+	.menu-li {
 		width:100%;
 		border-right:none;
 		background-color: rgb(226, 226, 226);
 	}
-	li a {
+	.menu-li a {
 		padding: 1%;
 		width: 100%;
 	}

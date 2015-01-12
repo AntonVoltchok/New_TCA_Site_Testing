@@ -41,7 +41,7 @@
     @media only screen and (min-width: 381px) and (max-width: 755px) { @content; }
   }
   @else if $point == newp {
-    @media only screen and (min-width: 321px) and (max-width: 380px)  { @content; }
+    @media only screen and (min-width: 321px) and (max-width: 420px)  { @content; }
   }
   @else if $point == oldp {
     @media only screen and (max-width: 320px)  { @content; }
@@ -87,6 +87,7 @@
 	
 	$menublue: #1f4c73;
 
+	$midblue: #015ca0;
 	$lightblue: #beddfc;
 	$headingblue: #02518c;
 	$darkblue: #14436d;

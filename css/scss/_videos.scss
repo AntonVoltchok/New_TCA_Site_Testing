@@ -1,0 +1,22 @@
+ .video-wrapper {
+ 	margin: 10% 10%;
+ }
+
+.video-head {
+	color: $headingblue;
+	line-height: 1em;
+	margin: 5% 0 4%;
+	text-align: center;
+}
+
+.video-subhead {
+	color: $headingblue;
+	margin-bottom: 4%;
+	text-align: center;
+	@include breakpoint(laptop) { margin: 0 3% 4%; }
+	@include breakpoint(netbook) { margin: 0 28% 4%; }
+	@include breakpoint(medium) { margin: 0 30% 4%; }
+	@include breakpoint(small) { margin: 0 25% 4%; }	
+	@include breakpoint(newp) { margin: 0 20% 4.5%; }
+	@include breakpoint(oldp) { margin: 0 20% 4.5%; }
+}

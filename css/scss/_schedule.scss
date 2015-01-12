@@ -22,7 +22,7 @@
 	@include breakpoint(small) { height: 260px; }
 	@include breakpoint(newp) { height: 200px; }
 	@include breakpoint(oldp) { height: 150px; }
-}
+} 
 
 .schedule-h2 {
 	@include breakpoint(hires) { font-size: 195%; }
@@ -60,13 +60,13 @@
     text-align: center;
 	line-height: 1.2;
 	color: #fff;
-	@include breakpoint(hires) { @include font-size(70px); }
+	@include breakpoint(hires) { @include font-size(84px); }
 	@include breakpoint(desktop) { @include font-size(64px); }
 	@include breakpoint(laptop) { @include font-size(54px); }
 	@include breakpoint(netbook) { @include font-size(44px); }
 	@include breakpoint(medium) { @include font-size(34px); }
 	@include breakpoint(small) { @include font-size(30px); }
-	@include breakpoint(newp) { @include font-size(22px); }
+	@include breakpoint(newp) { @include font-size(26px); }
 	@include breakpoint(oldp) { @include font-size(20px); }
 }
 .schedule-content {
@@ -102,4 +102,20 @@
     height: 31%;
 	z-index: 10;
 }
+
+.schedule-triangle {
+	width: 0;
+	height: 0;
+	border-color: rgba(76, 76, 76, 0.23) transparent transparent transparent;
+	display: inline-block;
+	border-style: solid;
+	border-width: 45px 45px 0 45px;
+	@include breakpoint(mobile-flip) { border-width: 25px 25px 0 25px; }
+}
+.schedule-triangle-position {
+	text-align: center;
+}
+
+
+
 
