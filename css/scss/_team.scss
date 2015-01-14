@@ -1,0 +1,161 @@
+.team-wrapper {
+	margin: 8% 11% 14%;;
+	text-align: center;
+	@include breakpoint(laptop) { margin: 10% 14% 10%; }
+	@include breakpoint(netbook) { margin: 12% 20% 12%; }
+	@include breakpoint(medium) { margin: 10% 13% 10%; }
+	@include breakpoint(small) { margin: 13% 2% 17%; }
+	@include breakpoint(newp) { margin: 14% 2% 14%; }
+	@include breakpoint(oldp) { margin: 13% 2% 13%; }	
+}
+
+.test-test {
+	margin-bottom: 13%;
+	@include breakpoint(laptop) { margin-bottom: 18%; }
+	@include breakpoint(netbook) { margin-bottom: 21%; }
+	@include breakpoint(medium) { margin-bottom: 22%; }
+	@include breakpoint(small) { margin-bottom: 23%; }
+	@include breakpoint(newp) { margin-bottom: 40%; }
+	@include breakpoint(oldp) { margin-bottom: 40%; }	
+}
+
+.profile-box h1 {
+	-webkit-transition: all .44s ease-in-out;
+    -moz-transition: all .44s ease-in-out;
+    -o-transition: all .44s ease-in-out;
+    -ms-transition: all .44s ease-in-out;
+    transition: all .44s ease-in-out;
+	color: #fff;
+	text-align: center;
+	margin-top: -10%;
+	opacity: .9;
+}
+
+.profile-box p {
+	color: $lightblue;
+	font-family: $p-font-fam;
+	font-weight: 400;
+	text-align: center;
+	opacity: .9;
+	-webkit-transition: all .44s ease-in-out;
+    -moz-transition: all .44s ease-in-out;
+    -o-transition: all .44s ease-in-out;
+    -ms-transition: all .44s ease-in-out;
+    transition: all .44s ease-in-out;
+		@include breakpoint(hires) { @include font-size(17px); }
+		@include breakpoint(desktop) { @include font-size(16px); }
+		@include breakpoint(laptop) { @include font-size(16px); }
+		@include breakpoint(netbook) { @include font-size(16px); }
+		@include breakpoint(medium) { @include font-size(16px); }
+		@include breakpoint(small) { @include font-size(15px); }
+		@include breakpoint(newp) { @include font-size(13px); }
+		@include breakpoint(oldp) { @include font-size(12px); }
+}
+
+.img-wrapper {
+	position: relative;
+	display: inline-block;
+	margin-top: -9%;
+}
+
+.img-position {
+	-webkit-transition: all .44s ease-in-out;
+    -moz-transition: all .44s ease-in-out;
+    -o-transition: all .44s ease-in-out;
+    -ms-transition: all .44s ease-in-out;
+    transition: all .44s ease-in-out;
+	text-align: center;	
+	position: relative;
+	top: -70px;
+}
+
+.img-wrapper img {
+	border-radius: 100%;
+	box-sizing: border-box;
+	border: 15px solid #fff;
+}
+
+.profile-box {
+	-webkit-transition: all .9s ease-in-out;
+    -moz-transition: all .9s ease-in-out;
+    -o-transition: all .9s ease-in-out;
+    -ms-transition: all .9s ease-in-out;
+    transition: all .9s ease-in-out;
+	text-decoration: none;
+	list-style-type:none;
+	display: inline-block;
+	vertical-align: top;
+	background-color: $midblue;
+	width: 25%;
+	min-width: 270px;
+	position: relative;	
+	margin: 30px 10px 140px;
+}
+
+
+.profile-size {
+	background-color: $midblue;
+	position: relative;
+	margin-bottom: 7%;
+	height: 270px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.profile-container {
+	padding: 0;
+}
+
+.more {
+	display: none;
+}
+.profile-overlay {
+	-webkit-transition: all .44s ease-in-out;
+    -moz-transition: all .44s ease-in-out;
+    -o-transition: all .44s ease-in-out;
+    -ms-transition: all .44s ease-in-out;
+    transition: all .44s ease-in-out;
+	color: #fff;
+	font-family: $p-font-fam;
+	font-weight: 400;
+	text-align: center;
+	@include breakpoint(hires) { @include font-size(17px); }
+	@include breakpoint(desktop) { @include font-size(16px); }
+	@include breakpoint(laptop) { @include font-size(16px); }
+	@include breakpoint(netbook) { @include font-size(16px); }
+	@include breakpoint(medium) { @include font-size(16px); }
+	@include breakpoint(small) { @include font-size(15px); }
+	@include breakpoint(newp) { @include font-size(13px); }
+	@include breakpoint(oldp) { @include font-size(12px); }
+	position: absolute;
+	opacity: 0;
+	top: 0px;
+	padding: 10% 5%;
+	transform: rotateX(90deg);
+}
+
+// -----------------
+// ON HOVER FUNCTION
+// -----------------
+
+
+.profile-box:hover .img-position {
+	opacity: .7;
+	top: -160px;
+	transform: rotateX(-90deg);
+}
+.profile-box:hover  p,
+.profile-box:hover  h1 {
+	opacity: 0;
+	margin-top: 35px;
+	transform: rotateX(-90deg);
+	padding: 0;
+	margin-bottom: 0;
+}
+
+.profile-box:hover .profile-overlay {
+	opacity: 1;
+	margin-top: -100px;
+	transform: rotateX(0deg);
+	top: 100px;
+}
+

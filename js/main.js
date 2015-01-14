@@ -16,14 +16,15 @@ $(window).resize(function(){
 	$('#nav li a').on("click", function(){
 	$('#nav').hide();
 	});	
-	}
+	} 
 });	
-
-});
  
+});
+  
 
 
 // VIDEOS SECTION: TAB MENU
+$(function() {
 
   $('ul.tabs').each(function(){
     // For each set of tabs, we want to keep track of
@@ -61,9 +62,19 @@ $(window).resize(function(){
     });
   });
 
+});
 
 
 
+/*
+
+$(function(){
+  $("#switch-view").click(function(){
+    $(this).find("button").toggleClass("active");
+    $(".article-wrapper").toggleClass("bloc col-xs-12 col-xs-4");
+  });
+});
+*/
 
 
 
