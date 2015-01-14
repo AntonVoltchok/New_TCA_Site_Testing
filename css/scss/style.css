@@ -1942,7 +1942,7 @@ img {
   list-style-type: none;
   display: inline-block;
   vertical-align: top;
-  background-color: #3f6c95;
+  background-color: #14436d;
   width: 25%;
   min-width: 270px;
   position: relative;
@@ -1954,7 +1954,7 @@ img {
   position: relative;
   margin-bottom: 7%;
   height: 270px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
+  border-bottom: 2px solid #fff; }
 
 /* line 104, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/team */
 .profile-container {
@@ -2015,19 +2015,17 @@ img {
 
 /* line 141, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/team */
 .profile-box:hover .img-position {
-  opacity: 0.7;
   top: -160px;
   transform: rotateX(-90deg); }
 
-/* line 147, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/team */
+/* line 146, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/team */
 .profile-box:hover p, .profile-box:hover h1 {
   opacity: 0;
-  margin-top: 35px;
-  transform: rotateX(-90deg);
+  margin-top: 25px;
   padding: 0;
   margin-bottom: 0; }
 
-/* line 155, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/team */
+/* line 153, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/team */
 .profile-box:hover .profile-overlay {
   opacity: 1;
   margin-top: -100px;
