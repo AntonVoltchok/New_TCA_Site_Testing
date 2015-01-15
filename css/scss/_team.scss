@@ -1,17 +1,18 @@
 // ------------------------ WRAPPER MARGINS --------------------------- //
 .team-wrapper {
-	margin: 8% 14% 14%;;
+	margin: 8% 14% 12%;;
 	text-align: center;
 	@include breakpoint(laptop) { margin: 10% 3% 10%; }
 	@include breakpoint(netbook) { margin: 12% 2% 12%; }
 	@include breakpoint(medium) { margin: 10% 3% 10%; }
-	@include breakpoint(small) { margin: 13% 2% 17%; }
+	@include breakpoint(small) { margin: 13% 2% 15%; }
 	@include breakpoint(newp) { margin: 14% 1% 14%; }
 	@include breakpoint(oldp) { margin: 13% 1% 13%; }	
 }
 
 .team-subhead {
-	color: #02518c;	
+	color: #02518c;
+	margin-top: 3%;
 }
 // -------------------- TEAM HEADER/SUB MARGIN ----------------------- //
 .team-header-wrapper {
@@ -200,7 +201,7 @@
 .profile-box:hover  p,
 .profile-box:hover  h1 {
 	opacity: 0;
-	margin-top: 175px;
+	margin-top: 35px;
 	padding: 0;
 	margin-bottom: 0;
 	@include breakpoint(medium) { margin-top: 0px; }
@@ -222,4 +223,24 @@
 }
 
 
+
+.blog-end-divider {
+	height: 10px;
+	width: 100%;
+	background-color: $midblue;
+	position: relative;
+}
+
+.blog-triangle {
+	width: 0;
+	height: 0;
+	border-color: $midblue transparent transparent transparent;
+	display: inline-block;
+	border-style: solid;
+	border-width: 45px 45px 0 45px;
+	@include breakpoint(mobile-flip) { border-width: 25px 25px 0 25px; }
+}
+.blog-triangle-position {
+	text-align: center;
+}
 
