@@ -194,16 +194,11 @@
 }
 
 @-webkit-keyframes 'flip-point' {
-0% {
+0%,16% {
 	-ms-transform: rotate(90deg); /* IE 9 */
     -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
     transform: rotate(90deg);	
 	}
-16% {
-	-ms-transform: rotate(90deg); /* IE 9 */
-    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
-    transform: rotate(90deg);	
-	}	
 25% {
 	-ms-transform: rotate(0deg); /* IE 9 */
     -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
@@ -230,12 +225,8 @@
     -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
     transform: rotate(0deg);	
 	}
-99% {
-	-ms-transform: rotate(90deg); /* IE 9 */
-    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
-    transform: rotate(90deg);
-	}
-100% {
+
+99%,100% {
 	-ms-transform: rotate(90deg); /* IE 9 */
     -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
     transform: rotate(90deg);	
@@ -335,12 +326,6 @@ img {
 //					skype-box-img: float right
 // 				CLEARFIX skype-box-split
  
-
-
-
-
-
-
 
 
 
