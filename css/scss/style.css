@@ -189,52 +189,6 @@ textarea {
 	------------------------------------------ */
 /* - 3.1. - BASE FONTS
 	------------------------------------------ */
-/* - 3.2. - HEADER FONTS
-	------------------------------------------ */
-/* 
-.hvr-float-shadow {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
-  position: relative;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-}
-.hvr-float-shadow:before {
-  pointer-events: none;
-  position: absolute;
-  z-index: -1;
-  content: '';
-  top: 100%;
-  left: 5%;
-  height: 10px;
-  width: 90%;
-  opacity: 0;
-  background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
-  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
-   W3C 
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: all;
-  transition-property: all;
-}
-.hvr-float-shadow:hover, .hvr-float-shadow:focus, .hvr-float-shadow:active {
-  -webkit-transform: translateY(-5px);
-  transform: translateY(-5px);
-}
-.hvr-float-shadow:hover:before, .hvr-float-shadow:focus:before, .hvr-float-shadow:active:before {
-  opacity: 1;
-  -webkit-transform: translateY(5px);
-  transform: translateY(5px);
-}
-*/
 /* RANDOM FUNCTIONS / MIXINS */
 /* line 8, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/modules/typography */
 h1, h2, h3, h4, h5, h6, ul, ol, dl, fieldset, p, table, pre, hr {
@@ -268,11 +222,11 @@ h1 {
     h1 {
       font-size: 34px;
       font-size: 2.125rem; } }
-  @media only screen and (min-width: 381px) and (max-width: 755px) {
+  @media only screen and (min-width: 376px) and (max-width: 755px) {
     h1 {
       font-size: 30px;
       font-size: 1.875rem; } }
-  @media only screen and (min-width: 321px) and (max-width: 420px) {
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
     h1 {
       font-size: 26px;
       font-size: 1.625rem; } }
@@ -307,11 +261,11 @@ h1 {
     .h1-subhead {
       font-size: 22px;
       font-size: 1.375rem; } }
-  @media only screen and (min-width: 381px) and (max-width: 755px) {
+  @media only screen and (min-width: 376px) and (max-width: 755px) {
     .h1-subhead {
       font-size: 16px;
       font-size: 1rem; } }
-  @media only screen and (min-width: 321px) and (max-width: 420px) {
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
     .h1-subhead {
       font-size: 15px;
       font-size: 0.9375rem; } }
@@ -346,13 +300,13 @@ h2 {
     h2 {
       font-size: 16px;
       font-size: 1rem; } }
-  @media only screen and (min-width: 381px) and (max-width: 755px) {
+  @media only screen and (min-width: 376px) and (max-width: 755px) {
     h2 {
-      font-size: 15px;
-      font-size: 0.9375rem;
+      font-size: 13px;
+      font-size: 0.8125rem;
       margin-left: 8%;
       margin-right: 8%; } }
-  @media only screen and (min-width: 321px) and (max-width: 420px) {
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
     h2 {
       font-size: 13px;
       font-size: 0.8125rem; } }
@@ -387,18 +341,18 @@ h3 {
     h3 {
       font-size: 22px;
       font-size: 1.375rem; } }
-  @media only screen and (min-width: 381px) and (max-width: 755px) {
+  @media only screen and (min-width: 376px) and (max-width: 755px) {
     h3 {
       font-size: 18px;
       font-size: 1.125rem; } }
-  @media only screen and (min-width: 321px) and (max-width: 420px) {
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
     h3 {
-      font-size: 15px;
-      font-size: 0.9375rem; } }
+      font-size: 14px;
+      font-size: 0.875rem; } }
   @media only screen and (max-width: 320px) {
     h3 {
-      font-size: 15px;
-      font-size: 0.9375rem; } }
+      font-size: 10px;
+      font-size: 0.625rem; } }
 
 /* line 1, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/menu */
 .header-stripe {
@@ -434,10 +388,10 @@ h3 {
     @media only screen and (min-width: 756px) and (max-width: 1005px) {
       .header-logo img {
         max-width: 80%; } }
-    @media only screen and (min-width: 381px) and (max-width: 755px) {
+    @media only screen and (min-width: 376px) and (max-width: 755px) {
       .header-logo img {
         max-width: 70%; } }
-    @media only screen and (min-width: 321px) and (max-width: 420px) {
+    @media only screen and (min-width: 321px) and (max-width: 375px) {
       .header-logo img {
         max-width: 65%; } }
     @media only screen and (max-width: 320px) {
@@ -522,7 +476,7 @@ a:hover {
     color: #33558b;
     font-size: 1.75em;
     text-align: center; }
-    @media only screen and (min-width: 321px) and (max-width: 420px) {
+    @media only screen and (min-width: 321px) and (max-width: 375px) {
       #menu {
         max-width: 65%; } }
     @media only screen and (max-width: 320px) {
@@ -572,11 +526,11 @@ a:hover {
 .intro-wrapper {
   background-color: #fff;
   margin: 3% 5% 0; }
-  /* line 60, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/modules/utility */
+  /* line 69, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/modules/utility */
   .intro-wrapper:before, .intro-wrapper:after {
     content: "";
     display: table; }
-  /* line 64, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/modules/utility */
+  /* line 73, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/modules/utility */
   .intro-wrapper:after {
     clear: both; }
   @media only screen and (max-width: 768px) {
@@ -593,13 +547,13 @@ a:hover {
   @media only screen and (max-width: 768px) {
     .intro-hero {
       margin-top: 12%; } }
-  @media only screen and (min-width: 381px) and (max-width: 755px) {
+  @media only screen and (min-width: 376px) and (max-width: 755px) {
     .intro-hero {
       margin-top: 15%; } }
   @media only screen and (max-width: 320px) {
     .intro-hero {
       margin-top: 25%; } }
-  @media only screen and (min-width: 321px) and (max-width: 420px) {
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
     .intro-hero {
       margin-top: 22%; } }
 
@@ -612,11 +566,11 @@ a:hover {
   box-sizing: border-box;
   width: 100%;
   padding: 0 2%; }
-  /* line 60, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/modules/utility */
+  /* line 69, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/modules/utility */
   .intro-split-content:before, .intro-split-content:after {
     content: "";
     display: table; }
-  /* line 64, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/modules/utility */
+  /* line 73, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/modules/utility */
   .intro-split-content:after {
     clear: both; }
 
@@ -652,11 +606,11 @@ a:hover {
     .skype-box-head {
       font-size: 22px;
       font-size: 1.375rem; } }
-  @media only screen and (min-width: 381px) and (max-width: 755px) {
+  @media only screen and (min-width: 376px) and (max-width: 755px) {
     .skype-box-head {
       font-size: 21px;
       font-size: 1.3125rem; } }
-  @media only screen and (min-width: 321px) and (max-width: 420px) {
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
     .skype-box-head {
       font-size: 20px;
       font-size: 1.25rem; } }
@@ -673,11 +627,11 @@ a:hover {
       text-align: center;
       transition: all 1s; } }
 
-/* line 60, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/modules/utility */
+/* line 69, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/modules/utility */
 .skype-box-split:before, .skype-box-split:after {
   content: "";
   display: table; }
-/* line 64, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/modules/utility */
+/* line 73, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/modules/utility */
 .skype-box-split:after {
   clear: both; }
 
@@ -704,11 +658,11 @@ a:hover {
     .skype-box-subhead {
       font-size: 17px;
       font-size: 1.0625rem; } }
-  @media only screen and (min-width: 381px) and (max-width: 755px) {
+  @media only screen and (min-width: 376px) and (max-width: 755px) {
     .skype-box-subhead {
       font-size: 17px;
       font-size: 1.0625rem; } }
-  @media only screen and (min-width: 321px) and (max-width: 420px) {
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
     .skype-box-subhead {
       font-size: 17px;
       font-size: 1.0625rem; } }
@@ -740,13 +694,13 @@ a:hover {
     .skype-box-img {
       width: 16%;
       margin-top: 2%; } }
-  @media only screen and (min-width: 381px) and (max-width: 755px) {
+  @media only screen and (min-width: 376px) and (max-width: 755px) {
     .skype-box-img {
       width: 13%; } }
   @media only screen and (max-width: 320px) {
     .skype-box-img {
       width: 12%; } }
-  @media only screen and (min-width: 321px) and (max-width: 420px) {
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
     .skype-box-img {
       width: 11%; } }
   @media only screen and (max-width: 768px) {
@@ -765,7 +719,7 @@ a:hover {
   @media only screen and (min-width: 756px) and (max-width: 1005px) {
     .monitor-box {
       width: 52%; } }
-  @media only screen and (min-width: 381px) and (max-width: 755px) {
+  @media only screen and (min-width: 376px) and (max-width: 755px) {
     .monitor-box {
       width: 52%; } }
   @media only screen and (max-width: 768px) {
@@ -942,44 +896,73 @@ img {
 
 /* line 299, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
 #element_to_pop_up {
-  font-size: 31px;
-  font-size: 1.9375rem;
-  color: #fff;
+  width: 50%;
+  color: #484747;
   font-family: 'Oswald', sans-serif;
+  text-align: center;
   display: none;
-  background-color: grey; }
+  background-color: #fff;
+  margin: 0;
+  padding: 0; }
   @media only screen and (min-width: 1281px) and (max-width: 1600px) {
     #element_to_pop_up {
-      font-size: 27px;
-      font-size: 1.6875rem; } }
+      width: 1000px; } }
   @media only screen and (min-width: 1006px) and (max-width: 1280px) {
     #element_to_pop_up {
-      font-size: 22px;
-      font-size: 1.375rem; } }
+      width: 880px; } }
   @media only screen and (min-width: 756px) and (max-width: 1005px) {
     #element_to_pop_up {
-      font-size: 17px;
-      font-size: 1.0625rem; } }
-  @media only screen and (min-width: 381px) and (max-width: 755px) {
+      width: 720px; } }
+  @media only screen and (min-width: 376px) and (max-width: 755px) {
     #element_to_pop_up {
-      font-size: 17px;
-      font-size: 1.0625rem; } }
-  @media only screen and (min-width: 321px) and (max-width: 420px) {
+      width: 380px; } }
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
     #element_to_pop_up {
-      font-size: 17px;
-      font-size: 1.0625rem; } }
+      width: 350px; } }
   @media only screen and (max-width: 320px) {
     #element_to_pop_up {
-      font-size: 16px;
-      font-size: 1rem; } }
+      width: 295px; } }
 
-/* line 317, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
+/* line 316, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
+.logo-small {
+  display: inline-block;
+  padding: 6px 0 8px; }
+  @media only screen and (min-width: 376px) and (max-width: 755px) {
+    .logo-small {
+      width: 82px; } }
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
+    .logo-small {
+      width: 82px;
+      padding: 0 0 5px; } }
+  @media only screen and (max-width: 320px) {
+    .logo-small {
+      width: 78px;
+      padding: 0 0 5px; } }
+
+/* line 325, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
 #my-button {
   appearance: normal;
   border: none;
   color: #fff;
   padding: 0;
   background-color: #fff; }
+
+/* line 335, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
+#my-button, #my-button:focus, #my-button:active {
+  border: 0;
+  outline: 0; }
+
+/* line 340, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
+.intro-video-wrap {
+  width: 50%;
+  margin: 0 auto;
+  border: 3px solid #fff; }
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
+    .intro-video-wrap {
+      border: 2px solid #fff; } }
+  @media only screen and (max-width: 320px) {
+    .intro-video-wrap {
+      border: 2px solid #fff; } }
 
 /* line 1, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/schedule */
 .schedule-container {
@@ -1012,10 +995,10 @@ img {
   @media only screen and (min-width: 756px) and (max-width: 1005px) {
     .video-ratio-box {
       height: 325px; } }
-  @media only screen and (min-width: 381px) and (max-width: 755px) {
+  @media only screen and (min-width: 376px) and (max-width: 755px) {
     .video-ratio-box {
       height: 260px; } }
-  @media only screen and (min-width: 321px) and (max-width: 420px) {
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
     .video-ratio-box {
       height: 200px; } }
   @media only screen and (max-width: 320px) {
@@ -1037,10 +1020,10 @@ img {
 @media only screen and (min-width: 756px) and (max-width: 1005px) {
   .schedule-h2 {
     font-size: 140%; } }
-@media only screen and (min-width: 381px) and (max-width: 755px) {
+@media only screen and (min-width: 376px) and (max-width: 755px) {
   .schedule-h2 {
     font-size: 90%; } }
-@media only screen and (min-width: 321px) and (max-width: 420px) {
+@media only screen and (min-width: 321px) and (max-width: 375px) {
   .schedule-h2 {
     font-size: 70%; } }
 @media only screen and (max-width: 320px) {
@@ -1092,11 +1075,11 @@ img {
     .schedule-head {
       font-size: 34px;
       font-size: 2.125rem; } }
-  @media only screen and (min-width: 381px) and (max-width: 755px) {
+  @media only screen and (min-width: 376px) and (max-width: 755px) {
     .schedule-head {
       font-size: 30px;
       font-size: 1.875rem; } }
-  @media only screen and (min-width: 321px) and (max-width: 420px) {
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
     .schedule-head {
       font-size: 26px;
       font-size: 1.625rem; } }
@@ -1169,10 +1152,10 @@ img {
   @media only screen and (min-width: 756px) and (max-width: 1005px) {
     .twitter-container {
       margin: 10% 14% 15% 14%; } }
-  @media only screen and (min-width: 381px) and (max-width: 755px) {
+  @media only screen and (min-width: 376px) and (max-width: 755px) {
     .twitter-container {
       margin: 10% 9% 20% 10%; } }
-  @media only screen and (min-width: 321px) and (max-width: 420px) {
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
     .twitter-container {
       margin: 10% 8.5% 25% 10%; } }
   @media only screen and (max-width: 320px) {
@@ -1205,10 +1188,10 @@ img {
   @media only screen and (min-width: 756px) and (max-width: 1005px) {
     .tweet-box:after {
       border-width: 0 27px 27px 0; } }
-  @media only screen and (min-width: 381px) and (max-width: 755px) {
+  @media only screen and (min-width: 376px) and (max-width: 755px) {
     .tweet-box:after {
       border-width: 0 20px 20px 0; } }
-  @media only screen and (min-width: 321px) and (max-width: 420px) {
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
     .tweet-box:after {
       border-width: 0 20px 20px 0; } }
   @media only screen and (max-width: 320px) {
@@ -1225,11 +1208,11 @@ img {
   position: relative;
   z-index: 0;
   margin-bottom: 5%; }
-  /* line 60, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/modules/utility */
+  /* line 69, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/modules/utility */
   .tweet-box:before, .tweet-box:after {
     content: "";
     display: table; }
-  /* line 64, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/modules/utility */
+  /* line 73, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/modules/utility */
   .tweet-box:after {
     clear: both; }
 
@@ -1263,11 +1246,11 @@ img {
     .tweet {
       font-size: 21px;
       font-size: 1.3125rem; } }
-  @media only screen and (min-width: 381px) and (max-width: 755px) {
+  @media only screen and (min-width: 376px) and (max-width: 755px) {
     .tweet {
       font-size: 15px;
       font-size: 0.9375rem; } }
-  @media only screen and (min-width: 321px) and (max-width: 420px) {
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
     .tweet {
       font-size: 13px;
       font-size: 0.8125rem; } }
@@ -1307,11 +1290,11 @@ img {
     .tweet-time {
       font-size: 17px;
       font-size: 1.0625rem; } }
-  @media only screen and (min-width: 381px) and (max-width: 755px) {
+  @media only screen and (min-width: 376px) and (max-width: 755px) {
     .tweet-time {
       font-size: 14px;
       font-size: 0.875rem; } }
-  @media only screen and (min-width: 321px) and (max-width: 420px) {
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
     .tweet-time {
       font-size: 12px;
       font-size: 0.75rem; } }
@@ -1356,10 +1339,10 @@ img {
   @media only screen and (min-width: 756px) and (max-width: 1005px) {
     .blog-container {
       margin: 10% 13% 10%; } }
-  @media only screen and (min-width: 381px) and (max-width: 755px) {
+  @media only screen and (min-width: 376px) and (max-width: 755px) {
     .blog-container {
       margin: 13% 2% 17%; } }
-  @media only screen and (min-width: 321px) and (max-width: 420px) {
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
     .blog-container {
       margin: 14% 2% 14%; } }
   @media only screen and (max-width: 320px) {
@@ -1385,10 +1368,10 @@ img {
   @media only screen and (min-width: 756px) and (max-width: 1005px) {
     .blog-subhead {
       margin: 0 30% 4%; } }
-  @media only screen and (min-width: 381px) and (max-width: 755px) {
+  @media only screen and (min-width: 376px) and (max-width: 755px) {
     .blog-subhead {
       margin: 0 25% 4%; } }
-  @media only screen and (min-width: 321px) and (max-width: 420px) {
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
     .blog-subhead {
       margin: 0 20% 4.5%; } }
   @media only screen and (max-width: 320px) {
@@ -1424,10 +1407,10 @@ img {
   @media only screen and (min-width: 756px) and (max-width: 1005px) {
     .blog-img {
       width: 230px; } }
-  @media only screen and (min-width: 381px) and (max-width: 755px) {
+  @media only screen and (min-width: 376px) and (max-width: 755px) {
     .blog-img {
       width: 220px; } }
-  @media only screen and (min-width: 321px) and (max-width: 420px) {
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
     .blog-img {
       width: 215px; } }
   @media only screen and (max-width: 320px) {
@@ -1462,10 +1445,10 @@ img {
   @media only screen and (min-width: 756px) and (max-width: 1005px) {
     .blog-box-body {
       padding-top: 2.2em; } }
-  @media only screen and (min-width: 381px) and (max-width: 755px) {
+  @media only screen and (min-width: 376px) and (max-width: 755px) {
     .blog-box-body {
       padding-top: 1.8em; } }
-  @media only screen and (min-width: 321px) and (max-width: 420px) {
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
     .blog-box-body {
       padding-top: 1.8em; } }
   @media only screen and (max-width: 320px) {
@@ -1498,13 +1481,13 @@ img {
     .blog-box-head h2 {
       font-size: 14.5px;
       font-size: 0.90625rem; } }
-  @media only screen and (min-width: 381px) and (max-width: 755px) {
+  @media only screen and (min-width: 376px) and (max-width: 755px) {
     .blog-box-head h2 {
       font-size: 14.5px;
       font-size: 0.90625rem;
       padding-bottom: 0;
       margin-bottom: 0; } }
-  @media only screen and (min-width: 321px) and (max-width: 420px) {
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
     .blog-box-head h2 {
       font-size: 14.5px;
       font-size: 0.90625rem;
@@ -1547,11 +1530,11 @@ img {
     .blog-box-body p {
       font-size: 13px;
       font-size: 0.8125rem; } }
-  @media only screen and (min-width: 381px) and (max-width: 755px) {
+  @media only screen and (min-width: 376px) and (max-width: 755px) {
     .blog-box-body p {
       font-size: 13px;
       font-size: 0.8125rem; } }
-  @media only screen and (min-width: 321px) and (max-width: 420px) {
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
     .blog-box-body p {
       font-size: 13px;
       font-size: 0.8125rem; } }
@@ -1622,11 +1605,11 @@ img {
     .blog-click {
       font-size: 13px;
       font-size: 0.8125rem; } }
-  @media only screen and (min-width: 381px) and (max-width: 755px) {
+  @media only screen and (min-width: 376px) and (max-width: 755px) {
     .blog-click {
       font-size: 13px;
       font-size: 0.8125rem; } }
-  @media only screen and (min-width: 321px) and (max-width: 420px) {
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
     .blog-click {
       font-size: 13px;
       font-size: 0.8125rem; } }
@@ -1676,7 +1659,7 @@ img {
 /* line 10, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/videos */
 .video-subhead {
   color: #02518c;
-  margin: 2% 10% 5%;
+  margin: 2% 10% 3%;
   text-align: center; }
 
 /* line 20, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/videos */
@@ -1686,7 +1669,7 @@ img {
   text-align: center;
   position: relative;
   width: 100%;
-  margin: 0;
+  margin: 0 0 4%;
   padding: 0; }
 
 /* line 33, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/videos */
@@ -1700,27 +1683,70 @@ img {
 /* line 41, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/videos */
 .tab-boxes a {
   display: inline-block;
-  width: 15%; }
+  width: 12%; }
+  @media only screen and (min-width: 1281px) and (max-width: 1600px) {
+    .tab-boxes a {
+      width: 13%; } }
+  @media only screen and (min-width: 1006px) and (max-width: 1280px) {
+    .tab-boxes a {
+      width: 13%; } }
+  @media only screen and (min-width: 756px) and (max-width: 1005px) {
+    .tab-boxes a {
+      width: 14%; } }
+  @media only screen and (min-width: 376px) and (max-width: 755px) {
+    .tab-boxes a {
+      width: 15%;
+      margin: 4% 0 2%; } }
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
+    .tab-boxes a {
+      width: 15%;
+      margin: 4% 0 2%; } }
+  @media only screen and (max-width: 320px) {
+    .tab-boxes a {
+      width: 15%;
+      margin: 4% 0 2%; } }
 
-/* line 50, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/videos */
+/* line 56, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/videos */
 .active {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out; }
 
-/* line 58, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/videos */
+/* line 64, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/videos */
 .tab-wrapper {
+  width: 70%;
+  margin: 0% auto;
   -webkit-transition: all 0.9s ease-in-out;
   -moz-transition: all 0.9s ease-in-out;
   -o-transition: all 0.9s ease-in-out;
   -ms-transition: all 0.9s ease-in-out;
   transition: all 0.9s ease-in-out;
-  width: 80%;
-  margin: 3% auto;
   background-color: #14436d; }
+  @media only screen and (min-width: 1281px) and (max-width: 1600px) {
+    .tab-wrapper {
+      width: 75%; } }
+  @media only screen and (min-width: 1006px) and (max-width: 1280px) {
+    .tab-wrapper {
+      width: 77%; } }
+  @media only screen and (min-width: 756px) and (max-width: 1005px) {
+    .tab-wrapper {
+      width: 82%; } }
+  @media only screen and (min-width: 376px) and (max-width: 755px) {
+    .tab-wrapper {
+      width: 90%; } }
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
+    .tab-wrapper {
+      width: 90%; } }
+  @media only screen and (max-width: 320px) {
+    .tab-wrapper {
+      width: 90%; } }
 
-/* line 78, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/videos */
+/* line 81, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/videos */
+#tab1 {
+  transition: all 0.8s ease-in-out; }
+
+/* line 90, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/videos */
 #tab1, #tab2, #tab3, #tab4, #tab5, #tab6 {
   -webkit-transition: all 0.9s ease-in-out;
   -moz-transition: all 0.9s ease-in-out;
@@ -1731,7 +1757,7 @@ img {
   border: 5px solid #fff;
   box-shadow: 0px 0px 0px 7px #cf6148; }
 
-/* line 89, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/videos */
+/* line 101, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/videos */
 .video-tab-head {
   -webkit-transition: all 0.9s ease-in-out;
   -moz-transition: all 0.9s ease-in-out;
@@ -1741,9 +1767,35 @@ img {
   color: #ff8677;
   text-align: center;
   box-sizing: border-box;
-  padding: 1% 0 0%; }
+  padding: 0;
+  font-size: 42px;
+  font-size: 2.625rem; }
+  @media only screen and (min-width: 1281px) and (max-width: 1600px) {
+    .video-tab-head {
+      font-size: 35px;
+      font-size: 2.1875rem; } }
+  @media only screen and (min-width: 1006px) and (max-width: 1280px) {
+    .video-tab-head {
+      font-size: 26px;
+      font-size: 1.625rem; } }
+  @media only screen and (min-width: 756px) and (max-width: 1005px) {
+    .video-tab-head {
+      font-size: 22px;
+      font-size: 1.375rem; } }
+  @media only screen and (min-width: 376px) and (max-width: 755px) {
+    .video-tab-head {
+      font-size: 18px;
+      font-size: 1.125rem; } }
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
+    .video-tab-head {
+      font-size: 16px;
+      font-size: 1rem; } }
+  @media only screen and (max-width: 320px) {
+    .video-tab-head {
+      font-size: 15px;
+      font-size: 0.9375rem; } }
 
-/* line 101, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/videos */
+/* line 121, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/videos */
 .video-tab-links {
   -webkit-transition: all 0.9s ease-in-out;
   -moz-transition: all 0.9s ease-in-out;
@@ -1756,11 +1808,11 @@ img {
   padding: 0 3% 0%;
   font-family: 'Roboto Slab', serif; }
 
-/* line 114, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/videos */
+/* line 134, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/videos */
 .last-tab-link {
   padding-bottom: 4%; }
 
-/* line 119, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/videos */
+/* line 139, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/videos */
 .icon-latest {
   text-decoration: none;
   position: relative;
@@ -1768,7 +1820,7 @@ img {
   -webkit-appearance: none;
   cursor: pointer; }
 
-/* line 129, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/videos */
+/* line 149, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/videos */
 .icon-latest:after {
   content: '';
   position: absolute;
@@ -1780,16 +1832,16 @@ img {
   transition: 0.4s;
   transform: translateY(-20px); }
 
-/* line 141, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/videos */
+/* line 161, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/videos */
 .icon-latest:hover {
   transform: translateY(-20px); }
 
-/* line 145, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/videos */
+/* line 165, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/videos */
 .icon-latest:hover:after {
   opacity: 1;
   transform: translateY(0); }
 
-/* line 150, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/videos */
+/* line 170, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/videos */
 .video-end-divider {
   height: 10px;
   width: 100%;
@@ -1804,17 +1856,17 @@ img {
   @media only screen and (min-width: 756px) and (max-width: 1005px) {
     .video-end-divider {
       margin-top: 20%; } }
-  @media only screen and (min-width: 381px) and (max-width: 755px) {
+  @media only screen and (min-width: 376px) and (max-width: 755px) {
     .video-end-divider {
       margin-top: 20%; } }
-  @media only screen and (min-width: 321px) and (max-width: 420px) {
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
     .video-end-divider {
       margin-top: 20%; } }
   @media only screen and (max-width: 320px) {
     .video-end-divider {
       margin-top: 20%; } }
 
-/* line 163, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/videos */
+/* line 183, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/videos */
 .video-triangle {
   width: 0;
   height: 0;
@@ -1826,12 +1878,14 @@ img {
     .video-triangle {
       border-width: 25px 25px 0 25px; } }
 
-/* line 172, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/videos */
+/* line 192, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/videos */
 .video-triangle-position {
   text-align: center; }
 
 /* line 2, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/team */
 .team-wrapper {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
   margin: 8% 14% 12%;
   text-align: center; }
   @media only screen and (min-width: 1281px) and (max-width: 1600px) {
@@ -1843,23 +1897,25 @@ img {
   @media only screen and (min-width: 756px) and (max-width: 1005px) {
     .team-wrapper {
       margin: 10% 3% 10%; } }
-  @media only screen and (min-width: 381px) and (max-width: 755px) {
+  @media only screen and (min-width: 376px) and (max-width: 755px) {
     .team-wrapper {
       margin: 13% 2% 15%; } }
-  @media only screen and (min-width: 321px) and (max-width: 420px) {
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
     .team-wrapper {
       margin: 14% 1% 14%; } }
   @media only screen and (max-width: 320px) {
     .team-wrapper {
       margin: 13% 1% 13%; } }
 
-/* line 13, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/team */
+/* line 15, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/team */
 .team-subhead {
   color: #02518c;
   margin-top: 3%; }
 
-/* line 18, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/team */
+/* line 20, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/team */
 .team-header-wrapper {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
   margin-bottom: 125px; }
   @media only screen and (min-width: 1281px) and (max-width: 1600px) {
     .team-header-wrapper {
@@ -1870,18 +1926,20 @@ img {
   @media only screen and (min-width: 756px) and (max-width: 1005px) {
     .team-header-wrapper {
       margin-bottom: 95px; } }
-  @media only screen and (min-width: 381px) and (max-width: 755px) {
+  @media only screen and (min-width: 376px) and (max-width: 755px) {
     .team-header-wrapper {
       margin-bottom: 85px; } }
-  @media only screen and (min-width: 321px) and (max-width: 420px) {
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
     .team-header-wrapper {
       margin-bottom: 100px; } }
   @media only screen and (max-width: 320px) {
     .team-header-wrapper {
       margin-bottom: 100px; } }
 
-/* line 30, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/team */
+/* line 34, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/team */
 .profile-box h1 {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
   margin-top: -25%;
   line-height: 1;
   text-align: center;
@@ -1907,12 +1965,12 @@ img {
       margin-top: -26%;
       font-size: 18px;
       font-size: 1.125rem; } }
-  @media only screen and (min-width: 381px) and (max-width: 755px) {
+  @media only screen and (min-width: 376px) and (max-width: 755px) {
     .profile-box h1 {
       margin-top: -25%;
       font-size: 18px;
       font-size: 1.125rem; } }
-  @media only screen and (min-width: 321px) and (max-width: 420px) {
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
     .profile-box h1 {
       margin-top: -14%;
       font-size: 15px;
@@ -1923,8 +1981,10 @@ img {
       font-size: 14px;
       font-size: 0.875rem; } }
 
-/* line 46, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/team */
+/* line 52, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/team */
 .profile-box p {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
   text-align: center;
   font-family: 'Roboto Slab', serif;
   font-weight: 400;
@@ -1948,11 +2008,11 @@ img {
     .profile-box p {
       font-size: 13px;
       font-size: 0.8125rem; } }
-  @media only screen and (min-width: 381px) and (max-width: 755px) {
+  @media only screen and (min-width: 376px) and (max-width: 755px) {
     .profile-box p {
       font-size: 13px;
       font-size: 0.8125rem; } }
-  @media only screen and (min-width: 321px) and (max-width: 420px) {
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
     .profile-box p {
       font-size: 13px;
       font-size: 0.8125rem; } }
@@ -1961,8 +2021,10 @@ img {
       font-size: 12px;
       font-size: 0.75rem; } }
 
-/* line 65, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/team */
+/* line 73, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/team */
 .profile-box {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
   width: 320px;
   margin: 20px 25px 100px;
   position: relative;
@@ -1984,11 +2046,11 @@ img {
     .profile-box {
       width: 300px;
       margin: 20px 10px 100px; } }
-  @media only screen and (min-width: 381px) and (max-width: 755px) {
+  @media only screen and (min-width: 376px) and (max-width: 755px) {
     .profile-box {
       width: 240px;
       margin: 20px 2px 55px; } }
-  @media only screen and (min-width: 321px) and (max-width: 420px) {
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
     .profile-box {
       width: 240px;
       margin: 20px 2px 40px; } }
@@ -1997,8 +2059,10 @@ img {
       width: 240px;
       margin: 20px 2px 40px; } }
 
-/* line 85, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/team */
+/* line 95, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/team */
 .profile-size {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
   height: 220px;
   position: relative;
   border-bottom: 2px solid #fff;
@@ -2015,22 +2079,24 @@ img {
   @media only screen and (min-width: 756px) and (max-width: 1005px) {
     .profile-size {
       height: 190px; } }
-  @media only screen and (min-width: 381px) and (max-width: 755px) {
+  @media only screen and (min-width: 376px) and (max-width: 755px) {
     .profile-size {
       height: 175px; } }
-  @media only screen and (min-width: 321px) and (max-width: 420px) {
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
     .profile-size {
       height: 170px; } }
   @media only screen and (max-width: 320px) {
     .profile-size {
       height: 170px; } }
 
-/* line 101, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/team */
+/* line 113, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/team */
 .profile-container {
   padding: 0; }
 
-/* line 106, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/team */
+/* line 118, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/team */
 .img-wrapper {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
   position: relative;
   display: inline-block;
   width: 180px; }
@@ -2040,46 +2106,50 @@ img {
   @media only screen and (min-width: 756px) and (max-width: 1005px) {
     .img-wrapper {
       width: 160px; } }
-  @media only screen and (min-width: 381px) and (max-width: 755px) {
+  @media only screen and (min-width: 376px) and (max-width: 755px) {
     .img-wrapper {
       width: 140px; } }
-  @media only screen and (min-width: 321px) and (max-width: 420px) {
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
     .img-wrapper {
       width: 100px; } }
   @media only screen and (max-width: 320px) {
     .img-wrapper {
       width: 90px; } }
 
-/* line 117, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/team */
+/* line 131, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/team */
 .img-position {
   top: -100px;
   position: relative;
   display: inline-block;
   text-align: center;
   -webkit-transition: all 0.44s ease-in-out;
-  transition: all 0.44s ease-in-out; }
+  transition: all 0.44s ease-in-out;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0); }
   @media only screen and (min-width: 1006px) and (max-width: 1280px) {
     .img-position {
       top: -100px; } }
   @media only screen and (min-width: 756px) and (max-width: 1005px) {
     .img-position {
       top: -90px; } }
-  @media only screen and (min-width: 381px) and (max-width: 755px) {
+  @media only screen and (min-width: 376px) and (max-width: 755px) {
     .img-position {
       top: -70px; } }
-  @media only screen and (min-width: 321px) and (max-width: 420px) {
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
     .img-position {
       top: -55px; } }
   @media only screen and (max-width: 320px) {
     .img-position {
       top: -45px; } }
 
-/* line 130, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/team */
+/* line 146, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/team */
 .img-wrapper img {
   max-width: 100%; }
 
-/* line 135, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/team */
+/* line 151, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/team */
 .profile-overlay {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
   top: 0px;
   padding: 0% 3%;
   position: absolute;
@@ -2099,26 +2169,28 @@ img {
   @media only screen and (min-width: 756px) and (max-width: 1005px) {
     .profile-overlay {
       padding: 0% 3%; } }
-  @media only screen and (min-width: 381px) and (max-width: 755px) {
+  @media only screen and (min-width: 376px) and (max-width: 755px) {
     .profile-overlay {
       padding: 0% 3%; } }
-  @media only screen and (min-width: 321px) and (max-width: 420px) {
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
     .profile-overlay {
       padding: 0% 3%; } }
   @media only screen and (max-width: 320px) {
     .profile-overlay {
       padding: 0% 3%; } }
 
-/* line 160, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/team */
+/* line 178, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/team */
 .profile-box:hover {
   background-color: #fff; }
 
-/* line 163, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/team */
+/* line 181, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/team */
 .profile-box:hover .profile-size {
   background-color: #14436d; }
 
-/* line 168, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/team */
+/* line 186, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/team */
 .profile-box:hover .img-position {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
   top: -170px;
   opacity: 1;
   -webkit-transform: rotateX(-90deg);
@@ -2129,27 +2201,35 @@ img {
       opacity: 0;
       -webkit-transform: rotateX(0deg);
       transform: rotateX(0deg); } }
-  @media only screen and (min-width: 381px) and (max-width: 755px) {
+  @media only screen and (min-width: 376px) and (max-width: 755px) {
     .profile-box:hover .img-position {
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
       top: -80px;
       opacity: 0;
       -webkit-transform: rotateX(0deg);
       transform: rotateX(0deg); } }
-  @media only screen and (min-width: 321px) and (max-width: 420px) {
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
     .profile-box:hover .img-position {
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
       top: -80px;
       opacity: 0;
       -webkit-transform: rotateX(0deg);
       transform: rotateX(0deg); } }
   @media only screen and (max-width: 320px) {
     .profile-box:hover .img-position {
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
       top: -80px;
       opacity: 0;
       -webkit-transform: rotateX(0deg);
       transform: rotateX(0deg); } }
 
-/* line 202, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/team */
+/* line 230, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/team */
 .profile-box:hover p, .profile-box:hover h1 {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
   opacity: 0;
   margin-top: 35px;
   padding: 0;
@@ -2157,18 +2237,20 @@ img {
   @media only screen and (min-width: 756px) and (max-width: 1005px) {
     .profile-box:hover p, .profile-box:hover h1 {
       margin-top: 0px; } }
-  @media only screen and (min-width: 381px) and (max-width: 755px) {
+  @media only screen and (min-width: 376px) and (max-width: 755px) {
     .profile-box:hover p, .profile-box:hover h1 {
       margin-top: 0px; } }
-  @media only screen and (min-width: 321px) and (max-width: 420px) {
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
     .profile-box:hover p, .profile-box:hover h1 {
       margin-top: 0px; } }
   @media only screen and (max-width: 320px) {
     .profile-box:hover p, .profile-box:hover h1 {
       margin-top: 0px; } }
 
-/* line 214, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/team */
+/* line 244, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/team */
 .profile-box:hover .profile-overlay {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
   top: 110px;
   margin-top: -85px;
   opacity: 1; }
@@ -2176,11 +2258,11 @@ img {
     .profile-box:hover .profile-overlay {
       top: 120px;
       margin-top: -95px; } }
-  @media only screen and (min-width: 381px) and (max-width: 755px) {
+  @media only screen and (min-width: 376px) and (max-width: 755px) {
     .profile-box:hover .profile-overlay {
       top: 110px;
       margin-top: -95px; } }
-  @media only screen and (min-width: 321px) and (max-width: 420px) {
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
     .profile-box:hover .profile-overlay {
       top: 110px;
       margin-top: -95px; } }
@@ -2189,14 +2271,14 @@ img {
       top: 110px;
       margin-top: -95px; } }
 
-/* line 227, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/team */
+/* line 259, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/team */
 .blog-end-divider {
   height: 10px;
   width: 100%;
   background-color: #3f6c95;
   position: relative; }
 
-/* line 234, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/team */
+/* line 266, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/team */
 .blog-triangle {
   width: 0;
   height: 0;
@@ -2208,7 +2290,7 @@ img {
     .blog-triangle {
       border-width: 25px 25px 0 25px; } }
 
-/* line 243, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/team */
+/* line 276, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/team */
 .blog-triangle-position {
   text-align: center; }
 
@@ -2247,11 +2329,11 @@ img {
     .counter {
       font-size: 34px;
       font-size: 2.125rem; } }
-  @media only screen and (min-width: 381px) and (max-width: 755px) {
+  @media only screen and (min-width: 376px) and (max-width: 755px) {
     .counter {
       font-size: 30px;
       font-size: 1.875rem; } }
-  @media only screen and (min-width: 321px) and (max-width: 420px) {
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
     .counter {
       font-size: 26px;
       font-size: 1.625rem; } }
@@ -2283,4 +2365,5 @@ img {
 img {
   max-width: 100%; }
 
+/* Other transform properties here */
 /*# sourceMappingURL=style.css.map */
