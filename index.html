@@ -15,8 +15,7 @@
 	<link rel="stylesheet" href="css/vendor/font-awesome-animation.css">
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> 
 	<link rel="stylesheet" href="css/scss/style.css">
-	<!--<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">-->
-
+	<link rel="stylesheet" href="css/magnific-popup.css">
 </head>
 	
 
@@ -39,7 +38,6 @@
 				<li class="menu-li"><a href="#">VIDEOS</a></li>
 				<li class="menu-li"><a href="#">ABOUT</a></li>
 			</ul>
-
 	</div>	
 		
 	
@@ -72,6 +70,11 @@
 						<img class="skype" src="img/skype.png">
 					</div>
 
+
+
+
+					
+					
 				</div> <!--end of skype-box-split-->
 			</div> <!--end of skype-box-->
 
@@ -79,35 +82,17 @@
 			<div class="monitor-box">
 				<div class="center-play">
 	<!-- BUTTON FOR MODAL VIDEO -->			
-				<span id="my-button">
-					<img class="monitor" src="img/monitor.jpg">
-					<div class="play-button-animate"></div>
-					<img class="play-button" src="img/play.png">
-				</span>
-	<!-- MODAL CONTENT VIDEO -->			
-				<div id="element_to_pop_up">
-				<div class="intro-video-wrap"> 
-				
-				<object width="640" height="360"><param name="movie" 
-				value="http://www.youtube.com/v/Iqse-Mw_h6s?version=3&autoplay=1&hl=en_US"></param><param 
-				name="allowFullScreen" value="true"></param><param 
-				name="allowscriptaccess" value="always"></param><embed 
-				src="http://www.youtube.com/v/Iqse-Mw_h6s?version=3&autoplay=1&hl=en_US" 
-				type="application/x-shockwave-flash" width="640" height="360" 
-				allowscriptaccess="always" 
-				allowfullscreen="true"></embed></object>
-			
-				</div>
-				<span class="logo-small"><img src="img/small-logo.png"></span>	
-				</div>	
-					
+					<div id="open-popup">					
+						<img class="monitor" src="img/monitor.jpg">
+						<div class="play-button-animate"></div>
+						<img class="play-button" src="img/play.png">
+					</div>	
 				</div>
 			</div>
 
 		</div> <!--end of intro-split-content-->
 	</div> <!--end of intro-wrapper-->
-				
-	
+
 
 	
 		
@@ -195,7 +180,7 @@
 			<img class="blog-img" src="img/baby-talk1.jpg"> 
 			<div class="blog-box-body">
 				<div class="blog-box-head"><h2>“BABY TALK” 12.23.14 AT 4PM EST</h2></div>
-				<p>Our newest Talk Center America program is designed to be a safe place for expectant mothers... </p>
+				<p>Our newest Talk Center America program is designed to be a safe place for expectant.. </p>
 				<img class="cross-overlay" src="img/cross-overlay.png">
 				<a class="blog-click" href="http://www.antonvolt.com/prototype/index.html">[More]</a>
 			</div>
@@ -230,7 +215,7 @@
 		<div class="blog-box">
 			<img class="blog-img" src="img/backstage.jpg"> 
 			<div class="blog-box-body">
-				<div class="blog-box-head"><h2>Q&amp;A WITH VINNIE FAVALE AND HEREAFTER MUSICAL CAST!</h2></div>
+				<div class="blog-box-head"><h2>Q&amp;A WITH VINNIE FAVALE AND HEREAFTER MUSICAL</h2></div>
 				<p>Come backstage with writer and executive producer...</p>
 				<img class="cross-overlay" src="img/cross-overlay.png">
 				<a class="blog-click" href="http://www.antonvolt.com/prototype/index.html">[More]</a>
@@ -532,17 +517,23 @@
 <!-- -------------------------------------- -->			
 
 	<div class="contact-wrapper">
-		
-			<div class="team-header-wrapper"><h1 class="video-head">BE ON OUR SHOW</h1>
-				<h2 class="team-subhead h1-subhead contact-subhead">We love when you watch our shows. We like it more when you become a part of them.</h2>
-			</div>
-		<div class="contact-container">
+		<div class="team-header-wrapper">
+			<h1 class="video-head">BE ON OUR SHOW</h1>
+			<h2 class="team-subhead h1-subhead contact-subhead">We love when you watch our shows. <br>We like it more when you become a part of them.</h2>
+			<div class="contact-container">
+				<div class="instructions"><p>When we are live, simply <span class="instructions-bold">pause or mute the live video feed above</span>, click on the Skype button at the top of the page and you will automatically be connected to the show. If you’d like to make sure your call gets through and you get to speak to your favorite host, simply click on "book your call" below, fill out the form, and we’ll arrange to call you! (We promise never to pass on your personal information)</p> 
+					<p>Let us know who you are, how to get in touch with you and which shows you watch. We’ll keep you up to date on all the programs we think will be of interest to you.</p> 
+					<p>All other comments and inquiries, please email us at: <span class="instructions-bold">caller@talkcenteramerica.com</span></p>
+					<p>The days of just watching TV are over. Join us. Be On your TV.</p>
+				</div>
+			</div>	
 		</div>
+		<a class="book-call" href="#contactForm">BOOK YOUR CALL</a>		
 	</div>
 		
 	
 	
-	
+
 	
 	
 	
@@ -595,15 +586,10 @@
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
     	<script src="/js/vendor/jquery.counterup.min.js"></script>
 		
-		<script src="js/vendor/jquery.bpopup.min.js"></script>
+		<script src="js/vendor/jquery.magnific-popup.min.js"></script>
 	
 		<script src="js/vendor/jquery.fitvids.js"></script>
-		<script>
-		  $(document).ready(function(){
-			// Target your .container, .wrapper, .post, etc.
-			$("#element_to_pop_up").fitVids();
-		  });
-		</script>
+
 	
 <!-- Google Analytics: change UA-XXXXX-X to site's ID. -->
 <!-- -------------------------------------------------------------------------- -->

@@ -145,7 +145,6 @@
 	width: 58%;
 	//BREAKPOINTS
 	@include breakpoint(medium) { width: 52%; }
-	@include breakpoint(small) { width: 52%; }
 	@include breakpoint(mobile-flip) {
 		float: none;
 		box-sizing: border-box;
@@ -193,44 +192,45 @@
 	animation-name: flip-point;
 }
 
-@-webkit-keyframes 'flip-point' {
-0%,16% {
-	-ms-transform: rotate(90deg); /* IE 9 */
-    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
-    transform: rotate(90deg);	
-	}
-25% {
-	-ms-transform: rotate(0deg); /* IE 9 */
-    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
-    transform: rotate(0deg);	
-	}
-42% {
-    -webkit-transform: rotateX(0deg); /* Chrome, Safari, Opera */
-    transform: rotateX(0deg);
-	}
-48% {
-    -webkit-transform: rotateX(-70deg); /* Chrome, Safari, Opera */
-    transform: rotateX(-70deg);	
-	}
-52% {
-	 -webkit-transform: rotateY(90deg); /* Chrome, Safari, Opera */
-    transform: rotateY(90deg);
-	}
-57% {
-	-webkit-transform: rotateX(0deg); /* Chrome, Safari, Opera */
-    transform: rotateX(0deg);	
-	}
-93% {
-	-ms-transform: rotate(0deg); /* IE 9 */
-    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
-    transform: rotate(0deg);	
-	}
-
-99%,100% {
-	-ms-transform: rotate(90deg); /* IE 9 */
-    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
-    transform: rotate(90deg);	
-	}
+@media screen and (min-width:701px) {
+	@-webkit-keyframes 'flip-point' {
+	0%,16% {
+		-ms-transform: rotate(90deg); /* IE 9 */
+		-webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+		transform: rotate(90deg);	
+		}
+	25% {
+		-ms-transform: rotate(0deg); /* IE 9 */
+		-webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+		transform: rotate(0deg);	
+		}
+	42% {
+		-webkit-transform: rotateX(0deg); /* Chrome, Safari, Opera */
+		transform: rotateX(0deg);
+		}
+	48% {
+		-webkit-transform: rotateX(-70deg); /* Chrome, Safari, Opera */
+		transform: rotateX(-70deg);	
+		}
+	52% {
+		 -webkit-transform: rotateY(90deg); /* Chrome, Safari, Opera */
+		transform: rotateY(90deg);
+		}
+	57% {
+		-webkit-transform: rotateX(0deg); /* Chrome, Safari, Opera */
+		transform: rotateX(0deg);	
+		}
+	93% {
+		-ms-transform: rotate(0deg); /* IE 9 */
+		-webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+		transform: rotate(0deg);	
+		}
+	99%,100% {
+		-ms-transform: rotate(90deg); /* IE 9 */
+		-webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+		transform: rotate(90deg);	
+		}
+  	}
 }
 
 .play-button:hover {
@@ -296,23 +296,80 @@ img {
 	max-width: 100%;
 }
 
- #element_to_pop_up { 
-	width: 50%;
-	@include breakpoint(laptop) { width: 1000px; }
-	@include breakpoint(netbook) { width: 880px; }
-	@include breakpoint(medium) { width: 720px;	}
-	@include breakpoint(small) { width: 380px; }
-	@include breakpoint(newp) {	width: 350px; }
-	@include breakpoint(oldp) {	width: 295px; }
-	 color: $darkgrey;
-	 font-family: $h1-font-fam;
-	 text-align: center;
-	 display:none; 
-	 background-color: #fff;
-	 margin: 0;
-	 padding: 0;
- }
 
+#open-popup {padding:0}
+
+
+
+
+@media screen and (max-width:700px) {
+	
+@-webkit-keyframes 'flip-point' {
+0%,16% {
+	-ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+    transform: rotate(90deg);	
+	}
+25% {
+	-ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);	
+	}
+42% {
+    -webkit-transform: rotateX(0deg); /* Chrome, Safari, Opera */
+    transform: rotateX(0deg);
+	}
+48% {
+    -webkit-transform: rotateX(0deg); /* Chrome, Safari, Opera */
+    transform: rotateX(0deg);	
+	}
+52% {
+	 -webkit-transform: rotateY(0deg); /* Chrome, Safari, Opera */
+    transform: rotateY(0deg);
+	}
+57% {
+	-webkit-transform: rotateX(0deg); /* Chrome, Safari, Opera */
+    transform: rotateX(0deg);	
+	}
+93% {
+	-ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);	
+	}
+
+99%,100% {
+	-ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+    transform: rotate(90deg);	
+	}
+}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 .logo-small {
 	display: inline-block;
 	padding: 6px 0 8px;
@@ -320,30 +377,7 @@ img {
 	@include breakpoint(newp) {	width: 82px; padding: 0 0 5px; }
 	@include breakpoint(oldp) {	width: 78px; padding: 0 0 5px; }
 }
-
-
-#my-button {
-	appearance: normal;
-	border: none;
-	color: #fff;
-	padding: 0;
-	background-color: #fff;	
-}
-
-#my-button,
-#my-button:focus,
-#my-button:active {
-    border: 0;
-    outline: 0;
-}
-
-.intro-video-wrap {
-	width: 50%;
-	margin: 0 auto;
-	border: 3px solid #fff;
-	@include breakpoint(newp) {	border: 2px solid #fff; }
-	@include breakpoint(oldp) {	border: 2px solid #fff; }	
-}
+*/
 
 
 
@@ -353,33 +387,6 @@ img {
 
 
 
-
-
-
-// ---------
-// STRUCTURE
-// ---------
-//
-// intro-wrapper 
-//		intro-hero
-//		intro-split-content
-// CLEARFIX on intro container
-// 
-// 		intro-split-content
-//			skype-box: float left
-//			intro-monitor: float right (small media queries, no float)
-// 		CLEARFIX intro-split-content
-// 
-// 			skype-box
-//				skype-box-head
-//				skype-box-split
-// 			CLEARFIX skype-box
-// 
-// 				skype-box-split
-//					skype-box-subhead: float left
-//					skype-box-img: float right
-// 				CLEARFIX skype-box-split
- 
 
 
 

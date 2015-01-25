@@ -1,33 +1,39 @@
- // Semicolon (;) to ensure closing of earlier scripting
-    // Encapsulation
-    // $ is assigned to jQuery
-    ;(function($) {
+jQuery(document).ready(function($) {
+	
+$('#open-popup').magnificPopup({
+    items: [
+      {
+        src: 'https://www.youtube.com/watch?v=NbmosHkxSnI',
+        type: 'iframe' // this overrides default type
+      },
+      {
+        src: 'https://www.youtube.com/watch?v=Iqse-Mw_h6s#t=218',
+        type: 'iframe' // this overrides default type
+      },
+      {
+        src: 'https://www.youtube.com/watch?v=ILfA-Tc1Fcw',
+        type: 'iframe' // this overrides default type
+      },
+ 	  {
+        src: 'https://www.youtube.com/watch?v=H39OY4UB8jI',
+        type: 'iframe' // this overrides default type
+      }
+    ],
+    gallery: {
+      enabled: true
+    },
+    type: 'image' // this is a default type
+});
+	
+});
 
-         // DOM Ready
-        $(function() {
 
-            // Binding a click event
-            // From jQuery v.1.7.0 use .on() instead of .bind()
-            $('#my-button').bind('click', function(e) {
-
-                // Prevents the default action to be triggered. 
-                e.preventDefault();
-
-                // Triggering bPopup when click event is fired
-                $('#element_to_pop_up').bPopup();
-
-            });
-
-        });
-
-    })(jQuery);
-
-
+// COUNTER IN STATS SECTION
 
 jQuery(document).ready(function($) {
 	$('.counter').counterUp({
 		delay: 10,
-		time: 1000
+		time: 2200
 	});
 });
 
@@ -100,33 +106,6 @@ $(function() {
 
 
 
-
-/*
-
-$(function(){
-  $("#switch-view").click(function(){
-    $(this).find("button").toggleClass("active");
-    $(".article-wrapper").toggleClass("bloc col-xs-12 col-xs-4");
-  });
-});
-*/
-
-
-
-
-
-
-
-
-
-
-/* 
-$(function() {
-	$('.blog-box').click(function(e) {
-		e.preventDefault();
-	});
-});	
-*/
 
 
 
