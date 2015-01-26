@@ -262,29 +262,24 @@
 }
 
 @-webkit-keyframes burst {
-	0% {
-		opacity: .7;
-	}
-	30% {
-		opacity: 0;	
-	}
-	40% {
-		-webkit-transform: scale(2);
-		transform: scale(2);
+	0% { opacity: .8; }
+	25% { opacity: .2; }	
+	35% { opacity: 0; }
+	45% {
+		-webkit-transform: scale(1.7);
+		transform: scale(1.7);
 		opacity: 0;
 	}
-	100% {
-		opacity: 0;
-	}
+	100% { 	opacity: 0;	}
 }
 
 @keyframes burst {
 	0% { opacity: .8; }
-	39% { opacity: 0; }
-	40% {
-		-webkit-transform: scale(1.8);
-		-ms-transform: scale(1.8);
-		transform: scale(1.8);
+	35% { opacity: 0; }
+	45% {
+		-webkit-transform: scale(1.7);
+		-ms-transform: scale(1.7);
+		transform: scale(1.7);
 		opacity: 0;
 	}
 	100% { opacity: 0; }
@@ -297,7 +292,10 @@ img {
 }
 
 
-#open-popup {padding:0}
+#open-popup {
+	padding:0;
+	cursor: pointer;
+}
 
 
 

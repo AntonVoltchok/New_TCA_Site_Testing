@@ -853,53 +853,58 @@ a:hover {
 @-webkit-keyframes burst {
   /* line 265, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
   0% {
-    opacity: 0.7; }
+    opacity: 0.8; }
+
+  /* line 266, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
+  25% {
+    opacity: 0.2; }
+
+  /* line 267, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
+  35% {
+    opacity: 0; }
 
   /* line 268, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
-  30% {
+  45% {
+    -webkit-transform: scale(1.7);
+    transform: scale(1.7);
     opacity: 0; }
 
-  /* line 271, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
-  40% {
-    -webkit-transform: scale(2);
-    transform: scale(2);
-    opacity: 0; }
-
-  /* line 276, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
+  /* line 273, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
   100% {
     opacity: 0; } }
 
 @keyframes burst {
-  /* line 282, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
+  /* line 277, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
   0% {
     opacity: 0.8; }
 
-  /* line 283, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
-  39% {
+  /* line 278, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
+  35% {
     opacity: 0; }
 
-  /* line 284, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
-  40% {
-    -webkit-transform: scale(1.8);
-    -ms-transform: scale(1.8);
-    transform: scale(1.8);
+  /* line 279, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
+  45% {
+    -webkit-transform: scale(1.7);
+    -ms-transform: scale(1.7);
+    transform: scale(1.7);
     opacity: 0; }
 
-  /* line 290, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
+  /* line 285, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
   100% {
     opacity: 0; } }
 
-/* line 295, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
+/* line 290, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
 img {
   max-width: 100%; }
 
-/* line 300, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
+/* line 295, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
 #open-popup {
-  padding: 0; }
+  padding: 0;
+  cursor: pointer; }
 
 @media screen and (max-width: 700px) {
   @-webkit-keyframes 'flip-point' {
-    /* line 308, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
+    /* line 306, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
     0%, 16% {
       -ms-transform: rotate(90deg);
       /* IE 9 */
@@ -907,7 +912,7 @@ img {
       /* Chrome, Safari, Opera */
       transform: rotate(90deg); }
 
-    /* line 313, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
+    /* line 311, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
     25% {
       -ms-transform: rotate(0deg);
       /* IE 9 */
@@ -915,31 +920,31 @@ img {
       /* Chrome, Safari, Opera */
       transform: rotate(0deg); }
 
-    /* line 318, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
+    /* line 316, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
     42% {
       -webkit-transform: rotateX(0deg);
       /* Chrome, Safari, Opera */
       transform: rotateX(0deg); }
 
-    /* line 322, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
+    /* line 320, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
     48% {
       -webkit-transform: rotateX(0deg);
       /* Chrome, Safari, Opera */
       transform: rotateX(0deg); }
 
-    /* line 326, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
+    /* line 324, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
     52% {
       -webkit-transform: rotateY(0deg);
       /* Chrome, Safari, Opera */
       transform: rotateY(0deg); }
 
-    /* line 330, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
+    /* line 328, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
     57% {
       -webkit-transform: rotateX(0deg);
       /* Chrome, Safari, Opera */
       transform: rotateX(0deg); }
 
-    /* line 334, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
+    /* line 332, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
     93% {
       -ms-transform: rotate(0deg);
       /* IE 9 */
@@ -947,7 +952,7 @@ img {
       /* Chrome, Safari, Opera */
       transform: rotate(0deg); }
 
-    /* line 340, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
+    /* line 338, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
     99%, 100% {
       -ms-transform: rotate(90deg);
       /* IE 9 */
@@ -2417,13 +2422,14 @@ img {
   display: inline-block;
   margin-top: -1%;
   border: 10px double #fff;
+  box-shadow: -4px 4px 0px 0px #e86767;
   border-radius: 0.5em;
-  background-color: #02518c;
-  padding: 1%;
+  background-color: #14436d;
+  padding: 0.6%;
   color: #fff;
   font-family: 'Roboto Slab', serif;
   font-weight: 400;
-  transition: all 0.6s; }
+  transition: all 0.5s ease-in-out; }
   @media only screen and (min-width: 1921px) and (max-width: 2565px) {
     .book-call {
       font-size: 25px;
@@ -2457,13 +2463,14 @@ img {
       font-size: 13px;
       font-size: 0.8125rem; } }
 
-/* line 61, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/contact */
+/* line 63, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/contact */
 .book-call:hover {
+  border: 10px double #02518c;
+  border-radius: 1.6em;
   color: #02518c;
   background-color: #fff;
-  transition: all 0.6s;
-  border: 10px double #02518c;
-  border-radius: 1.6em; }
+  transition: all 0.5s;
+  box-shadow: 0px 0px 0px 0px #e86767; }
 
 /* line 25, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/style.scss */
 *, *:after, *:before {

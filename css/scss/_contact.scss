@@ -41,9 +41,10 @@
 	display: inline-block;
 	margin-top: -1%;
 	border: 10px double #fff;
+	box-shadow: -4px 4px 0px 0px $pinkred-dull; 
 	border-radius: .5em;
-	background-color: $headingblue;	
-	padding: 1%;
+	background-color: $darkblue;	
+	padding: .6%;
 	color: #fff;
 	font-family: $h3-font-fam;
 	font-weight: 400;
@@ -55,15 +56,18 @@
 		@include breakpoint(small) { @include font-size(18px); }
 		@include breakpoint(newp) { @include font-size(14px); }
 		@include breakpoint(oldp) { @include font-size(13px); }	
-	transition: all .6s;
+	transition: all .5s ease-in-out;
+
 }
 
 .book-call:hover {
-	color: $headingblue;
-	background-color: #fff;
-	transition: all .6s;
 	border: 10px double $headingblue;
 	border-radius: 1.6em;
+	color: $headingblue;
+	background-color: #fff;
+	transition: all .5s;
+
+		box-shadow: 0px 0px 0px 0px $pinkred-dull;
 }
 
 

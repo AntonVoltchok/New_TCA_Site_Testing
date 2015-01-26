@@ -28,6 +28,8 @@ $('#open-popup').magnificPopup({
 });
 
 
+
+
 // COUNTER IN STATS SECTION
 
 jQuery(document).ready(function($) {
