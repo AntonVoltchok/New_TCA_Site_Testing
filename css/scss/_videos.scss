@@ -1,4 +1,4 @@
- .video-wrapper {
+.video-wrapper {
  	margin: 8% 10% 12%;
  }
 .video-head {
@@ -41,6 +41,7 @@
 .tab-boxes a {
 	display: inline-block;
 	width: 12%;
+	margin: 1% 1%;
 	@include breakpoint(laptop) { width: 13%; }
 	@include breakpoint(netbook) { width: 13%; }
 	@include breakpoint(medium) { width: 14%; }

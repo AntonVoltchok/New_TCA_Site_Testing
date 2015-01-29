@@ -200,8 +200,7 @@ h1, h2, h3, h4, h5, h6, ul, ol, dl, fieldset, p, table, pre, hr {
 h1 {
   font-family: 'Oswald', sans-serif;
   color: #484747;
-  font-weight: 400;
-  line-height: 1.72em; }
+  font-weight: 400; }
   @media only screen and (min-width: 1921px) and (max-width: 2565px) {
     h1 {
       font-size: 70px;
@@ -540,7 +539,7 @@ a:hover {
 /* line 16, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
 .intro-hero {
   width: 100%;
-  margin-bottom: 4%; }
+  margin-bottom: 3.3%; }
   @media only screen and (min-width: 756px) and (max-width: 1005px) {
     .intro-hero {
       margin-top: 6%; } }
@@ -638,7 +637,7 @@ a:hover {
 /* line 85, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
 .skype-box-subhead {
   box-sizing: border-box;
-  margin-top: 5%;
+  margin-top: 7%;
   float: left;
   font-family: 'Roboto Condensed', sans-serif;
   color: #484747;
@@ -683,7 +682,9 @@ a:hover {
 .skype-box-img {
   float: left;
   margin-left: 11%;
-  width: 22%; }
+  width: 22%;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
   @media only screen and (min-width: 1281px) and (max-width: 1600px) {
     .skype-box-img {
       width: 21%; } }
@@ -694,25 +695,28 @@ a:hover {
     .skype-box-img {
       width: 16%;
       margin-top: 2%; } }
-  @media only screen and (min-width: 376px) and (max-width: 755px) {
-    .skype-box-img {
-      width: 13%; } }
-  @media only screen and (max-width: 320px) {
-    .skype-box-img {
-      width: 12%; } }
-  @media only screen and (min-width: 321px) and (max-width: 375px) {
-    .skype-box-img {
-      width: 11%; } }
   @media only screen and (max-width: 768px) {
     .skype-box-img {
       display: none; } }
 
-/* line 129, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
+/* line 128, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
+.skype-box-img:hover {
+  transform: scale(1.05); }
+
+/* line 132, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
 .skype {
   width: 100%;
-  opacity: 1; }
+  opacity: 1;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0px 20px 30px -14px rgba(50, 50, 50, 0.44); }
 
-/* line 143, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
+/* line 141, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
+.skype:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 49px 30px -30px rgba(50, 50, 50, 0.37); }
+
+/* line 157, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
 .monitor-box {
   float: right;
   width: 58%; }
@@ -727,16 +731,16 @@ a:hover {
       width: 100%;
       transition: all 1s; } }
 
-/* line 159, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
+/* line 173, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
 .center-play {
   width: 100%;
   position: relative; }
 
-/* line 163, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
+/* line 177, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
 .monitor {
   width: 100%; }
 
-/* line 167, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
+/* line 181, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
 .play-button {
   position: absolute;
   top: 27%;
@@ -766,7 +770,7 @@ a:hover {
 
 @media screen and (min-width: 701px) {
   @-webkit-keyframes 'flip-point' {
-    /* line 197, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
+    /* line 211, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
     0%, 16% {
       -ms-transform: rotate(90deg);
       /* IE 9 */
@@ -774,7 +778,7 @@ a:hover {
       /* Chrome, Safari, Opera */
       transform: rotate(90deg); }
 
-    /* line 202, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
+    /* line 216, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
     25% {
       -ms-transform: rotate(0deg);
       /* IE 9 */
@@ -782,31 +786,31 @@ a:hover {
       /* Chrome, Safari, Opera */
       transform: rotate(0deg); }
 
-    /* line 207, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
+    /* line 221, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
     42% {
       -webkit-transform: rotateX(0deg);
       /* Chrome, Safari, Opera */
       transform: rotateX(0deg); }
 
-    /* line 211, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
+    /* line 225, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
     48% {
       -webkit-transform: rotateX(-70deg);
       /* Chrome, Safari, Opera */
       transform: rotateX(-70deg); }
 
-    /* line 215, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
+    /* line 229, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
     52% {
       -webkit-transform: rotateY(90deg);
       /* Chrome, Safari, Opera */
       transform: rotateY(90deg); }
 
-    /* line 219, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
+    /* line 233, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
     57% {
       -webkit-transform: rotateX(0deg);
       /* Chrome, Safari, Opera */
       transform: rotateX(0deg); }
 
-    /* line 223, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
+    /* line 237, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
     93% {
       -ms-transform: rotate(0deg);
       /* IE 9 */
@@ -814,7 +818,7 @@ a:hover {
       /* Chrome, Safari, Opera */
       transform: rotate(0deg); }
 
-    /* line 228, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
+    /* line 242, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
     99%, 100% {
       -ms-transform: rotate(90deg);
       /* IE 9 */
@@ -823,7 +827,7 @@ a:hover {
       transform: rotate(90deg); } }
  }
 
-/* line 236, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
+/* line 250, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
 .play-button:hover {
   opacity: 0.95;
   box-sizing: border-box;
@@ -836,7 +840,7 @@ a:hover {
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.56);
   border: 10px solid rgba(255, 255, 255, 0.31); }
 
-/* line 250, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
+/* line 264, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
 .play-button-animate {
   position: absolute;
   top: 28.25%;
@@ -851,60 +855,60 @@ a:hover {
   animation: burst 5s infinite linear; }
 
 @-webkit-keyframes burst {
-  /* line 265, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
+  /* line 279, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
   0% {
     opacity: 0.8; }
 
-  /* line 266, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
+  /* line 280, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
   25% {
     opacity: 0.2; }
 
-  /* line 267, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
+  /* line 281, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
   35% {
     opacity: 0; }
 
-  /* line 268, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
+  /* line 282, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
   45% {
     -webkit-transform: scale(1.7);
     transform: scale(1.7);
     opacity: 0; }
 
-  /* line 273, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
+  /* line 287, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
   100% {
     opacity: 0; } }
 
 @keyframes burst {
-  /* line 277, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
+  /* line 291, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
   0% {
     opacity: 0.8; }
 
-  /* line 278, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
+  /* line 292, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
   35% {
     opacity: 0; }
 
-  /* line 279, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
+  /* line 293, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
   45% {
     -webkit-transform: scale(1.7);
     -ms-transform: scale(1.7);
     transform: scale(1.7);
     opacity: 0; }
 
-  /* line 285, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
+  /* line 299, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
   100% {
     opacity: 0; } }
 
-/* line 290, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
+/* line 304, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
 img {
   max-width: 100%; }
 
-/* line 295, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
+/* line 309, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
 #open-popup {
   padding: 0;
   cursor: pointer; }
 
 @media screen and (max-width: 700px) {
   @-webkit-keyframes 'flip-point' {
-    /* line 306, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
+    /* line 320, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
     0%, 16% {
       -ms-transform: rotate(90deg);
       /* IE 9 */
@@ -912,7 +916,7 @@ img {
       /* Chrome, Safari, Opera */
       transform: rotate(90deg); }
 
-    /* line 311, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
+    /* line 325, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
     25% {
       -ms-transform: rotate(0deg);
       /* IE 9 */
@@ -920,31 +924,31 @@ img {
       /* Chrome, Safari, Opera */
       transform: rotate(0deg); }
 
-    /* line 316, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
+    /* line 330, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
     42% {
       -webkit-transform: rotateX(0deg);
       /* Chrome, Safari, Opera */
       transform: rotateX(0deg); }
 
-    /* line 320, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
+    /* line 334, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
     48% {
       -webkit-transform: rotateX(0deg);
       /* Chrome, Safari, Opera */
       transform: rotateX(0deg); }
 
-    /* line 324, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
+    /* line 338, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
     52% {
       -webkit-transform: rotateY(0deg);
       /* Chrome, Safari, Opera */
       transform: rotateY(0deg); }
 
-    /* line 328, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
+    /* line 342, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
     57% {
       -webkit-transform: rotateX(0deg);
       /* Chrome, Safari, Opera */
       transform: rotateX(0deg); }
 
-    /* line 332, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
+    /* line 346, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
     93% {
       -ms-transform: rotate(0deg);
       /* IE 9 */
@@ -952,7 +956,7 @@ img {
       /* Chrome, Safari, Opera */
       transform: rotate(0deg); }
 
-    /* line 338, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
+    /* line 352, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
     99%, 100% {
       -ms-transform: rotate(90deg);
       /* IE 9 */
@@ -1695,7 +1699,8 @@ img {
 /* line 41, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/videos */
 .tab-boxes a {
   display: inline-block;
-  width: 12%; }
+  width: 12%;
+  margin: 1% 1%; }
   @media only screen and (min-width: 1281px) and (max-width: 1600px) {
     .tab-boxes a {
       width: 13%; } }
@@ -1718,14 +1723,14 @@ img {
       width: 15%;
       margin: 4% 0 2%; } }
 
-/* line 56, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/videos */
+/* line 57, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/videos */
 .active {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out; }
 
-/* line 64, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/videos */
+/* line 65, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/videos */
 .tab-wrapper {
   width: 70%;
   margin: 0% auto;
@@ -1754,11 +1759,11 @@ img {
     .tab-wrapper {
       width: 90%; } }
 
-/* line 81, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/videos */
+/* line 82, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/videos */
 #tab1 {
   transition: all 0.8s ease-in-out; }
 
-/* line 90, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/videos */
+/* line 91, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/videos */
 #tab1, #tab2, #tab3, #tab4, #tab5, #tab6 {
   -webkit-transition: all 0.9s ease-in-out;
   -moz-transition: all 0.9s ease-in-out;
@@ -1769,7 +1774,7 @@ img {
   border: 5px solid #fff;
   box-shadow: 0px 0px 0px 7px #cf6148; }
 
-/* line 101, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/videos */
+/* line 102, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/videos */
 .video-tab-head {
   -webkit-transition: all 0.9s ease-in-out;
   -moz-transition: all 0.9s ease-in-out;
@@ -1807,7 +1812,7 @@ img {
       font-size: 15px;
       font-size: 0.9375rem; } }
 
-/* line 121, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/videos */
+/* line 122, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/videos */
 .video-tab-links {
   -webkit-transition: all 0.9s ease-in-out;
   -moz-transition: all 0.9s ease-in-out;
@@ -1820,11 +1825,11 @@ img {
   padding: 0 3% 0%;
   font-family: 'Roboto Slab', serif; }
 
-/* line 134, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/videos */
+/* line 135, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/videos */
 .last-tab-link {
   padding-bottom: 4%; }
 
-/* line 139, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/videos */
+/* line 140, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/videos */
 .icon-latest {
   text-decoration: none;
   position: relative;
@@ -1832,7 +1837,7 @@ img {
   -webkit-appearance: none;
   cursor: pointer; }
 
-/* line 149, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/videos */
+/* line 150, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/videos */
 .icon-latest:after {
   content: '';
   position: absolute;
@@ -1844,16 +1849,16 @@ img {
   transition: 0.4s;
   transform: translateY(-20px); }
 
-/* line 161, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/videos */
+/* line 162, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/videos */
 .icon-latest:hover {
   transform: translateY(-20px); }
 
-/* line 165, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/videos */
+/* line 166, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/videos */
 .icon-latest:hover:after {
   opacity: 1;
   transform: translateY(0); }
 
-/* line 170, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/videos */
+/* line 171, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/videos */
 .video-end-divider {
   height: 10px;
   width: 100%;
@@ -1878,7 +1883,7 @@ img {
     .video-end-divider {
       margin-top: 20%; } }
 
-/* line 183, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/videos */
+/* line 184, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/videos */
 .video-triangle {
   width: 0;
   height: 0;
@@ -1890,7 +1895,7 @@ img {
     .video-triangle {
       border-width: 25px 25px 0 25px; } }
 
-/* line 192, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/videos */
+/* line 193, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/videos */
 .video-triangle-position {
   text-align: center; }
 
@@ -2356,7 +2361,7 @@ img {
 
 /* line 1, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/contact */
 .contact-wrapper {
-  margin: 10% 5% 30%;
+  margin: 10% 5% 10%;
   text-align: center; }
 
 /* line 6, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/contact */
@@ -2373,12 +2378,11 @@ img {
   box-shadow: -7px 7px 0px 0px #e86767;
   background-color: #14436d;
   padding: 2% 4%;
-  font-family: 'Roboto Slab', serif;
   text-align: left;
   font-family: 'Roboto Slab', serif;
   color: #fff;
   font-weight: 400;
-  line-height: 1.5 em; }
+  line-height: 1.5em; }
   @media only screen and (min-width: 1921px) and (max-width: 2565px) {
     .instructions {
       font-size: 28px;
@@ -2412,12 +2416,12 @@ img {
       font-size: 10px;
       font-size: 0.625rem; } }
 
-/* line 35, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/contact */
+/* line 34, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/contact */
 .instructions-bold {
   font-weight: 700;
   color: #ff8677; }
 
-/* line 40, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/contact */
+/* line 39, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/contact */
 .book-call {
   display: inline-block;
   margin-top: -1%;
@@ -2463,7 +2467,7 @@ img {
       font-size: 13px;
       font-size: 0.8125rem; } }
 
-/* line 63, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/contact */
+/* line 62, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/contact */
 .book-call:hover {
   border: 10px double #02518c;
   border-radius: 1.6em;
@@ -2471,6 +2475,410 @@ img {
   background-color: #fff;
   transition: all 0.5s;
   box-shadow: 0px 0px 0px 0px #e86767; }
+
+/* line 75, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/contact */
+#content {
+  width: 800px;
+  padding: 50px;
+  margin: 0 auto;
+  display: block;
+  font-size: 1.2em; }
+
+/* line 83, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/contact */
+#content h2 {
+  line-height: 1.5em; }
+
+/* Add curved borders to various elements */
+/* line 94, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/contact */
+#contactForm, .statusMessage, input[type="submit"], input[type="button"] {
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px; }
+
+/* Style for the contact form and status messages */
+/* line 102, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/contact */
+#contactForm, .statusMessage {
+  color: #666;
+  background-color: #ebedf2;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #dfe1e5), color-stop(1, #f2f4fa));
+  background: -moz-linear-gradient(center bottom, #dfe1e5 0%, #ebedf2 100%);
+  border: 1px solid #aaa;
+  -moz-box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+  opacity: 0.99; }
+
+/* The form dimensions */
+/* line 117, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/contact */
+#contactForm {
+  width: 40em;
+  height: 37.7em;
+  padding: 0 1.5em 1.5em 1.5em;
+  margin: 0 auto; }
+
+/* Position the form in the middle of the window (if JavaScript is enabled) */
+/* line 127, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/contact */
+#contactForm.positioned {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-top: auto;
+  margin-bottom: auto; }
+
+/* Dimensions and position of the status messages */
+/* line 140, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/contact */
+.statusMessage {
+  display: none;
+  margin: auto;
+  width: 30em;
+  height: 2em;
+  padding: 1.5em;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+
+/* line 153, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/contact */
+.statusMessage p {
+  text-align: center;
+  margin: 0;
+  padding: 0; }
+
+/* HEADER IS THE TCA LOGO , SMALL VERSION */
+/* line 161, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/contact */
+.form-logo-container {
+  margin: 1.5em auto; }
+
+/* line 164, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/contact */
+.form-logo {
+  max-width: 30%; }
+
+/* Give form elements consistent margin, padding and line height */
+/* line 169, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/contact */
+#contactForm ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+/* line 175, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/contact */
+#contactForm ul li {
+  margin: 0.9em 0 0 0;
+  padding: 0; }
+
+/* line 180, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/contact */
+#contactForm input, #contactForm label {
+  line-height: 1em; }
+
+/* The field labels */
+/* line 186, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/contact */
+label {
+  display: block;
+  float: left;
+  clear: left;
+  text-align: right;
+  width: 28%;
+  padding: 0.4em 0 0 0;
+  margin: 0.15em 0.5em 0 0;
+  font-weight: bold;
+  font-family: 'Roboto Slab', serif; }
+
+/* line 198, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/contact */
+.form-upcoming {
+  font-weight: 700;
+  font-family: 'Roboto Slab', serif;
+  font-size: 12.5px;
+  font-size: 0.78125rem;
+  color: #8d8d8d; }
+
+/* line 205, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/contact */
+.form-upcoming p {
+  line-height: 1.5em;
+  margin: 0; }
+
+/* line 210, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/contact */
+.form-upcoming-head {
+  font-weight: 700;
+  font-size: 15.6px;
+  font-size: 0.975rem;
+  color: #666; }
+
+/* The fields */
+/* line 217, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/contact */
+input, textarea {
+  display: block;
+  margin: 0;
+  padding: 0.4em;
+  width: 67%;
+  font-family: 'Roboto Slab', serif;
+  font-size: 1em;
+  border: 1px solid #aaa;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 4px inset;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 4px inset;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 1px 4px inset;
+  background: #fff; }
+
+/* line 234, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/contact */
+textarea {
+  height: 13em;
+  line-height: 1.5em;
+  resize: none; }
+
+/* Place a border around focused fields, and hide the inner shadow */
+/* line 243, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/contact */
+#contactForm *:focus {
+  border: 1px solid #3f6c95;
+  outline: none;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none; }
+
+/* Display correctly filled-in fields with a green background */
+/* line 254, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/contact */
+input:valid, textarea:valid {
+  background: #fff; }
+
+/* The Send and Cancel buttons */
+/* line 261, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/contact */
+input[type="submit"], input[type="button"] {
+  display: inline-block;
+  margin: 4em -1em 0 2em;
+  width: 7em;
+  padding: 0.7em;
+  border: 3px solid #fff;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  border-radius: 7px;
+  -moz-box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.8);
+  color: #fff;
+  background: #02518c;
+  font-size: 1em;
+  line-height: 1em;
+  font-weight: bold;
+  opacity: 0.7;
+  font-size: 18px;
+  font-size: 1.125rem;
+  -webkit-appearance: none;
+  -moz-transition: opacity 0.5s;
+  -webkit-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  transition: opacity 0.5s; }
+
+/* line 288, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/contact */
+input[type="submit"]:hover, input[type="submit"]:active {
+  cursor: pointer;
+  opacity: 1;
+  border-radius: 100px;
+  transition: all 0.6s; }
+
+/* line 295, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/contact */
+input[type="button"]:hover, input[type="button"]:active {
+  cursor: pointer;
+  opacity: 1;
+  border-radius: 7px;
+  transition: all 0.2s; }
+
+/* line 302, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/contact */
+input[type="submit"]:active, input[type="button"]:active {
+  color: #333;
+  background: #eee;
+  -moz-box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.8) inset;
+  -webkit-box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.8) inset;
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.8) inset; }
+
+/* line 310, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/contact */
+input[type="button"] {
+  background: #c33a1a;
+  width: 2.1em;
+  padding: 0.29em;
+  font-family: inherit;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 700;
+  position: relative;
+  top: 0;
+  left: 0;
+  border-radius: 50px;
+  border: 3px solid #fff;
+  text-align: center; }
+
+/* line 325, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/contact */
+form {
+  position: relative; }
+
+/* line 329, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/contact */
+.span-check-instruct {
+  position: relative;
+  top: 0.5em;
+  left: 0.2em;
+  font-family: 'Roboto Slab', serif; }
+
+/* line 336, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/contact */
+.checkboxFive {
+  width: 20px;
+  margin: -30px 140px;
+  position: relative; }
+
+/* line 341, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/contact */
+.checkboxFive label {
+  cursor: pointer;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: -0.4em;
+  left: -0.1em;
+  background: #eee;
+  border: 1px solid #acacac;
+  border-radius: 6px; }
+
+/* line 352, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/contact */
+.checkboxFive label:after {
+  opacity: 0.2;
+  content: '';
+  position: absolute;
+  width: 14px;
+  height: 5px;
+  background: transparent;
+  top: 7px;
+  left: 6px;
+  border: 2.8px solid #000;
+  border-top: none;
+  border-right: none;
+  border-radius: 6px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg); }
+
+/**
+ * Create the hover event of the tick
+ */
+/* line 376, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/contact */
+.checkboxFive label:hover::after {
+  opacity: 0.7; }
+
+/**
+ * Create the checkbox state for the tick
+ */
+/* line 383, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/contact */
+.checkboxFive input[type=checkbox]:checked + label:after {
+  opacity: 1; }
+
+/* line 391, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/contact */
+.schedule-triangle {
+  width: 0;
+  height: 0;
+  border-color: #fff transparent transparent transparent;
+  display: inline-block;
+  border-style: solid;
+  border-width: 45px 45px 0 45px; }
+  @media only screen and (max-width: 768px) {
+    .schedule-triangle {
+      border-width: 25px 25px 0 25px; } }
+
+/* line 400, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/contact */
+.schedule-triangle-position {
+  text-align: center; }
+
+/* line 406, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/contact */
+.pagebottom-block {
+  background-color: rgba(237, 237, 237, 0.96);
+  text-align: center; }
+
+/* line 411, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/contact */
+.pagebottom-logo-container {
+  text-align: center;
+  margin: 2% 0 2%; }
+
+/* line 415, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/contact */
+.page-bottom-logo {
+  max-width: 27%;
+  display: inline-block; }
+  @media only screen and (min-width: 1006px) and (max-width: 1280px) {
+    .page-bottom-logo {
+      max-width: 37%; } }
+  @media only screen and (min-width: 756px) and (max-width: 1005px) {
+    .page-bottom-logo {
+      max-width: 47%; } }
+  @media only screen and (min-width: 376px) and (max-width: 755px) {
+    .page-bottom-logo {
+      max-width: 57%; } }
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
+    .page-bottom-logo {
+      max-width: 67%; } }
+  @media only screen and (max-width: 320px) {
+    .page-bottom-logo {
+      max-width: 67%; } }
+
+/* line 427, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/contact */
+.bottom-subhead {
+  color: #02518c;
+  font-weight: 700;
+  margin: 0; }
+
+/* line 432, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/contact */
+.bottom-info {
+  width: 30%;
+  margin: 1% auto;
+  padding-bottom: 3%;
+  font-family: 'Roboto Slab', serif;
+  color: #3f6c95;
+  font-weight: 400;
+  line-height: 1.5em; }
+  @media only screen and (min-width: 1921px) and (max-width: 2565px) {
+    .bottom-info {
+      font-size: 20px;
+      font-size: 1.25rem; } }
+  @media only screen and (min-width: 1601px) and (max-width: 1920px) {
+    .bottom-info {
+      font-size: 18px;
+      font-size: 1.125rem; } }
+  @media only screen and (min-width: 1281px) and (max-width: 1600px) {
+    .bottom-info {
+      font-size: 17px;
+      font-size: 1.0625rem; } }
+  @media only screen and (min-width: 1006px) and (max-width: 1280px) {
+    .bottom-info {
+      font-size: 15px;
+      font-size: 0.9375rem; } }
+  @media only screen and (min-width: 756px) and (max-width: 1005px) {
+    .bottom-info {
+      font-size: 14px;
+      font-size: 0.875rem;
+      width: 60%; } }
+  @media only screen and (min-width: 376px) and (max-width: 755px) {
+    .bottom-info {
+      font-size: 13px;
+      font-size: 0.8125rem;
+      width: 80%; } }
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
+    .bottom-info {
+      font-size: 11px;
+      font-size: 0.6875rem;
+      width: 90%; } }
+  @media only screen and (max-width: 320px) {
+    .bottom-info {
+      font-size: 10px;
+      font-size: 0.625rem;
+      width: 90%; } }
+
+/* line 450, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/contact */
+.bottom-stripe-light {
+  height: 10px;
+  background-color: rgba(160, 160, 160, 0.18); }
+
+/* line 454, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/contact */
+.bottom-stripe {
+  height: 30px;
+  background-color: rgba(116, 116, 116, 0.46); }
 
 /* line 25, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/style.scss */
 *, *:after, *:before {

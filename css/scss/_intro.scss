@@ -15,7 +15,7 @@
 // HERO HEADING - USING FITTEXT TO ALWAYS KEEP 1 LINE/MAX WIDTH TEXT 
 .intro-hero {
 	width: 100%;
-	margin-bottom: 4%;
+	margin-bottom: 3.3%;
 	//BREAKPOINTS
 	@include breakpoint(medium) { margin-top: 6%; }
 	@include breakpoint(mobile-flip) { margin-top: 12%; }
@@ -84,7 +84,7 @@
 }
 .skype-box-subhead {
 	box-sizing: border-box;
-	margin-top: 5%;
+	margin-top: 7%;
 	float: left;
 	font-family: $h2-font-fam;
 	color: $darkgrey;
@@ -120,16 +120,30 @@
 		width: 16%; 
 		margin-top: 2%;	
 	}
-	@include breakpoint(small) { width: 13%; }
-	@include breakpoint(oldp) { width: 12%; }
-	@include breakpoint(newp) { width: 11%; }
 	@include breakpoint(mobile-flip) { display: none; }
+		-webkit-transition: all .2s ease-in-out;	
+	transition: all .2s ease-in-out;
+}
+
+.skype-box-img:hover {
+	transform: scale(1.05);
 }
 
 .skype {
 	width: 100%;
 	opacity: 1;
+	-webkit-transition: all .2s ease-in-out;	
+	transition: all .2s ease-in-out;
+	box-shadow: 0px 20px 30px -14px rgba(50, 50, 50, 0.44);
+	
 }
+
+.skype:hover {
+	transform:translateY(-10px);
+	box-shadow: 0px 49px 30px -30px rgba(50, 50, 50, 0.37);
+}
+
+
 
 // NOT USING RIGHT NOW, IF NEEDED, INTRO-BR
 // GETS RID OF LINE BREAKS FOR MOBILE VIEW
