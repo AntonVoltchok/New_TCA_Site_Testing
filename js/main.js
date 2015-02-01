@@ -262,7 +262,7 @@ function init() {
 function submitForm() {
   var contactForm = $(this);
   // Are all the fields filled in?
-  if ( !$('#senderName').val() || !$('#senderEmail').val() || !$('#message').val() ) {
+  if ( !$('#senderName').val() || !$('#senderEmail').val() || ( !$('#senderSkype').val() || !$('#message').val() ) {
     // No; display a warning message and return to the form
     $('#incompleteMessage').fadeIn().delay(messageDelay).fadeOut();
     contactForm.fadeOut().delay(messageDelay).fadeIn();
@@ -297,6 +297,7 @@ function submitFinished( response ) {
     $('#successMessage').fadeIn().delay(messageDelay).fadeOut();
     $('#senderName').val( "" );
     $('#senderEmail').val( "" );
+		$('#senderSkype').val( "" );
     $('#message').val( "" );
 
     $('#content').delay(messageDelay+500).fadeTo( 'slow', 1 );

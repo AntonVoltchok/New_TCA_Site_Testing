@@ -21,7 +21,7 @@
 	color: #fff;
 	font-weight: 400;
 	line-height: 1.5em;
-		@include breakpoint(hires) { @include font-size(28px); }
+		@include breakpoint(hires) { @include font-size(20px); }
 		@include breakpoint(desktop) { @include font-size(20px); } 
 		@include breakpoint(laptop) { @include font-size(19px); } 
 		@include breakpoint(netbook) { @include font-size(18px); }

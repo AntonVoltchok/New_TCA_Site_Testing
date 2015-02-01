@@ -200,7 +200,8 @@ h1, h2, h3, h4, h5, h6, ul, ol, dl, fieldset, p, table, pre, hr {
 h1 {
   font-family: 'Oswald', sans-serif;
   color: #484747;
-  font-weight: 400; }
+  font-weight: 400;
+  line-height: 1.72em; }
   @media only screen and (min-width: 1921px) and (max-width: 2565px) {
     h1 {
       font-size: 70px;
@@ -709,12 +710,12 @@ a:hover {
   opacity: 1;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  box-shadow: 0px 20px 30px -14px rgba(50, 50, 50, 0.44); }
+  box-shadow: 0px 20px 30px -24px rgba(50, 50, 50, 0.1); }
 
 /* line 141, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
 .skype:hover {
   transform: translateY(-10px);
-  box-shadow: 0px 49px 30px -30px rgba(50, 50, 50, 0.37); }
+  box-shadow: 0px 30px 30px -20px rgba(50, 50, 50, 0.37); }
 
 /* line 157, C:/Users/The Box/Desktop/CODING/_TCA-NEW/css/scss/intro */
 .monitor-box {
@@ -2385,8 +2386,8 @@ img {
   line-height: 1.5em; }
   @media only screen and (min-width: 1921px) and (max-width: 2565px) {
     .instructions {
-      font-size: 28px;
-      font-size: 1.75rem; } }
+      font-size: 20px;
+      font-size: 1.25rem; } }
   @media only screen and (min-width: 1601px) and (max-width: 1920px) {
     .instructions {
       font-size: 20px;
